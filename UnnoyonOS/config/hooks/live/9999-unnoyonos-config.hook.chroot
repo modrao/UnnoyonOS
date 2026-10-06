@@ -1,11 +1,18 @@
 #!/bin/sh
+# 9999-unnoyonos-config.hook.chroot
+# Final configuration: KDE defaults, lock screen, wallpaper, SDDM
 set -e
 
-rm -rf /usr/share/desktop-base/kf5-settings
+echo "==> Applying UnnoyonOS KDE configuration..."
+
+# Remove conflicting Debian KDE settings
+rm -rf /usr/share/desktop-base/kf5-settings 2>/dev/null || true
+rm -f /usr/share/glib-2.0/schemas/10_desktop-base.gschema.override 2>/dev/null || true
 
 mkdir -p /etc/xdg
 
-cat > /etc/xdg/kdeglobals <<'EOF'
+# ── Global KDE settings ───────────────────────────────────────────────────────
+cat > /etc/xdg/kdeglobals << 'EOF'
 [General]
 XftAntialias=true
 XftHintStyle=hintslight
@@ -14,12 +21,73 @@ BrowserApplication=firefox-esr.desktop
 
 [KDE]
 LookAndFeelPackage=org.unnoyonos.desktop
+SingleClick=false
+
+[Icons]
+Theme=breeze-dark
 EOF
 
-cat > /etc/xdg/kscreenlockerrc <<'EOF'
+# ── KWin (window manager) ─────────────────────────────────────────────────────
+cat > /etc/xdg/kwinrc << 'EOF'
+[org.kde.kdecoration2]
+library=org.kde.breeze
+theme=Breeze
+
+[Compositing]
+Enabled=true
+Backend=OpenGL
+GLCore=true
+EOF
+
+# ── Desktop wallpaper (Plasma 6 compatible) ───────────────────────────────────
+# This sets the wallpaper for ALL screens and ALL activities
+cat > /etc/xdg/plasma-org.kde.plasma.desktop-appletsrc << 'EOF'
+[Containments][1][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/unnoyonos-dark-signature/contents/images/1920x1080.png
+PreviewImage=file:///usr/share/wallpapers/unnoyonos-dark-signature/contents/images/1920x1080.png
+EOF
+
+# ── Lock screen wallpaper ─────────────────────────────────────────────────────
+cat > /etc/xdg/kscreenlockerrc << 'EOF'
 [Greeter]
 WallpaperPlugin=org.kde.image
 
-[Wallpaper][org.kde.image][General]
-Image=/usr/share/wallpapers/unnoyonos-dark-signature/contents/images/1376x768.png
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/unnoyonos-dark-signature/contents/images/1920x1080.png
 EOF
+
+# ── Plasma configuration ──────────────────────────────────────────────────────
+cat > /etc/xdg/plasmarc << 'EOF'
+[Theme]
+name=default
+
+[KDE Action Restrictions]
+action/lock_screen=true
+EOF
+
+# ── Plasma 6 look and feel ────────────────────────────────────────────────────
+cat > /etc/xdg/plasmashellrc << 'EOF'
+[LookAndFeel]
+LookAndFeelPackage=org.unnoyonos.desktop
+EOF
+
+# ── Apply skel (default for new users / live user) ────────────────────────────
+SKEL_PLASMA_DIR="/etc/skel/.config"
+mkdir -p "${SKEL_PLASMA_DIR}"
+
+# Copy all xdg configs to skel so live user gets them
+cp /etc/xdg/kdeglobals    "${SKEL_PLASMA_DIR}/" 2>/dev/null || true
+cp /etc/xdg/kwinrc        "${SKEL_PLASMA_DIR}/" 2>/dev/null || true
+cp /etc/xdg/kscreenlockerrc "${SKEL_PLASMA_DIR}/" 2>/dev/null || true
+cp /etc/xdg/plasmarc      "${SKEL_PLASMA_DIR}/" 2>/dev/null || true
+cp /etc/xdg/plasmashellrc "${SKEL_PLASMA_DIR}/" 2>/dev/null || true
+
+# Plasma desktop config for live user skel
+mkdir -p /etc/skel/.local/share/plasma/look-and-feel
+cat > "${SKEL_PLASMA_DIR}/plasma-org.kde.plasma.desktop-appletsrc" << 'EOF'
+[Containments][1][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/unnoyonos-dark-signature/contents/images/1920x1080.png
+PreviewImage=file:///usr/share/wallpapers/unnoyonos-dark-signature/contents/images/1920x1080.png
+EOF
+
+echo "==> UnnoyonOS KDE configuration complete."

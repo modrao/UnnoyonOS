@@ -1,0 +1,60 @@
+#!/bin/sh
+# 9998-unnoyonos-wallpapers.hook.chroot
+# 1. Removes ALL default Debian/KDE/Breeze wallpapers (packages + files)
+# 2. Ensures UnnoyonOS wallpapers have all required resolution symlinks
+set -e
+
+echo "==> [UnnoyonOS] Removing default wallpapers..."
+
+# ── Remove wallpaper packages ─────────────────────────────────────────────────
+# plasma-workspace-wallpapers = Breeze/Next/etc default KDE wallpapers
+# desktop-base                = Debian default wallpapers
+for pkg in plasma-workspace-wallpapers desktop-base; do
+    if dpkg -l "$pkg" 2>/dev/null | grep -q "^ii"; then
+        apt-get remove -y --purge "$pkg" 2>/dev/null || true
+        echo "  Removed package: $pkg"
+    fi
+done
+
+# ── Remove any leftover wallpaper directories that are NOT UnnoyonOS ──────────
+WALL_DIR="/usr/share/wallpapers"
+if [ -d "$WALL_DIR" ]; then
+    for dir in "$WALL_DIR"/*/; do
+        name=$(basename "$dir")
+        # Keep only directories starting with "unnoyonos"
+        if [ -d "$dir" ] && ! echo "$name" | grep -q "^unnoyonos"; then
+            rm -rf "$dir"
+            echo "  Removed wallpaper dir: $name"
+        fi
+    done
+fi
+
+# ── Fix resolution symlinks for UnnoyonOS wallpapers ─────────────────────────
+echo "==> [UnnoyonOS] Configuring wallpaper resolutions..."
+
+RESOLUTIONS="1280x720 1280x800 1280x1024 1366x768 1376x768 1440x900 1600x900 1600x1024 1600x1200 1920x1080 1920x1200 2560x1440 2560x1600 3840x2160"
+
+for wall_dir in "$WALL_DIR"/unnoyonos-*/; do
+    [ -d "$wall_dir" ] || continue
+    name=$(basename "$wall_dir")
+    img_dir="${wall_dir}contents/images"
+    mkdir -p "$img_dir"
+
+    # Find source image
+    src=$(find "$img_dir" -maxdepth 1 -type f | head -1)
+    if [ -z "$src" ]; then
+        echo "  [WARN] No image found for: $name"
+        continue
+    fi
+
+    ext="${src##*.}"
+    for res in $RESOLUTIONS; do
+        target="${img_dir}/${res}.${ext}"
+        if [ ! -f "$target" ]; then
+            ln -sf "$src" "$target"
+        fi
+    done
+    echo "  [OK] $name"
+done
+
+echo "==> Default wallpapers removed. Only UnnoyonOS wallpapers remain."
