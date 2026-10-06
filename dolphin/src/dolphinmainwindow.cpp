@@ -144,8 +144,8 @@ DolphinMainWindow::DolphinMainWindow()
 #ifndef Q_OS_WIN
     setWindowFlags(Qt::WindowContextHelpButtonHint);
 #endif
-    setComponentName(QStringLiteral("dolphin"), QGuiApplication::applicationDisplayName());
-    setObjectName(QStringLiteral("Dolphin#"));
+    setComponentName(QStringLiteral("thikana"), QGuiApplication::applicationDisplayName());
+    setObjectName(QStringLiteral("Thikana#"));
 
     setStateConfigGroup("State");
 

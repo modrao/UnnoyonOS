@@ -1,0 +1,25 @@
+[Desktop Entry]
+Type=Application
+Name=Thikana
+Name[bn]=ঠিকানা
+Name[hi]=ठिकाना
+Name[ar]=ثيكانا
+Name[ru]=Тикана
+Name[ja]=ティカナ
+Name[ko]=티卡나
+Name[zh_CN]=蒂卡纳
+Name[zh_TW]=蒂卡納
+GenericName=File Manager
+GenericName[bn]=ফাইল ম্যানেজার
+Comment=Browse and manage your files
+Icon=thikana
+Exec=dolphin %U
+Terminal=false
+Categories=System;FileManager;Utility;Core;
+MimeType=inode/directory;application/x-gnome-saved-search;
+StartupNotify=true
+StartupWMClass=dolphin
+X-KDE-Protocols=ftp,smb,sftp,fish,webdavs
+InitialPreference=10
+Keywords=Files;Folders;Thikana;FileManager;Finder;
+X-DocPath=dolphin/index.html

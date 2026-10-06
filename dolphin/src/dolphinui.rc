@@ -110,6 +110,7 @@
         <text context="@title:menu">Main Toolbar</text>
         <Action name="go_back" />
         <Action name="go_forward" />
+        <Action name="view_mode" />
         <Action name="view_settings" />
         <Action name="url_navigators" />
         <Action name="split_view" />

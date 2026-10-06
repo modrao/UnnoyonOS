@@ -59,8 +59,8 @@ int main(int argc, char **argv)
         std::cout << qPrintable(
             xi18ndc(dolphinTranslationDomain,
                     "@info:shell %1 is a terminal command",
-                    "Running <application>Dolphin</application> with <command>sudo</command> is discouraged. Please run <icode>%1</icode> instead.",
-                    QStringLiteral("dolphin --sudo")))
+                    "Running <application>Thikana</application> with <command>sudo</command> is discouraged. Please run <icode>%1</icode> instead.",
+                    QStringLiteral("thikana --sudo")))
                   << '\n';
         // We could perform a privilege de-escalation here and continue as normal. It is a bit safer though to simply let the user restart without sudo.
         return EXIT_FAILURE;
@@ -73,7 +73,8 @@ int main(int argc, char **argv)
     KIconTheme::initTheme();
 
     QApplication app(argc, argv);
-    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.dolphin"), app.windowIcon()));
+    app.setApplicationDisplayName(QStringLiteral("Thikana"));
+    app.setWindowIcon(QIcon::fromTheme(QStringLiteral("thikana"), QIcon::fromTheme(QStringLiteral("org.kde.dolphin"), app.windowIcon())));
 
 #if HAVE_STYLE_MANAGER
     /**
@@ -93,13 +94,14 @@ int main(int argc, char **argv)
     KLocalizedString::setApplicationDomain(dolphinTranslationDomain);
 
     KAboutData aboutData(
-        QStringLiteral("dolphin"),
-        i18n("Dolphin"),
+        QStringLiteral("thikana"),
+        i18n("Thikana"),
         QStringLiteral(DOLPHIN_VERSION_STRING),
         i18nc("@title", "File Manager"),
         KAboutLicense::GPL,
-        i18nc("@info:credit", "© 2006–%1 The Dolphin Developers", QStringLiteral("2026"))); // years term not localized, pass as string, not int
-    aboutData.setHomepage(QStringLiteral("https://apps.kde.org/dolphin"));
+        i18nc("@info:credit", "© 2026 UnnoyonOS Project / Dolphin Developers"));
+    aboutData.setHomepage(QStringLiteral("https://github.com/modrao/UnnoyonOS"));
+    aboutData.setProgramLogo(QIcon::fromTheme(QStringLiteral("thikana")));
     aboutData.addAuthor(i18nc("@info:credit", "Felix Ernst"),
                         i18nc("@info:credit", "Maintainer (since 2021) and developer"),
                         QStringLiteral("felixernst@kde.org"));
@@ -138,12 +140,12 @@ int main(int argc, char **argv)
                                         i18nc("@info:shell",
                                               "The files and folders passed as arguments "
                                               "will be selected.")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("split"), i18nc("@info:shell", "Dolphin will get started with a split view.")));
-    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("new-window"), i18nc("@info:shell", "Dolphin will explicitly open in a new window.")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("split"), i18nc("@info:shell", "Thikana will get started with a split view.")));
+    parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("new-window"), i18nc("@info:shell", "Thikana will explicitly open in a new window.")));
     parser.addOption(QCommandLineOption(QStringList() << QStringLiteral("sudo") << QStringLiteral("admin"),
-                                        i18nc("@info:shell", "Set up Dolphin for administrative tasks.")));
+                                        i18nc("@info:shell", "Set up Thikana for administrative tasks.")));
     parser.addOption(
-        QCommandLineOption(QStringList() << QStringLiteral("daemon"), i18nc("@info:shell", "Start Dolphin Daemon (only required for DBus Interface).")));
+        QCommandLineOption(QStringList() << QStringLiteral("daemon"), i18nc("@info:shell", "Start Thikana Daemon (only required for DBus Interface).")));
 #ifdef BUILD_TESTING
     {
         QCommandLineOption selfTestOption(QStringLiteral("self-test"));

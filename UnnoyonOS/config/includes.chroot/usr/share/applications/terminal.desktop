@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Name=Terminal
+GenericName=Terminal
+Comment=Command Line Interface
+Icon=utilities-terminal
+Exec=konsole %U
+Terminal=false
+Categories=System;TerminalEmulator;Utility;Core;
+StartupNotify=true
+StartupWMClass=konsole
+X-KDE-Protocols=
+InitialPreference=10
+Keywords=Terminal;Command;Shell;Bash;Prompt;CLI;
+X-DocPath=konsole/index.html
