@@ -1,0 +1,123 @@
+# SPDX-FileCopyrightText: 2022, 2024, 2025 Ryuichi Yamada <ryuichi_ya220@outlook.jp>
+# Fuminobu Takeyama <ftake@geeko.jp>, 2016.
+# Tomohiro Hyakutake <tomhioo@outlook.jp>, 2019, 2020.
+# Fumiaki Okushi <fumiaki.okushi@gmail.com>, 2019, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_lookandfeel_org.kde.lookandfeel\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-09-22 00:47+0000\n"
+"PO-Revision-Date: 2025-02-02 20:58+0900\n"
+"Last-Translator: Ryuichi Yamada <ryuichi_ya220@outlook.jp>\n"
+"Language-Team: Japanese <kde-jp@kde.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Generator: Lokalize 24.12.1\n"
+
+#: contents/splash/Splash.qml:79
+#, kde-format
+msgctxt ""
+"This is the first text the user sees while starting in the splash screen, "
+"should be translated as something short, is a form that can be seen on a "
+"product. Plasma is the project name so shouldn't be translated."
+msgid "Plasma made by KDE"
+msgstr "Plasma made by KDE"
+
+#~ msgid "Installing software updates and restarting in 1 second"
+#~ msgid_plural "Installing software updates and restarting in %1 seconds"
+#~ msgstr[0] "%1秒後に更新をインストールして再起動"
+
+#~ msgid "Restarting in 1 second"
+#~ msgid_plural "Restarting in %1 seconds"
+#~ msgstr[0] "%1秒後に再起動"
+
+#~ msgid "Logging out in 1 second"
+#~ msgid_plural "Logging out in %1 seconds"
+#~ msgstr[0] "%1秒後にログアウト"
+
+#~ msgid "Installing software updates and shutting down in 1 second"
+#~ msgid_plural "Installing software updates and shutting down in %1 seconds"
+#~ msgstr[0] "%1秒後に更新をインストールしてシャットダウン"
+
+#~ msgid "Shutting down in 1 second"
+#~ msgid_plural "Shutting down in %1 seconds"
+#~ msgstr[0] "%1秒後にシャットダウン"
+
+#~ msgid ""
+#~ "One other user is currently logged in. If the computer is shut down or "
+#~ "restarted, that user may lose work."
+#~ msgid_plural ""
+#~ "%1 other users are currently logged in. If the computer is shut down or "
+#~ "restarted, those users may lose work."
+#~ msgstr[0] ""
+#~ "現在、他に%1人のユーザがログインしています。コンピュータがシャットダウンも"
+#~ "しくは再起動された場合、そのユーザは作業中のデータを失う可能性があります。"
+
+#, fuzzy
+#~| msgid "When restarted, the computer will enter the firmware setup screen."
+#~ msgid "When restarted, the computer will enter UEFI firmware settings."
+#~ msgstr "再起動すると、コンピュータはファームウェア設定画面に入ります。"
+
+#~ msgid "When restarted, the computer will enter the firmware setup screen."
+#~ msgstr "再起動すると、コンピュータはファームウェア設定画面に入ります。"
+
+#~ msgid "When restarted, the computer will enter the boot loader menu."
+#~ msgstr "再起動すると、コンピュータはブートローダメニューに入ります。"
+
+#, fuzzy
+#~| msgid "When restarted, the computer will enter the boot loader menu."
+#~ msgctxt "%1 is a boot loader entry"
+#~ msgid "When restarted, the computer will switch to %1."
+#~ msgstr "再起動すると、コンピュータはブートローダメニューに入ります。"
+
+#~ msgctxt "Suspend to RAM"
+#~ msgid "Slee&p"
+#~ msgstr "スリープ(&P)"
+
+#~ msgctxt "Suspend to RAM"
+#~ msgid "Slee&p Now"
+#~ msgstr "今すぐスリープ(&P)"
+
+#~ msgid "&Hibernate"
+#~ msgstr "ハイバネート(&H)"
+
+#~ msgid "&Hibernate Now"
+#~ msgstr "今すぐハイバネート(&H)"
+
+#~ msgctxt "@action:button Keep short"
+#~ msgid "Install Updates and Restart"
+#~ msgstr "更新をインストールして再起動"
+
+#~ msgid "&Restart"
+#~ msgstr "再起動(&R)"
+
+#~ msgid "&Restart Now"
+#~ msgstr "今すぐ再起動(&R)"
+
+#~ msgctxt "@action:button Keep short"
+#~ msgid "Install Updates and Shut Down"
+#~ msgstr "更新をインストールしてシャットダウン"
+
+#~ msgid "&Shut Down"
+#~ msgstr "シャットダウン(&S)"
+
+#~ msgid "&Shut Down Now"
+#~ msgstr "今すぐシャットダウン(&S)"
+
+#~ msgid "&Log Out"
+#~ msgstr "ログアウト(&L)"
+
+#~ msgid "&Log Out Now"
+#~ msgstr "今すぐログアウト(&L)"
+
+#~ msgid "&Cancel"
+#~ msgstr "キャンセル(&C)"
+
+#~ msgctxt "Percentage value"
+#~ msgid "%1%"
+#~ msgstr "%1%"

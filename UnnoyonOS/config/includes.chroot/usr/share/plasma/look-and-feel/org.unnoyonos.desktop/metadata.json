@@ -1,0 +1,15 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Id": "org.unnoyonos.desktop",
+        "Name": "UnnoyonOS",
+        "Description": "UnnoyonOS desktop experience",
+        "Version": "0.1.0",
+        "License": "LGPL-2.1+",
+        "Authors": [
+            {
+                "Name": "UnnoyonOS Project"
+            }
+        ]
+    }
+}

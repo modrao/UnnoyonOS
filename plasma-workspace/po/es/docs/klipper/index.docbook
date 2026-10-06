@@ -1,0 +1,513 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&klipper;">
+  <!ENTITY package "kdebase">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Spanish "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<book id="klipper" lang="&language;">
+<bookinfo>
+<title
+>Manual de &klipper; </title>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2026-09-09</date>
+<releaseinfo
+>Plasma 6.8</releaseinfo>
+
+<abstract>
+<para
+>&klipper; es el portapapeles de &plasma;, una utilidad para cortar y pegar.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Klipper</keyword>
+<keyword
+>kdebase</keyword>
+<keyword
+>portapapeles</keyword>
+</keywordset>
+</bookinfo>
+<chapter id="introduction">
+<title
+>Introducción</title>
+<para
+>&klipper; es la utilidad del portapapeles de &plasma;. Guarda el historial del portapapeles y permite enlazar su contenido a acciones de las aplicaciones. Si desea informar de algún problema o solicitar alguna funcionalidad, envíe un mensaje al <ulink url="http://bugs.kde.org"
+>Sistema de seguimiento de fallos de KDE</ulink
+>.</para>
+</chapter>
+
+<chapter id="using-klipper">
+<title
+>Usando &klipper;</title>
+
+<sect1 id="basic-usage">
+<title
+>Uso básico</title>
+<para
+>Puede usar &klipper; en la bandeja del sistema como <emphasis
+>widget</emphasis
+> de &plasma; o como aplicación clásica. Ambos modos comparten la misma funcionalidad, aunque tienen una interfaz distinta, y muestran el último elemento del historial al situar el puntero del ratón sobre el icono de &klipper; en la bandeja del sistema: </para>
+
+<screenshot>
+<screeninfo
+>El icono de &klipper;.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screenshot.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>El icono de &klipper;.</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Para mostrar el historial del portapapeles, pulse el icono de &klipper; que hay en la bandeja del sistema.</para>
+
+<sect2 id="klipper-widget">
+<title
+>Elemento gráfico de &klipper;</title>
+<screenshot>
+<screeninfo
+>El elemento gráfico de &klipper;.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="klipper-widget.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>El elemento gráfico de &klipper;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<!-- TODO: Document starred functionality -->
+<para
+>Sitúe el puntero del ratón sobre una entrada para que aparezcan cuatro iconos que le permiten invocar una acción, mostrar un código de barras, editar el contenido o eliminar la entrada del historial. Use &spectacle; para capturar los códigos de barras y guardarlos. </para>
+
+<para
+>Puede buscar en el historial del portapapeles escribiendo la consulta en el campo de búsqueda. Los resultados se actualizarán a medida que vaya escribiendo. Para borrar el historial del portapapeles, pulse el icono que hay a la derecha del campo de búsqueda. </para>
+
+<para
+>La acción <guilabel
+>Configurar el portapapeles…</guilabel
+> del menú de contexto abre el <link linkend="preferences"
+>diálogo de preferencias</link
+>. </para>
+
+</sect2>
+</sect1>
+
+<sect1 id="actions">
+<title
+>Acciones</title>
+
+<para
+>&klipper; puede realizar operaciones sobre el contenido del portapapeles, de acuerdo con una expresión regular determinada. Existe una acción integrada que actúa sobre direcciones web y archivos. Permite pasar una dirección web que empiece por «http://» o «https://» a un navegador web, o un archivo (por ejemplo, un <acronym
+>PDF</acronym
+>) a una aplicación compatible, como &okular;.</para>
+
+<para
+>Puede escribir sus propias acciones en la página <guilabel
+>Configuración de acciones</guilabel
+> del <link linkend="preferences"
+>diálogo de preferencias</link
+>, donde también puede desactivar la acción integrada con <guilabel
+>Ofrecer aplicaciones para los enlaces y archivos copiados</guilabel
+>. </para>
+
+<para
+>Siempre puede acceder al menú de coincidencia de acciones mediante un botón cercano al elemento del historial. También puede escoger que se muestre un menú de acciones emergente cada vez que se produzca una coincidencia en el portapapeles usando el atajo de teclado <guilabel
+>Menú de acciones emergente automático</guilabel
+>, que puede configurar en la página <guilabel
+>Atajos de teclado</guilabel
+>, o marcando <guilabel
+>Inmediatamente al seleccionar</guilabel
+> bajo <guilabel
+>Mostrar un menú de acciones emergente</guilabel
+> en la página <guilabel
+>Menú de acciones</guilabel
+>. Allí, con la opción <guilabel
+>Tiempo del menú de acciones automático</guilabel
+>, también puede cambiar el tiempo que tarda en cerrarse por sí solo el menú automático si no interactúa con él.</para>
+
+<para
+>El contenido del portapapeles que se ajuste a una expresión regular también se puede editar antes de realizar una acción sobre él. Seleccione <guimenuitem
+>Editar contenido…</guimenuitem
+> a la derecha de la entrada del portapapeles para poder cambiar el contenido del portapapeles en el diálogo que aparecerá, antes de pulsar el botón <guibutton
+>Aceptar</guibutton
+> para ejecutar la acción apropiada.</para>
+
+<para
+>Si define un atajo de teclado para <guilabel
+>Invocar manualmente una acción en el portapapeles actual</guilabel
+>, al pulsar dicho atajo de teclado se mostrará el menú emergente correspondiente.</para>
+
+</sect1>
+
+<sect1 id="clipboard-modes">
+<title
+>Comportamiento del portapapeles/selección</title>
+
+<sect2 id="clipboard-modes-general">
+<title
+>General</title>
+<para
+>&klipper; se puede usar para cambiar el comportamiento del portapapeles y de la selección en &plasma;. Para ajustar su comportamiento, consulte <xref linkend="general-page"/>. </para>
+
+<note
+><para
+>Existen dos memorias temporales separadas para el portapapeles: la «selección» y el «portapapeles». El texto se colocará en la memoria temporal de selección simplemente con seleccionarlo y se podrá pegar usando el botón central del ratón. Para colocar el texto en la memoria temporal del portapapeles, selecciónelo y pulse <keycombo
+>&Ctrl;<keycap
+>X</keycap
+> </keycombo
+> o <keycombo
+>&Ctrl;<keycap
+>C</keycap
+></keycombo
+>. El texto de la memoria temporal del portapapeles se puede pegar usando <keycombo
+>&Ctrl;<keycap
+>V</keycap
+> </keycombo
+> o seleccionando <guimenuitem
+>Pegar</guimenuitem
+> en un menú de contexto.</para>
+</note>
+</sect2>
+</sect1>
+</chapter>
+
+<chapter id="preferences">
+<title
+>Configuración de &klipper;</title>
+
+<sect1 id="general-page">
+<title
+>Opciones generales</title>
+<note
+><para
+>Las opciones inferiores distinguen entre <emphasis
+>selección</emphasis
+> y <emphasis
+>portapapeles</emphasis
+>. Para entender la diferencia, consulte <xref linkend="clipboard-modes"/>. </para
+></note>
+
+
+<variablelist>
+
+<varlistentry
+><term
+><guilabel
+>Historial del portapapeles: Guardar el historial entre sesiones de escritorio</guilabel
+></term>
+<listitem
+><para
+>Controla si se debe conservar el historial del portapapeles al salir de la sesión o al apagar el equipo.</para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Tamaño del historial</guilabel
+></term>
+<listitem
+><para
+>Fija el número de elementos que se guardan en el historial del portapapeles. Su valor puede estar entre 1 y 2048.</para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Selección y portapapeles: Hacer que la selección y el portapapeles sean idénticos</guilabel
+></term>
+<listitem
+><para
+>Cuando se marca, esta opción mantiene la selección y el portapapeles iguales, de modo que cualquier selección o contenido del portapapeles esté inmediatamente disponible para pegar con cualquier método. Si está desactivada, la selección aún se puede guardar en el historial del portapapeles (acción sujeta a las opciones siguientes), pero solo se puede pegar con el botón central del ratón. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Incluir en el historial: Texto seleccionado con el puntero o con el teclado</guilabel
+></term>
+<listitem
+><para
+>Cuando se marca, la selección se guarda en el historial. El portapapeles se guarda siempre. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Incluir en el historial: Datos de imagen copiados explícitamente</guilabel
+></term>
+<listitem
+><para
+>Cuando se marca, las imágenes copiadas como datos (capas y selecciones copiadas en un editor de imagen, por ejemplo) se guardan el el historial del portapapeles. Los archivos de imagen copiados de un gestor de archivos se guardan siempre. En el historial aparecen como imágenes, aunque solo son vistas previas, ya que solo son nombres de archivos. Las capturas de pantalla guardadas por &spectacle; también se guardarán siempre cuando estén configuradas de este modo en dicho programa. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+<sect1 id="action-menu-page">
+<title
+>Menú de acciones</title>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Para un elemento seleccionado del historial</guilabel
+></term>
+<listitem
+><para
+>Si esta opción está activada, al seleccionar un elemento del historial hará que, si es apropiado, &klipper; muestre las operaciones emergentes en ese elemento.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Tiempo para el menú emergente de acciones automático</guilabel
+></term>
+<listitem
+><para
+>Define cuánto tiempo tardará en cerrarse por sí mismo el menú automático cuando no se interactúa con él.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Recortar los espacios en blanco iniciales y finales</guilabel
+></term>
+<listitem
+><para
+>Si está seleccionado se eliminarán todos los espacios en blanco (espacios, tabuladores, etc.) que se encuentren al principio y al final del contenido del portapapeles antes de pasarlo a una aplicación. El texto guardado en el historial no se ve afectado.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+
+<sect1 id="actions-configuration-page">
+<title
+>Configuración de acciones</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Ofrecer aplicaciones para los enlaces y archivos copiados</guilabel
+></term>
+<listitem
+><para
+>Si se selecciona, el menú emergente ofrece aplicaciones que pueden abrir un archivo copiado o un enlace copiado que empiece por «http://» o por «https://», incluso cuando coincide con ninguna de sus acciones.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Editando expresiones/operaciones</term>
+<listitem
+><para
+>En la página <guilabel
+>Operaciones</guilabel
+>, haga doble clic sobre la expresión regular o acción que desee editar o seleccionar y pulse el botón <guibutton
+>Editar acción</guibutton
+>. Aparecerá un diálogo con el texto de la expresión en el que podrá editarla como desee.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Añadiendo expresiones/operaciones</term>
+<listitem
+><para
+>Pulse el botón <guibutton
+>Añadir acción…</guibutton
+> para añadir una expresión regular con la que &klipper; pueda encontrar una coincidencia. &klipper; usa la clase la clase <classname
+>QRegularExpression</classname
+> de &Qt;, que usa PCRE (expresiones regulares compatibles con Perl).</para>
+<para
+>Puede añadir una descripción de un tipo de expresión regular (&eg; «HTTP URL») pulsando con el botón <mousebutton
+>izquierdo</mousebutton
+> del ratón en la columna <guilabel
+>Descripción</guilabel
+>.</para>
+
+<note
+><para
+>Puede encontrar información detallada sobre el uso de las expresiones regulares de <classname
+>QRegularExpression</classname
+> en la <ulink url="https://doc.qt.io/qt-5/qregularexpression.html#details"
+>documentación en línea de Qt</ulink
+>.</para
+></note>
+
+<para
+>Edite la expresión regular como se describió anteriormente. Para añadir una orden, pulse <guimenuitem
+>Añadir orden</guimenuitem
+> y edite la orden que aparece en cuadro de edición. Para editar una orden, haga doble clic en ella.</para>
+
+<para
+>Tenga en cuenta que <token
+>%s</token
+> en la línea de órdenes se sustituye por los contenidos del portapapeles, &eg;, si su definición de orden es <userinput
+><command
+>kwrite</command
+> <token
+>%s</token
+></userinput
+> y el contenido de su portapapeles es <filename
+>/home/phil/textfile</filename
+>, se ejecutará la orden <userinput
+><command
+>kwrite</command
+> <filename
+>/home/phil/textfile</filename
+></userinput
+>. Para incluir <token
+>%s</token
+> en la línea de órdenes, utilice la barra inversa, de este modo: <userinput
+>\%s</userinput
+>.</para>
+
+<para
+>Las entradas de <userinput
+><token
+>%0</token
+></userinput
+> a <userinput
+><token
+>%9</token
+></userinput
+> se sustituirán con los correspondientes textos capturados del patrón de coincidencia. </para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="shortcuts-page">
+<title
+>Opciones de los atajos de teclado</title>
+
+<para
+>La página de atajos de teclado le permite cambiar los atajos de teclado que se utilizan para acceder a las funciones de &klipper;. Puede modificar el atajo de teclado mediante una de las tres opciones siguientes:</para>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Ninguna</guilabel
+></term>
+<listitem
+><para
+>No se puede acceder directamente a la acción seleccionada con el teclado.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Predeterminada</guilabel
+></term>
+<listitem
+><para
+>La acción seleccionada utiliza la tecla predeterminada de &klipper;. Estos son los atajos de teclado a los que se refiere este manual.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Personalizar</guilabel
+></term>
+<listitem
+><para
+>La acción seleccionada se asigna a las teclas que elija.</para>
+<para
+>Para elegir una tecla personalizada para la acción que ha seleccionado, pulse <guilabel
+>Personalizar</guilabel
+> y después, <guilabel
+>Ninguna</guilabel
+>. A continuación, teclee la combinación deseada, como en cualquier aplicación de &kde;. </para
+> </listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>Si define un atajo de teclado para <guilabel
+>Abrir Klipper en la posición del ratón</guilabel
+>, al pulsar dicho atajo de teclado se abrirá el menú emergente de  en la posición del cursor del ratón, en lugar de hacerlo en su posición predeterminada (en el panel de &plasma;). Esto resulta útil si utiliza el ratón más que el teclado.</para>
+
+</sect1>
+</chapter>
+
+<chapter id="credits">
+<title
+>Créditos y licencia</title>
+
+<para
+>&klipper; </para>
+<para
+>Copyright del programa. 1998. &Andrew.Stanley-Jones; <email
+>asj@cban.com</email
+>. </para>
+<para
+>Copyright del programa. 1998-2000. &Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;.</para>
+<para
+>Mantenido actualmente por los desarrolladores de KDE &plasma;. </para>
+
+<para
+>Copyright de la documentación. 2000-2003, 2005. &Philip.Rodrigues; &Philip.Rodrigues.mail;.</para>
+
+<para
+>Traducido por Rocío Gallego <email
+>traducciones@rociogallego.com</email
+>, Pablo de Vicente <email
+>pvicentea@nexo.es</email
+>, Marcos Fouces Lago <email
+>mfouces@yahoo.es</email
+> y Santiago Fernández Sancho <email
+>santi@kde-es.org</email
+>.</para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+sgml-indent-step: 0
+End:
+-->
+
+
+
+
+
+
+
+
+
+

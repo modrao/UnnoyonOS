@@ -1,0 +1,175 @@
+# SPDX-FileCopyrightText: 2007-2025 KDE Contributors
+#
+# SPDX-License-Identifier: GPL-2.0-or-later
+
+set( EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_BINARY_DIR} )
+
+find_package(Qt6Test CONFIG REQUIRED)
+include(ECMAddTests)
+
+include(FindGem)  # For servicemenutest, see bottom of this file
+
+# KItemSetTest
+ecm_add_test(kitemsettest.cpp LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# KItemRangeTest
+ecm_add_test(kitemrangetest.cpp LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# KItemListSmoothScrollerTest
+ecm_add_test(kitemlistsmoothscrollertest.cpp LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+
+# KItemListContainerTest
+ecm_add_test(kitemlistcontainertest.cpp testdir.cpp
+TEST_NAME kitemlistcontainertest
+LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# KItemListSelectionManagerTest
+ecm_add_test(kitemlistselectionmanagertest.cpp LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# KItemListControllerTest
+ecm_add_test(kitemlistcontrollertest.cpp testdir.cpp
+TEST_NAME kitemlistcontrollertest
+LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# KItemListControllerExpandTest
+ecm_add_test(kitemlistcontrollerexpandtest.cpp testdir.cpp
+TEST_NAME kitemlistcontrollerexpandtest
+LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# KFileItemListViewTest
+ecm_add_test(kfileitemlistviewtest.cpp testdir.cpp
+TEST_NAME kfileitemlistviewtest
+LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# DolphinItemListViewTest
+ecm_add_test(dolphinitemlistviewtest.cpp testdir.cpp
+TEST_NAME dolphinitemlistviewtest
+LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# DolphinViewTest
+ecm_add_test(dolphinviewtest.cpp testdir.cpp
+TEST_NAME dolphinviewtest
+LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test)
+
+# KItemListRoleEditorTest
+ecm_add_test(kitemlistroleeditortest.cpp
+TEST_NAME kitemlistroleeditortest
+LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# KFileItemModelTest
+ecm_add_test(kfileitemmodeltest.cpp testdir.cpp
+TEST_NAME kfileitemmodeltest
+LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test)
+
+# KFileItemModelBenchmark, not run automatically with `ctest` or `make test`
+add_executable(kfileitemmodelbenchmark kfileitemmodelbenchmark.cpp testdir.cpp)
+target_link_libraries(kfileitemmodelbenchmark dolphinprivate Qt6::Test)
+
+# KItemListKeyboardSearchManagerTest
+ecm_add_test(kitemlistkeyboardsearchmanagertest.cpp LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# DolphinSearchBar
+if (HAVE_BALOO)
+    ecm_add_test(dolphinsearchbartest.cpp
+    TEST_NAME dolphinsearchbartest
+    LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test)
+endif()
+
+# DolphinQuery
+if (HAVE_BALOO)
+    ecm_add_test(dolphinquerytest.cpp
+    TEST_NAME dolphinquerytest
+    LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test)
+endif()
+
+# ViewPropertiesTest
+ecm_add_test(viewpropertiestest.cpp testdir.cpp
+TEST_NAME viewpropertiestest
+LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test KF6::FileMetaData)
+
+# DolphinMainWindowTest (requires a real window desktop; not reliable on Windows CI)
+if(NOT WIN32)
+    ecm_add_test(dolphinmainwindowtest.cpp testdir.cpp ${CMAKE_SOURCE_DIR}/src/dolphin.qrc
+    TEST_NAME dolphinmainwindowtest
+    LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test)
+endif()
+
+# DragAndDropHelperTest
+ecm_add_test(draganddrophelpertest.cpp LINK_LIBRARIES dolphinprivate Qt6::Test)
+
+# ServiceMenuShortcutManagerTest (depends on the KIO service-menu shortcut API)
+if(KF6KIO_VERSION VERSION_GREATER_EQUAL "6.24.0")
+    ecm_add_test(servicemenushortcutmanagertest.cpp LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test)
+endif()
+
+# Lint: forbid bare QTest::qWait() in test sources without an // UNAVOIDABLE: justification.
+# Every unavoidable delay must carry a comment explaining why no signal-based wait is possible.
+# Requires bash; not run on Windows.
+if(NOT WIN32)
+add_test(
+    NAME no_bare_qwait_in_tests
+    COMMAND bash -c
+        "result=\$(grep -rn 'qWait(' '${CMAKE_CURRENT_SOURCE_DIR}' --include='*.cpp' | grep -v '//.*UNAVOIDABLE:'); \
+         if [ -n \"\$result\" ]; then \
+             echo ''; \
+             echo 'LINT FAILURE: bare QTest::qWait(N) found in test sources.'; \
+             echo ''; \
+             echo 'Why this is forbidden:'; \
+             echo '  qWait(N) is a fixed-time sleep. On slow CI machines the delay may be'; \
+             echo '  too short, causing sporadic failures unrelated to the code under test.'; \
+             echo ''; \
+             echo 'How to fix it:'; \
+             echo '  Replace with a signal-based wait:'; \
+             echo '    QTRY_COMPARE(someValue, expected);          // polls up to 5 s'; \
+             echo '    QTRY_VERIFY(someCondition);                 // polls up to 5 s'; \
+             echo '    QVERIFY(signalSpy.wait(5000));              // waits for a signal'; \
+             echo '    QVERIFY(QTest::qWaitFor([&]{ ... }, 5000)); // waits for a lambda'; \
+             echo ''; \
+             echo '  If no signal or pollable condition exists, add // UNAVOIDABLE: <reason>'; \
+             echo '  on the same line to suppress this check and document why.'; \
+             echo ''; \
+             echo 'Offending lines:'; \
+             echo \"\$result\"; \
+             exit 1; \
+         fi"
+)
+endif()
+
+# Smoke test: launch Dolphin, verify it starts without crashing, then quit.
+if(NOT WIN32)
+    add_test(NAME dolphin_smoketest COMMAND "$<TARGET_FILE:dolphin>" --self-test)
+    set_tests_properties(dolphin_smoketest PROPERTIES TIMEOUT 30)
+endif()
+
+# PlacesPanelTest
+ecm_add_test(placespaneltest.cpp
+    TEST_NAME placespaneltest
+    LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test)
+
+# FoldersPanelTest
+ecm_add_test(folderspaneltest.cpp testdir.cpp
+    TEST_NAME folderspaneltest
+    LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test)
+
+# The information panel is built only where Baloo is, and so are the tests of it.
+if(HAVE_BALOO)
+    # PixmapViewerTest
+    ecm_add_test(pixmapviewertest.cpp
+        TEST_NAME pixmapviewertest
+        LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test)
+
+    # InformationPanelContentTest
+    ecm_add_test(informationpanelcontenttest.cpp
+        TEST_NAME informationpanelcontenttest
+        LINK_LIBRARIES dolphinprivate dolphinstatic Qt6::Test)
+endif()
+
+find_gem(test-unit)
+set_package_properties(Gem_test-unit PROPERTIES
+    TYPE RECOMMENDED
+    DESCRIPTION "Ruby gem 'test-unit' required for testing of servicemenu helpers.")
+if (Gem_test-unit_FOUND)
+    add_test(NAME servicemenutest
+    COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/../settings/contextmenu/test/test_run.rb)
+endif()

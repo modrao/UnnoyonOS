@@ -1,0 +1,731 @@
+# translation of kcmstyle.po to Italian
+#
+# Andrea Rizzi <rizzi@kde.org>, 2003, 2005, 2007.
+# Andrea RIZZI <arizzi@pi.infn.it>, 2004.
+# Luciano Montanaro <mikelima@cirulla.net>, 2008.
+# Federico Zenith <federico.zenith@member.fsf.org>, 2009, 2010, 2012.
+# SPDX-FileCopyrightText: 2017-2021, 2023-2024, 2026 Paolo Zamponi <feus73@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmstyle\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-09-10 00:49+0000\n"
+"PO-Revision-Date: 2026-09-11 09:05+0200\n"
+"Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 26.08.0\n"
+
+#: gtkpage.cpp:57
+#, kde-format
+msgid "%1 is not a valid GTK Theme archive."
+msgstr "%1 non è un valido archivio di temi GTK."
+
+#: kcmstyle.cpp:117
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: Cannot install a style from a remote location."
+msgstr ""
+"Installazione non riuscita: impossibile installare da una posizione remota."
+
+#: kcmstyle.cpp:123
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style file could not be read."
+msgstr "Installazione non riuscita: impossibile leggere il file dello stile."
+
+#: kcmstyle.cpp:128
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style file does not contain any data."
+msgstr "Installazione non riuscita: il file dello stile non contiene dati."
+
+#: kcmstyle.cpp:134
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style file could not be unpacked."
+msgstr ""
+"Installazione non riuscita: impossibile decomprimere il file dello stile."
+
+#: kcmstyle.cpp:144
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style could not be found."
+msgstr "Installazione non riuscita: impossibile trovare lo stile."
+
+#: kcmstyle.cpp:148
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The selected file is not a valid Union style."
+msgstr ""
+"Installazione non riuscita: il file selezionato non è uno stile Union valido."
+
+#: kcmstyle.cpp:151
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The selected style is not supported."
+msgstr "Installazione non riuscita: il file selezionato non è supportato."
+
+#: kcmstyle.cpp:165
+#, kde-format
+msgctxt "@info:status"
+msgid "Installing “%1” failed: The style is already installed."
+msgstr "Installazione di «%1» non riuscita: lo stile è già installato."
+
+#: kcmstyle.cpp:170
+#, kde-format
+msgctxt "@info:status"
+msgid "Installing “%1” failed: Permission was denied."
+msgstr "Installazione di «%1» non riuscita: il permesso è stato negato."
+
+#: kcmstyle.cpp:174
+#, kde-format
+msgctxt "@info:status"
+msgid "Installing “%1” failed: %2"
+msgstr "Installazione di «%1» non riuscita: %2"
+
+#: kcmstyle.cpp:179
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully installed “%1”."
+msgstr "Installazione di «%1» riuscita."
+
+#: kcmstyle.cpp:192
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstall failed: The style with ID “%1” could not be found."
+msgstr ""
+"Disinstallazione non riuscita: impossibile trovare lo stile con ID «%1»."
+
+#: kcmstyle.cpp:202
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: Permission was denied."
+msgstr "Disinstallazione di «%1» non riuscita: il permesso è stato negato."
+
+#: kcmstyle.cpp:204
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: The style is not installed."
+msgstr "Disinstallazione di «%1» non riuscita: lo stile non è installato."
+
+#: kcmstyle.cpp:206
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: The style is in use."
+msgstr "Disinstallazione di «%1» non riuscita: lo stile è in uso."
+
+#: kcmstyle.cpp:208
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: %2"
+msgstr "Disinstallazione di «%1» non riuscita: %2"
+
+#: kcmstyle.cpp:223
+#, kde-format
+msgctxt "@info:status"
+msgid "Could not uninstall styles:\n"
+msgstr "Impossibile disinstallare gli stili:\n"
+
+#: kcmstyle.cpp:226
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled “%1” but could not uninstall others:\n"
+msgstr ""
+"«%1» disinstallato con successo, ma non è possibile disinstallare gli "
+"altri:\n"
+
+#: kcmstyle.cpp:229
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled %1 style but could not uninstall others:\n"
+msgid_plural ""
+"Successfully uninstalled %1 styles but could not uninstall others:\n"
+msgstr[0] ""
+"Disinstallato con successo %1 stile, ma non è possibile disinstallare gli "
+"altri:\n"
+msgstr[1] ""
+"Disinstallati con successo %1 stili, ma non è possibile disinstallare gli "
+"altri:\n"
+
+#: kcmstyle.cpp:240
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled “%1”."
+msgstr "«%1» disinstallato con successo."
+
+#: kcmstyle.cpp:242
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled %1 style"
+msgid_plural "Successfully uninstalled %1 styles."
+msgstr[0] "Disinstallato con successo %1 stile"
+msgstr[1] "Disinstallati con successo %1 stili."
+
+#: kcmstyle.cpp:306 kcmstyle.cpp:313
+#, kde-format
+msgid "There was an error loading the configuration dialog for this style."
+msgstr ""
+"Si è verificato un errore nel caricamento della finestra di configurazione "
+"di questo stile."
+
+#: kcmstyle.cpp:420
+#, kde-format
+msgid "Failed to apply selected style '%1'."
+msgstr "Impossibile applicare lo stile selezionato «%1»."
+
+#: styleconfdialog.cpp:21
+#, kde-format
+msgid "Configure %1"
+msgstr "Configura %1"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_1)
+#: stylepreview.ui:33
+#, kde-format
+msgid "Tab 1"
+msgstr "Linguetta 1"
+
+#. i18n: ectx: property (format), widget (QProgressBar, progressBar)
+#: stylepreview.ui:65
+#, no-c-format, kde-format
+msgid "%p%"
+msgstr "%p%"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: stylepreview.ui:85
+#, kde-format
+msgid "Button"
+msgstr "Pulsante"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: stylepreview.ui:99
+#, kde-format
+msgid "Combo box"
+msgstr "Casella combinata"
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkBox)
+#: stylepreview.ui:109
+#, kde-format
+msgid "Checkbox"
+msgstr "Casella di spunta"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton_2)
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton_1)
+#: stylepreview.ui:119 stylepreview.ui:129
+#, kde-format
+msgid "Radio button"
+msgstr "Pulsante a scelta singola"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, lineEdit)
+#: stylepreview.ui:138
+#, kde-format
+msgid "Text Field"
+msgstr "Campo testuale"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: stylepreview.ui:146
+#, kde-format
+msgid "Tab 2"
+msgstr "Linguetta 2"
+
+#. i18n: ectx: label, entry (widgetStyle), group (KDE)
+#: stylesettings.kcfg:9
+#, kde-format
+msgid "Application style"
+msgstr "Stile delle applicazioni"
+
+#. i18n: ectx: label, entry (unionStyle), group (KDE)
+#: stylesettings.kcfg:13
+#, kde-format
+msgid "Union Style ID"
+msgstr "ID stile Union"
+
+#. i18n: ectx: label, entry (iconsOnButtons), group (KDE)
+#: stylesettings.kcfg:17
+#, kde-format
+msgid "Show icons on buttons"
+msgstr "Mostra le icone sui pulsanti"
+
+#. i18n: ectx: label, entry (iconsInMenus), group (KDE)
+#: stylesettings.kcfg:21
+#, kde-format
+msgid "Show icons in menus"
+msgstr "Mostra le icone nei menu"
+
+#. i18n: ectx: label, entry (toolButtonStyle), group (Toolbar style)
+#: stylesettings.kcfg:27
+#, kde-format
+msgid "Main toolbar label"
+msgstr "Etichetta della barra degli strumenti principale"
+
+#. i18n: ectx: label, entry (toolButtonStyleOtherToolbars), group (Toolbar style)
+#: stylesettings.kcfg:31
+#, kde-format
+msgid "Secondary toolbar label"
+msgstr "Etichetta della barra degli strumenti secondaria"
+
+#: ui/EffectSettingsPopup.qml:19
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure Icons and Toolbars"
+msgstr "Configura icone e barre degli strumenti"
+
+#: ui/EffectSettingsPopup.qml:36
+#, kde-format
+msgid "Show icons:"
+msgstr "Mostra le icone:"
+
+#: ui/EffectSettingsPopup.qml:37
+#, kde-format
+msgid "On buttons"
+msgstr "Sui pulsanti"
+
+#: ui/EffectSettingsPopup.qml:48
+#, kde-format
+msgid "In menus"
+msgstr "Nei menu"
+
+#: ui/EffectSettingsPopup.qml:60
+#, kde-format
+msgid "Main toolbar label:"
+msgstr "Etichetta della barra degli strumenti principale:"
+
+#: ui/EffectSettingsPopup.qml:62
+#, kde-format
+msgid "None"
+msgstr "Nessuna"
+
+#: ui/EffectSettingsPopup.qml:63
+#, kde-format
+msgid "Text only"
+msgstr "Solo testo"
+
+#: ui/EffectSettingsPopup.qml:64
+#, kde-format
+msgid "Beside icons"
+msgstr "Accanto alle icone"
+
+#: ui/EffectSettingsPopup.qml:65
+#, kde-format
+msgid "Below icon"
+msgstr "Sotto l'icona"
+
+#: ui/EffectSettingsPopup.qml:80
+#, kde-format
+msgid "Secondary toolbar label:"
+msgstr "Etichetta della barra degli strumenti secondaria:"
+
+#: ui/GtkStylePage.qml:17
+#, kde-format
+msgid "GNOME/GTK Application Style"
+msgstr "Stile delle applicazioni GNOME/GTK"
+
+#: ui/GtkStylePage.qml:38
+#, kde-format
+msgctxt "@action:button"
+msgid "Install from File…"
+msgstr "Installa da file…"
+
+#: ui/GtkStylePage.qml:43
+#, kde-format
+msgctxt "@action:button"
+msgid "Get New…"
+msgstr "Scarica nuovo…"
+
+#: ui/GtkStylePage.qml:60
+#, kde-format
+msgid "GTK theme:"
+msgstr "Tema GTK:"
+
+#: ui/GtkStylePage.qml:85
+#, kde-format
+msgid "Preview…"
+msgstr "Anteprima…"
+
+#: ui/GtkStylePage.qml:104
+#, kde-format
+msgid "Select GTK Theme Archive"
+msgstr "Seleziona un archivio di temi GTK"
+
+#: ui/GtkStylePage.qml:106
+#, kde-format
+msgid "GTK Theme Archive (*.tar.xz *.tar.gz *.tar.bz2)"
+msgstr "Archivio di temi GTK (*.tar.xz *.tar.gz *.tar.bz2)"
+
+#: ui/main.qml:85
+#, kde-format
+msgctxt "@action:button"
+msgid "Install From File…"
+msgstr "Installa da file…"
+
+#: ui/main.qml:90
+#, kde-format
+msgid "Configure Icons and Toolbars…"
+msgstr "Configura icone e barre degli strumenti…"
+
+#: ui/main.qml:108
+#, kde-format
+msgid "Configure GNOME/GTK Application Style…"
+msgstr "Configura lo stile delle applicazioni GNOME/GTK…"
+
+#: ui/main.qml:170
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"This style is using the Union style engine which is still under development. "
+"Some things may look or behave incorrectly when using this style."
+msgstr ""
+"Questo stile utilizza il motore Union, che è ancora in fase di sviluppo. Se "
+"utilizzi questo stile, alcuni elementi potrebbero apparire o comportarsi in "
+"modo anomalo."
+
+#: ui/main.qml:174
+#, kde-format
+msgid "Configure Style…"
+msgstr "Configura stile…"
+
+#: ui/main.qml:182
+#, kde-format
+msgctxt "@action:button"
+msgid "Uninstall…"
+msgstr "Disinstalla..."
+
+#: ui/main.qml:184
+#, kde-format
+msgctxt "@action:button"
+msgid "Cannot uninstall system-installed styles."
+msgstr "Impossibile disinstallare gli stili installati dal sistema."
+
+#: ui/main.qml:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Can only uninstall Union styles."
+msgstr "È possibile disinstallare solo gli stili Union."
+
+#: ui/main.qml:199
+#, kde-format
+msgid "Do not uninstall this style."
+msgstr "Non disinstallare questo stile."
+
+#: ui/main.qml:245
+#, kde-format
+msgctxt "@title:dialog"
+msgid "Choose Union Style to Install"
+msgstr "Scegli lo stile Union da installare"
+
+#: ui/main.qml:246
+#, kde-format
+msgctxt "@action:button"
+msgid "Install"
+msgstr "Installa"
+
+#: ui/UnionThumbnailItem.qml:25
+#, kde-format
+msgctxt "@title:tab"
+msgid "Tab 1"
+msgstr "Scheda 1"
+
+#: ui/UnionThumbnailItem.qml:29
+#, kde-format
+msgctxt "@title:tab"
+msgid "Tab 2"
+msgstr "Scheda 2"
+
+#: ui/UnionThumbnailItem.qml:50
+#, kde-format
+msgctxt "@option:check"
+msgid "Checkbox"
+msgstr "Casella"
+
+#: ui/UnionThumbnailItem.qml:56 ui/UnionThumbnailItem.qml:62
+#, kde-format
+msgctxt "@option:radio"
+msgid "Radio Button"
+msgstr "Pulsante a scelta singola"
+
+#: ui/UnionThumbnailItem.qml:84
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Combo Box"
+msgstr "Casella combinata"
+
+#: ui/UnionThumbnailItem.qml:85
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Combo Box Item"
+msgstr "Elemento casella combinata"
+
+#: ui/UnionThumbnailItem.qml:94
+#, kde-format
+msgctxt "@action:button"
+msgid "Button"
+msgstr "Pulsante"
+
+#: ui/UnionThumbnailItem.qml:107
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Text Field"
+msgstr "Campo testuale"
+
+#: ui/UnionThumbnailItem.qml:122
+#, kde-format
+msgctxt "@item:inrange Progress bar value"
+msgid "%1%"
+msgstr "%1%"
+
+#~ msgid "Get New GNOME/GTK Application Styles…"
+#~ msgstr "Scarica nuovi stili delle applicazioni GNOME/GTK…"
+
+#~ msgid ""
+#~ "This module allows you to modify the visual appearance of applications' "
+#~ "user interface elements."
+#~ msgstr ""
+#~ "Questo modulo ti permette di modificare l'aspetto visivo degli elementi "
+#~ "dell'interfaccia."
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "Paolo Zamponi,Federico Zenith,Andrea Rizzi"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "zapaolo@email.it,,"
+
+#~ msgid "Application Style"
+#~ msgstr "Stile delle applicazioni"
+
+#~ msgid "(c) 2002 Karol Szwed, Daniel Molkentin, (c) 2019 Kai Uwe Broulik "
+#~ msgstr "© 2002 Karol Szwed, Daniel Molkentin, © 2019 Kai Uwe Broulik "
+
+#~ msgid "Karol Szwed"
+#~ msgstr "Karol Szwed"
+
+#~ msgid "Daniel Molkentin"
+#~ msgstr "Daniel Molkentin"
+
+#~ msgid "Kai Uwe Broulik"
+#~ msgstr "Kai Uwe Broulik"
+
+#~ msgid "GTK3 theme:"
+#~ msgstr "Tema GTK3:"
+
+#~ msgid "Download New GNOME/GTK2 Application Styles..."
+#~ msgstr "Scarica nuovi stili delle applicazioni GNOME/GTK2..."
+
+#~ msgid "GNOME/GTK2 Application Styles"
+#~ msgstr "Stili delle applicazioni GNOME/GTK2"
+
+#~ msgid "Download New GNOME/GTK3 Application Styles..."
+#~ msgstr "Scarica nuovi stili delle applicazioni GNOME/GTK3..."
+
+#~ msgid "GNOME/GTK3 Application Styles"
+#~ msgstr "Stili delle applicazioni GNOME/GTK3"
+
+#~ msgid "Unable to Load Dialog"
+#~ msgstr "Impossibile caricare la finestra"
+
+#~ msgid "No description available."
+#~ msgstr "Nessuna descrizione disponibile."
+
+#~ msgid ""
+#~ "This area shows a preview of the currently selected style without having "
+#~ "to apply it to the whole desktop."
+#~ msgstr ""
+#~ "Quest'area mostra un'anteprima dello stile attualmente selezionato senza "
+#~ "doverlo applicare all'intero desktop."
+
+#~ msgid ""
+#~ "Here you can choose from a list of predefined widget styles (e.g. the way "
+#~ "buttons are drawn) which may or may not be combined with a theme "
+#~ "(additional information like a marble texture or a gradient)."
+#~ msgstr ""
+#~ "Qui puoi scegliere da una lista degli stili predefiniti degli oggetti (ad "
+#~ "esempio il modo in cui vengono disegnati i pulsanti) che possono essere o "
+#~ "combinati o meno con un tema (informazioni aggiuntive, come una trama a "
+#~ "marmo o una sfumatura)."
+
+#~ msgid ""
+#~ "If you enable this option, applications will show small icons alongside "
+#~ "some important buttons."
+#~ msgstr ""
+#~ "Se abiliti questa opzione, le applicazioni mostreranno delle piccole "
+#~ "icone accanto ad alcuni pulsanti importanti."
+
+#~ msgid ""
+#~ "If you enable this option, applications will show small icons alongside "
+#~ "most menu items."
+#~ msgstr ""
+#~ "Se abiliti questa opzione, le applicazioni mostreranno delle piccole "
+#~ "icone di fianco alla maggior parte degli elementi dei menu."
+
+#~ msgid ""
+#~ "<p><b>No text:</b> Shows only icons on toolbar buttons. Best option for "
+#~ "low resolutions.</p><p><b>Text only: </b>Shows only text on toolbar "
+#~ "buttons.</p><p><b>Text beside icons: </b> Shows icons and text on toolbar "
+#~ "buttons. Text is aligned beside the icon.</p><b>Text below icons: </b> "
+#~ "Shows icons and text on toolbar buttons. Text is aligned below the icon."
+#~ msgstr ""
+#~ "<p><b>Senza testo:</b> mostra solo le icone sui pulsanti delle barre "
+#~ "degli strumenti. La miglior opzione per le basse risoluzioni.</"
+#~ "p><p><b>Solo testo:</b> mostra solo il testo sui pulsanti delle barre "
+#~ "degli strumenti.</p><p><b>Testo accanto alle icone:</b> mostra le icone e "
+#~ "il testo sui pulsanti delle barre degli strumenti. Il testo è allineato "
+#~ "di fianco all'icona.</p><p><b>Testo sotto le icone:</b> mostra le icone e "
+#~ "il testo sui pulsanti delle barre degli strumenti. Il testo è allineato "
+#~ "sotto l'icona.</p>"
+
+#~ msgid "Toolbars"
+#~ msgstr "Barre degli strumenti"
+
+#~ msgid "No Text"
+#~ msgstr "Senza testo"
+
+#~ msgid "Widget Style"
+#~ msgstr "Stile degli oggetti"
+
+#~ msgid "Widget style:"
+#~ msgstr "Stile degli oggetti:"
+
+#~ msgctxt "@title:tab"
+#~ msgid "&Fine Tuning"
+#~ msgstr "Regolazione &fine"
+
+#~ msgid "Description: %1"
+#~ msgstr "Descrizione: %1"
+
+#~ msgid ""
+#~ "This page allows you to choose details about the widget style options"
+#~ msgstr ""
+#~ "Questa pagina ti permette di scegliere i dettagli delle opzioni dello "
+#~ "stile degli oggetti"
+
+#~ msgid "Group Box"
+#~ msgstr "Riquadro di gruppo"
+
+#~ msgid "KDE Style Module"
+#~ msgstr "Modulo dello stile di KDE"
+
+#~ msgid "Ralf Nolden"
+#~ msgstr "Ralf Nolden"
+
+#~ msgid "Menubar"
+#~ msgstr "Barra dei menu"
+
+#~ msgid "Menubar style:"
+#~ msgstr "Stile della barra dei menu:"
+
+#~ msgid "In application"
+#~ msgstr "Nell'applicazione"
+
+#~ msgid "Title bar button"
+#~ msgstr "Pulsante della barra del titolo"
+
+#, fuzzy
+#~| msgid "Application Menu widget"
+#~ msgid "Global Menu widget"
+#~ msgstr "Menu dell'applicazione"
+
+#~ msgid "Your changes will take effect only on application restart."
+#~ msgstr ""
+#~ "Le tue modifiche alle impostazioni avranno effetto solo al riavvio "
+#~ "dell'applicazione"
+
+#~ msgid ""
+#~ "<p>Changes to the visibility of menu icons will only affect newly started "
+#~ "applications.</p>"
+#~ msgstr ""
+#~ "<p>Le modifiche alla visibilità delle icone dei menu avranno effetto solo "
+#~ "sulle applicazioni avviate da questo momento in poi.</p>"
+
+#~ msgctxt "@title:window"
+#~ msgid "Menu Icons Changed"
+#~ msgstr "Icone dei menu cambiate"
+
+#~ msgid "Top screen menubar"
+#~ msgstr "Barra dei menu in cima allo schermo"
+
+#~ msgid "Only export"
+#~ msgstr "Solo esportazione"
+
+#~ msgid "Graphical effects:"
+#~ msgstr "Effetti grafici:"
+
+#~ msgid "Low display resolution and Low CPU"
+#~ msgstr "Bassa risoluzione e scarso uso della CPU"
+
+#~ msgid "High display resolution and Low CPU"
+#~ msgstr "Alta risoluzione e scarso uso della CPU"
+
+#~ msgid "Low display resolution and High CPU"
+#~ msgstr "Bassa risoluzione e uso elevato della CPU"
+
+#~ msgid "High display resolution and High CPU"
+#~ msgstr "Alta risoluzione e uso elevato della CPU"
+
+#~ msgid "Low display resolution and Very High CPU"
+#~ msgstr "Bassa risoluzione e uso intensivo della CPU"
+
+#~ msgid "High display resolution and Very High CPU"
+#~ msgstr "Alta risoluzione e uso intensivo della CPU"
+
+#~ msgid ""
+#~ "If you enable this option, KDE Applications will run internal animations."
+#~ msgstr ""
+#~ "Se abiliti questa opzione, le applicazioni di KDE eseguiranno animazioni "
+#~ "interne."
+
+#~ msgid "kcmstyle"
+#~ msgstr "kcmstyle"
+
+#~ msgctxt "@title:tab"
+#~ msgid "&Workspace"
+#~ msgstr "&Spazio di lavoro"
+
+#~ msgid "Get New Themes..."
+#~ msgstr "Prendi nuovi temi..."
+
+#~ msgid "Icons Only"
+#~ msgstr "Solo icone"
+
+#~ msgctxt "@label:listbox"
+#~ msgid "Text pos&ition of toolbar elements:"
+#~ msgstr "Pos&izione del testo nelle barre degli strumenti:"
+
+#~ msgctxt "@title:tab"
+#~ msgid "&Style"
+#~ msgstr "&Stile"
+
+#~ msgid ""
+#~ "This page allows you to enable various widget style effects. For best "
+#~ "performance, it is advisable to disable all effects."
+#~ msgstr ""
+#~ "Questa pagina ti permette di abilitare vari effetti. Per avere le "
+#~ "migliori performance è consigliabile non abilitare gli effetti grafici."
+
+#~ msgid "E&nable tooltips"
+#~ msgstr "&Abilita i suggerimenti"
+
+#~ msgid "High&light buttons under mouse"
+#~ msgstr "&Evidenzia i pulsanti sotto il mouse"
+
+#~ msgid "&Effects"
+#~ msgstr "E&ffetti"
+
+#~ msgid ""
+#~ "If this option is selected, toolbar buttons will change their color when "
+#~ "the mouse cursor is moved over them."
+#~ msgstr ""
+#~ "Se questa opzione è selezionata, i pulsanti delle barre degli strumenti "
+#~ "cambieranno colore quando il cursore del mouse passerà sopra di essi."
+
+#~ msgid ""
+#~ "If you check this option, the KDE application will offer tooltips when "
+#~ "the cursor remains over items in the toolbar."
+#~ msgstr ""
+#~ "Se marchi questa casella le applicazioni di KDE ti mostreranno un "
+#~ "suggerimento se ti fermi con il mouse sopra un elemento delle barre degli "
+#~ "strumenti."

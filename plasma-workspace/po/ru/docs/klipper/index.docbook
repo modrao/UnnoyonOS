@@ -1,0 +1,519 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&klipper;">
+  <!ENTITY package "kdebase">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Russian "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<book id="klipper" lang="&language;">
+<bookinfo>
+<title
+>Руководство пользователя &klipper; </title>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>9 сентября 2026 г.</date>
+<releaseinfo
+>Plasma 6.8</releaseinfo>
+
+<abstract>
+<para
+>&klipper; &mdash; служебная программа &plasma; для работы с буфером обмена.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Klipper</keyword>
+<keyword
+>kdebase</keyword>
+<keyword
+>буфер обмена</keyword>
+</keywordset>
+</bookinfo>
+<chapter id="introduction">
+<title
+>Введение</title>
+<para
+>&klipper; — служебная программа &plasma; для работы с буфером обмена. Она сохраняет журнал буфера обмена и позволяет связывать содержимое буфера обмена с действиями приложений. Сообщайте о проблемах или пожеланиях через <ulink url="http://bugs.kde.org"
+>систему отслеживания ошибок KDE</ulink
+>.</para>
+</chapter>
+
+<chapter id="using-klipper">
+<title
+>Использование &klipper;</title>
+
+<sect1 id="basic-usage">
+<title
+>Основные функции</title>
+<para
+>Программу &klipper; можно использовать в системном лотке как виджет &plasma; или как классическое приложение. Оба способа предоставляют одинаковую функциональность, но имеют разные &GUI;, а также при наведении указателя мыши на значок &klipper; в системном лотке показывается последний элемент журнала: </para>
+
+<screenshot>
+<screeninfo
+>Значок &klipper;</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screenshot.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Значок &klipper;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Для просмотра журнала буфера обмена щёлкните по значку &klipper; в системном лотке.</para>
+
+<sect2 id="klipper-widget">
+<title
+>Виджет &klipper;</title>
+<screenshot>
+<screeninfo
+>Виджет &klipper;.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="klipper-widget.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Виджет &klipper;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<!-- TODO: Document starred functionality -->
+<para
+>Наведите указатель мыши на запись: появятся четыре значка, которые позволяют выполнить действие, показать штрихкод, изменить содержимое или удалить запись из журнала. Сделать и сохранить снимки штрихкодов позволяет приложение &spectacle;. </para>
+
+<para
+>В журнале буфера обмена можно выполнять поиск, введя запрос в поле поиска. Результаты поиска обновляются по мере ввода текста. Чтобы очистить журнал буфера обмена, щёлкните по значку, который расположен справа от поля поиска. </para>
+
+<para
+>Пункт <guilabel
+>Настроить буфер обмена…</guilabel
+> в контекстном меню вызывает <link linkend="preferences"
+>диалог настройки</link
+>. </para>
+
+</sect2>
+</sect1>
+
+<sect1 id="actions">
+<title
+>Действия</title>
+
+<para
+>&klipper; может выполнять над содержимым буфера обмена некоторые действия, если это содержимое соответствует определённому регулярному выражению. Имеется встроенное действие, которое применяется к веб-адресам и файлам. Оно позволяет передать веб-адрес, начинающийся с <quote
+>http://</quote
+> или <quote
+>https://</quote
+>, в веб-браузер или файл, например <acronym
+>PDF</acronym
+>, в совместимое приложение, такое как &okular;.</para>
+
+<para
+>Собственные действия можно создать на странице <guilabel
+>Настройка действий</guilabel
+> <link linkend="preferences"
+>диалога настройки</link
+>, где также можно отключить встроенное действие <guilabel
+>Предлагать приложения для скопированных ссылок и файлов</guilabel
+>. </para>
+
+<para
+>Меню подходящих действий всегда можно открыть кнопкой рядом с элементом журнала. Кроме того, можно включить автоматическое появление меню действий каждый раз, когда в буфер обмена помещается подходящее содержимое: с помощью комбинации клавиш <guilabel
+>Всплывающее меню автоматических действий</guilabel
+>, которая задаётся на странице <guilabel
+>Комбинации клавиш</guilabel
+>, либо выбрав вариант <guilabel
+>Сразу после выделения</guilabel
+> для параметра <guilabel
+>Показ всплывающего меню действий</guilabel
+> на странице <guilabel
+>Меню действий</guilabel
+>. Там же параметр <guilabel
+>Время показа меню автоматических действий</guilabel
+> задаёт, через какое время автоматическое меню закроется само, если им не воспользоваться.</para>
+
+<para
+>Содержимое буфера обмена, соответствующее регулярному выражению, может быть изменено перед выполнением действия над ним. Выберите пункт <guimenuitem
+>Изменить содержимое…</guimenuitem
+>, который расположен справа от записи буфера обмена, чтобы изменить содержимое буфера обмена в появившемся диалоге, а затем нажмите кнопку <guibutton
+>ОК</guibutton
+> для запуска соответствующего действия.</para>
+
+<para
+>Если задана комбинация клавиш для действия <guilabel
+>Ручной выбор действия с буфером обмена</guilabel
+>, при её нажатии появится соответствующее всплывающее меню.</para>
+
+</sect1>
+
+<sect1 id="clipboard-modes">
+<title
+>Работа с буфером обмена</title>
+
+<sect2 id="clipboard-modes-general">
+<title
+>Общие</title>
+<para
+>&klipper; может использоваться для настройки поведения буфера обмена и выделения в &plasma;. Как изменить их поведение, описано в разделе <xref linkend="general-page"/>. </para>
+
+<note
+><para
+>Существует два отдельных буфера: <quote
+>выделение</quote
+> и <quote
+>буфер обмена</quote
+>. Текст помещается в буфер выделения просто при его выделении, и его можно вставить средней кнопкой мыши. Для помещения текста в буфер обмена его необходимо выделить и нажать <keycombo
+>&Ctrl;<keycap
+>X</keycap
+> </keycombo
+> или <keycombo
+>&Ctrl;<keycap
+>C</keycap
+> </keycombo
+>. Текст из буфера обмена вставляется с помощью <keycombo
+>&Ctrl;<keycap
+>V</keycap
+> </keycombo
+> или выбором пункта <guimenuitem
+>Вставить</guimenuitem
+> в контекстном меню.</para>
+</note>
+</sect2>
+</sect1>
+</chapter>
+
+<chapter id="preferences">
+<title
+>Настройка &klipper;</title>
+
+<sect1 id="general-page">
+<title
+>Основные параметры</title>
+<note
+><para
+>Приведённые ниже параметры различают <emphasis
+>выделение</emphasis
+> и <emphasis
+>буфер обмена</emphasis
+>. Разница между ними описана в разделе <xref linkend="clipboard-modes"/>. </para
+></note>
+
+
+<variablelist>
+
+<varlistentry
+><term
+><guilabel
+>Журнал буфера обмена: Сохранять журнал между сеансами рабочего стола</guilabel
+></term>
+<listitem
+><para
+>Определяет, сохраняется ли журнал буфера обмена при завершении сеанса или выключении компьютера.</para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Размер журнала</guilabel
+></term>
+<listitem
+><para
+>Задаёт количество записей в журнале буфера обмена. Допустимые значения — от 1 до 2048.</para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Выделение и буфер обмена: Поддерживать синхронизацию выделенного фрагмента и буфера обмена</guilabel
+></term>
+<listitem
+><para
+>Если этот параметр включён, содержимое выделения и буфера обмена совпадает, поэтому выделение сразу же становится доступным для вставки любым способом. Если этот параметр отключён, выделение всё равно можно сохранить в журнале буфера обмена (в соответствии с расположенными ниже параметрами), но вставить его можно только с помощью средней кнопки мыши. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Всегда сохранять в журнале: Текст, выделенный курсором или клавиатурой</guilabel
+></term>
+<listitem
+><para
+>Если этот флажок установлен, выделенный текст сохраняется в журнале. Содержимое буфера обмена сохраняется всегда. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Всегда сохранять в журнале: Явно скопированные данные изображений</guilabel
+></term>
+<listitem
+><para
+>Если этот флажок установлен, изображения, скопированные как данные (например, слои и выделенные области, скопированные в редакторе изображений), сохраняются в журнале буфера обмена. Файлы изображений, скопированные из диспетчера файлов, сохраняются всегда. В журнале они показываются как изображения, но это лишь предварительный просмотр — на самом деле это просто имена файлов. Снимки, сохранённые приложением &spectacle;, также сохраняются, если это задано в его параметрах. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+<sect1 id="action-menu-page">
+<title
+>Меню действий</title>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Для выбранной в журнале записи</guilabel
+></term>
+<listitem
+><para
+>Если этот флажок установлен, при выборе элемента из журнала &klipper; покажет действия для этого элемента (если они, конечно, есть).</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Время показа меню автоматических действий</guilabel
+></term>
+<listitem
+><para
+>Время, по истечении которого автоматическое меню закрывается само, если им не воспользоваться.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Удалять пробелы выделения</guilabel
+></term>
+<listitem
+><para
+>Если этот флажок установлен, все пробельные символы (пробелы, табуляция и так далее) в начале и конце содержимого буфера обмена будут удалены перед передачей содержимого буфера обмена приложению. Текст, сохранённый в журнале, не изменяется.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+
+<sect1 id="actions-configuration-page">
+<title
+>Настройка действий</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Предлагать приложения для скопированных ссылок и файлов</guilabel
+></term>
+<listitem
+><para
+>Если этот флажок установлен, всплывающее меню будет предлагать приложения, способные открыть скопированный файл или скопированную ссылку, начинающуюся с <quote
+>http://</quote
+> или <quote
+>https://</quote
+>, даже если ни одно из заданных действий не подходит.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Редактирование выражений/действий</term>
+<listitem
+><para
+>На странице <guilabel
+>Действия</guilabel
+> двойным щелчком откройте регулярное выражение или действие, которое требуется изменить (также можно выбрать его и нажать кнопку <guibutton
+>Изменить действие…</guibutton
+>). Появится диалог, в котором текст может быть изменён необходимым образом.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Добавление выражений/действий</term>
+<listitem
+><para
+>Нажмите кнопку <guibutton
+>Добавить действие…</guibutton
+>, чтобы добавить в &klipper; регулярное выражение для сравнения. &klipper; использует <classname
+>QRegularExpression</classname
+> &Qt;, который использует регулярные выражения PCRE (Perl Compatible Regular Expressions).</para>
+<para
+>Вы можете добавить описание к регулярному выражению (например, <quote
+>HTTP URL</quote
+>), щёлкнув <mousebutton
+>левой</mousebutton
+> кнопкой мыши по столбцу <guilabel
+>Описание</guilabel
+>.</para>
+
+<note
+><para
+>Подробная информация об использовании регулярных выражений <classname
+>QRegularExpression</classname
+> доступна в <ulink url="https://doc.qt.io/qt-5/qregularexpression.html#details"
+>документации основной версии Qt</ulink
+>.</para
+></note>
+
+<para
+>Измените регулярное выражение, как описано выше. Чтобы добавить команду для исполнения, нажмите кнопку <guimenuitem
+>Добавить команду</guimenuitem
+> и измените появившуюся команду в поле редактирования текста. Двойной щелчок по команде делает её доступной для редактирования.</para>
+
+<para
+>Обратите внимание, что <token
+>%s</token
+> в командной строке заменяется содержимым буфера обмена. Например, если определение команды выглядит как <userinput
+><command
+>kwrite</command
+> <token
+>%s</token
+></userinput
+>, а в буфере обмена находится <filename
+>/home/phil/textfile</filename
+>, будет выполнена команда <userinput
+><command
+>kwrite</command
+> <filename
+>/home/phil/textfile</filename
+></userinput
+>. Чтобы ввести в командной строке <token
+>%s</token
+>, предварите его обратной наклонной чертой вот так: <userinput
+>\%s</userinput
+>.</para>
+
+<para
+>Записи <userinput
+><token
+>%0</token
+></userinput
+> — <userinput
+><token
+>%9</token
+></userinput
+> будут заменены соответствующими захваченными текстами из шаблона сопоставления. </para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="shortcuts-page">
+<title
+>Параметры комбинаций клавиш</title>
+
+<para
+>Эта вкладка позволяет изменять комбинации клавиш для доступа к функциям &klipper;. Комбинации могут находиться в одном из трёх режимов:</para>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Нет</guilabel
+></term>
+<listitem
+><para
+>К выбранному действию нельзя получить доступ непосредственно с клавиатуры.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>По умолчанию</guilabel
+></term>
+<listitem
+><para
+>Выбранное действие использует комбинации клавиш &klipper; по умолчанию. Это комбинации, использовавшиеся в этом руководстве.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Другая</guilabel
+></term>
+<listitem
+><para
+>Выбранному действию назначены установленные вами комбинации клавиш.</para>
+<para
+>Чтобы назначить выбранному действию другую комбинацию клавиш, нажмите кнопку <guilabel
+>Другая</guilabel
+>, затем кнопку <guilabel
+>Не определена</guilabel
+> и нажмите нужные клавиши на клавиатуре. Этот способ назначения комбинации клавиш применяется во всех приложениях &kde;. </para
+> </listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>Если задана комбинация клавиш для действия <guilabel
+>Открывать Klipper на месте указателя мыши</guilabel
+>, с её помощью можно вызвать всплывающее меню &klipper;: оно появится на месте указателя мыши, а не на месте по умолчанию (то есть в панели &plasma;). Это может быть полезно, если мышь используется чаще, чем клавиатура.</para>
+
+</sect1>
+</chapter>
+
+<chapter id="credits">
+<title
+>Авторские права и лицензия</title>
+
+<para
+>&klipper; </para>
+<para
+>Авторские права на программу: &copy; &Andrew.Stanley-Jones; <email
+>asj@cban.com</email
+>, 1998 </para>
+<para
+>Авторские права на программу: &copy; &Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;, 1998-2000</para>
+<para
+>В настоящее время поддерживается разработчиками KDE &plasma;. </para>
+
+<para
+>Авторские права на документацию: &copy; &Philip.Rodrigues; &Philip.Rodrigues.mail;, 2000-2003, 2005</para>
+
+<para
+>Олеся Герасименко <email
+>translation-team@basealt.ru</email
+></para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+sgml-indent-step: 0
+End:
+-->
+
+
+
+
+
+
+
+
+
+

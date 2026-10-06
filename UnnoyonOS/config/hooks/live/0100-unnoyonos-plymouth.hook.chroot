@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+THEME_DIR="/usr/share/plymouth/themes/UnnoyonOS"
+
+if [ -f "${THEME_DIR}/UnnoyonOS.plymouth" ]; then
+    /usr/sbin/plymouth-set-default-theme UnnoyonOS
+    update-initramfs -u -k all
+fi

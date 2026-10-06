@@ -1,0 +1,49 @@
+# Live-build generated directories
+UnnoyonOS/.build/
+UnnoyonOS/binary/
+UnnoyonOS/chroot/
+UnnoyonOS/cache/
+UnnoyonOS/.stage/
+
+# ISO output files
+*.iso
+*.img
+*.hybrid.iso
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+*~
+
+# Build artifacts
+build/
+dist/
+output/
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# KDE build artifacts (plasma-workspace, dolphin)
+plasma-workspace/build/
+dolphin/build/
+*.cmake.user
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Node modules (if any web tools used)
+node_modules/

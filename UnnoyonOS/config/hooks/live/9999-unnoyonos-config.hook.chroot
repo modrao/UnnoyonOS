@@ -1,0 +1,25 @@
+#!/bin/sh
+set -e
+
+rm -rf /usr/share/desktop-base/kf5-settings
+
+mkdir -p /etc/xdg
+
+cat > /etc/xdg/kdeglobals <<'EOF'
+[General]
+XftAntialias=true
+XftHintStyle=hintslight
+XftSubPixel=rgb
+BrowserApplication=firefox-esr.desktop
+
+[KDE]
+LookAndFeelPackage=org.unnoyonos.desktop
+EOF
+
+cat > /etc/xdg/kscreenlockerrc <<'EOF'
+[Greeter]
+WallpaperPlugin=org.kde.image
+
+[Wallpaper][org.kde.image][General]
+Image=/usr/share/wallpapers/unnoyonos-dark-signature/contents/images/1376x768.png
+EOF

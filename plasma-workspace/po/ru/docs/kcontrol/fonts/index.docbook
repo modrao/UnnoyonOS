@@ -1,0 +1,270 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+<!ENTITY % addindex "IGNORE">
+<!ENTITY % Russian "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<article id="fonts" lang="&language;">
+<articleinfo>
+<title
+>Шрифты</title>
+<authorgroup>
+<author
+>&Mike.McBride; &Mike.McBride.mail;</author>
+<author
+>&Anne-Marie.Mahfouf; &Anne-Marie.Mahfouf.mail;</author>
+<othercredit role="translator"
+><firstname
+>Вера</firstname
+><surname
+>Пономарёва </surname
+><affiliation
+><address
+><email
+>verun10249@mail.ru</email
+></address
+></affiliation
+><contrib
+>Перевод на русский язык</contrib
+></othercredit
+> <othercredit role="translator"
+><firstname
+>Олеся</firstname
+><surname
+>Герасименко </surname
+><affiliation
+><address
+><email
+>gammaray@basealt.ru</email
+></address
+></affiliation
+><contrib
+>Перевод на русский язык</contrib
+></othercredit
+> <othercredit role="reviewer"
+><firstname
+>Александр</firstname
+><surname
+>Яворский</surname
+><contrib
+>Рецензирование</contrib
+></othercredit
+> 
+</authorgroup>
+
+<date
+>9 апреля 2021 г.</date>
+<releaseinfo
+>Plasma 5.20</releaseinfo>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>параметры системы</keyword>
+<keyword
+>шрифты</keyword>
+</keywordset>
+</articleinfo>
+
+<sect1 id="kcm_fonts">
+
+<title
+>Шрифты</title>
+
+<para
+>Этот модуль приложения &systemsettings; позволяет выбирать шрифты для различных элементов окружения рабочего стола &kde;.</para>
+
+<para>
+<screenshot>
+<screeninfo
+>Снимок экрана модуля настройки параметров шрифтов</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="main.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Модуль настройки параметров шрифтов</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Для гибкой настройки шрифты разделены на следующие группы: </para>
+
+<itemizedlist>
+<listitem
+><para
+><guilabel
+>Обычный текст</guilabel
+> — используется везде, где не применяются шрифты других групп;</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>Моноширинный</guilabel
+> — используется везде, где требуется непропорциональный (моноширинный) шрифт;</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>Маленький</guilabel
+> — используется при использовании маленьких размеров шрифтов;</para
+></listitem
+> 
+
+<listitem
+><para
+><guilabel
+>Панель инструментов</guilabel
+> — шрифт для показа панелей инструментов в приложениях &kde;;</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>Меню</guilabel
+> — шрифт для показа меню в приложениях &kde;;</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>Заголовок окна</guilabel
+> — шрифт для показа заголовков окон;</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>Панель задач</guilabel
+> — шрифт для показа аплетов на панели задач;</para
+></listitem>
+
+<listitem
+><para
+><guilabel
+>Рабочий стол</guilabel
+> — шрифт для показа подписей к значкам на рабочем столе.</para
+></listitem>
+
+</itemizedlist>
+
+<para
+>Каждой группе шрифтов соответствует кнопка <guibutton
+>Выбрать…</guibutton
+>. При её нажатии открывается диалоговое окно выбора шрифта, его начертания и размера. Для подтверждения выбора следует нажать кнопку <guibutton
+>ОК</guibutton
+>.</para>
+
+<para
+>Установите флажок <guilabel
+>Показывать только моноширинные шрифты</guilabel
+>, чтобы в списке присутствовали только моноширинные шрифты.</para>
+
+<para
+>Образцы выбранных шрифтов показываются в полях между названиями групп шрифтов и кнопками <guibutton
+>Выбрать…</guibutton
+>.</para>
+
+<para
+>По завершении выбора шрифтов следует нажать кнопку <guibutton
+>ОК</guibutton
+> для перезапуска всех необходимых компонентов &kde; и применения изменений.</para>
+
+<para
+>Кнопка <guibutton
+>Изменить все шрифты…</guibutton
+> позволяет быстро изменить одно или несколько свойств для всех групп шрифтов. Будет открыто окно <guilabel
+>Выбрать шрифт</guilabel
+>, похожее на стандартное, но позволяющее с помощью флажков настроить параметры <guilabel
+>Гарнитура</guilabel
+>, <guilabel
+>Начертание</guilabel
+> и <guilabel
+>Размер</guilabel
+> независимо друг от друга. Вы можете выбрать один или несколько из этих параметров, и они будут применены ко всем группам шрифтов.</para>
+
+<para
+>Установите флажок <guilabel
+>Показывать только моноширинные шрифты</guilabel
+>, чтобы в списке присутствовали только моноширинные шрифты.</para>
+
+<para>
+<screenshot>
+<screeninfo
+>Изменение всех шрифтов</screeninfo>
+  <mediaobject>
+    <imageobject>
+      <imagedata fileref="adjust-all.png" format="PNG"/>
+    </imageobject>
+    <textobject>
+      <phrase
+>Диалоговое окно изменения всех шрифтов</phrase>
+    </textobject>
+  </mediaobject>
+</screenshot>
+</para>
+
+<para
+>Если после выбора нескольких начертаний шрифтов оказывается, что все они слишком большие (такое часто случается, например, при изменении разрешения экрана), следует применить к ним новый размер. Это не повлияет на выбранные пользователем гарнитуры и начертания шрифтов.</para>
+
+<sect2 id="fonts-aa">
+<title
+>Настройка сглаживания шрифтов</title>
+
+<para
+>Чтобы включить сглаживание, просто установите флажок <guilabel
+>Включить</guilabel
+> и настройте пользовательские параметры.</para>
+
+<para
+>Флажок <guilabel
+>Исключить диапазон из сглаживания</guilabel
+> позволяет задать диапазон, в котором шрифты <emphasis
+>не будут</emphasis
+> сглаживаться. Верхняя и нижняя границы диапазона устанавливаются при помощи соответствующих полей ввода числа.</para>
+
+<para
+>Можно выбрать <guilabel
+>Тип субпиксельной отрисовки</guilabel
+>, который будет использован для <ulink url="https://en.wikipedia.org/wiki/Subpixel_rendering"
+>субпиксельной отрисовки</ulink
+>, а также <guilabel
+>Стиль хинтинга</guilabel
+> для <ulink url="https://ru.wikipedia.org/wiki/%D0%A5%D0%B8%D0%BD%D1%82%D0%B8%D0%BD%D0%B3"
+>хинтинга</ulink
+> шрифтов. Также можно включить параметр <guilabel
+>Использовать другой DPI</guilabel
+> для <ulink url="https://ru.wikipedia.org/wiki/Dots_per_inch"
+>отрисовки экрана</ulink
+>. Не стоит изменять эти параметры, если вы не знакомы с конкретными способами.</para>
+
+<note
+><para
+>Для сглаживания шрифтов и значков требуется поддержка со стороны сервера показа и &Qt;, установленные подходящие шрифты, а также использование встроенных средств работы со шрифтами сервера показа. Если проблемы остаются, напишите в соответствующий список рассылки &kde;.</para
+></note>
+
+</sect2>
+
+<sect2 id="fonts-dpi">
+<title
+>DPI шрифтов</title>
+
+<para
+>Флажок <guilabel
+>Использовать другой DPI</guilabel
+> позволяет задать значение DPI (количества точек на дюйм), отличное от системного значения по умолчанию. Чтобы проверить, какое значение DPI установлено X-сервером, введите команду <userinput
+>xdpyinfo | grep resolution</userinput
+> в окне терминала, после чего введите значение в поле ввода числа. Внесённые изменения будут применены только ко вновь запущенным приложениям.</para>
+</sect2>
+
+</sect1>
+
+</article>

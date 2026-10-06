@@ -1,0 +1,459 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-09-10 00:49+0000\n"
+"PO-Revision-Date: 2024-04-22 15:58\n"
+"Last-Translator: \n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Project-ID: 269464\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf6-trunk/messages/plasma-workspace/kcm_style.pot\n"
+"X-Crowdin-File-ID: 43787\n"
+
+#: gtkpage.cpp:57
+#, kde-format
+msgid "%1 is not a valid GTK Theme archive."
+msgstr "%1 不是有效的 GTK 应用程序外观样式包。"
+
+#: kcmstyle.cpp:117
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: Cannot install a style from a remote location."
+msgstr "安装失败：无法从远程位置安装样式。"
+
+#: kcmstyle.cpp:123
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style file could not be read."
+msgstr "安装失败：无法读取样式文件。"
+
+#: kcmstyle.cpp:128
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style file does not contain any data."
+msgstr "安装失败：样式文件不包含任何数据。"
+
+#: kcmstyle.cpp:134
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style file could not be unpacked."
+msgstr "安装失败：无法解包样式文件。"
+
+#: kcmstyle.cpp:144
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style could not be found."
+msgstr "安装失败：找不到样式。"
+
+#: kcmstyle.cpp:148
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The selected file is not a valid Union style."
+msgstr "安装失败：选中的文件不是有效的 Union 和合风格。"
+
+#: kcmstyle.cpp:151
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The selected style is not supported."
+msgstr "安装失败：不支持所选样式。"
+
+#: kcmstyle.cpp:165
+#, kde-format
+msgctxt "@info:status"
+msgid "Installing “%1” failed: The style is already installed."
+msgstr "安装“%1”失败：样式已经安装。"
+
+#: kcmstyle.cpp:170
+#, kde-format
+msgctxt "@info:status"
+msgid "Installing “%1” failed: Permission was denied."
+msgstr "安装“%1”失败：权限被拒绝。"
+
+#: kcmstyle.cpp:174
+#, kde-format
+msgctxt "@info:status"
+msgid "Installing “%1” failed: %2"
+msgstr "安装“%1”失败：%2"
+
+#: kcmstyle.cpp:179
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully installed “%1”."
+msgstr "已成功安装“%1”。"
+
+#: kcmstyle.cpp:192
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstall failed: The style with ID “%1” could not be found."
+msgstr "卸载失败：找不到 ID 为“%1”的样式。"
+
+#: kcmstyle.cpp:202
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: Permission was denied."
+msgstr "卸载“%1”失败：权限被拒绝。"
+
+#: kcmstyle.cpp:204
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: The style is not installed."
+msgstr "卸载“%1”失败：样式没有安装。"
+
+#: kcmstyle.cpp:206
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: The style is in use."
+msgstr "卸载“%1”失败：该样式正在使用。"
+
+#: kcmstyle.cpp:208
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: %2"
+msgstr "卸载“%1”失败：%2"
+
+#: kcmstyle.cpp:223
+#, kde-format
+msgctxt "@info:status"
+msgid "Could not uninstall styles:\n"
+msgstr "无法卸载样式：\n"
+
+#: kcmstyle.cpp:226
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled “%1” but could not uninstall others:\n"
+msgstr ""
+
+#: kcmstyle.cpp:229
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled %1 style but could not uninstall others:\n"
+msgid_plural ""
+"Successfully uninstalled %1 styles but could not uninstall others:\n"
+msgstr[0] ""
+
+#: kcmstyle.cpp:240
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled “%1”."
+msgstr ""
+
+#: kcmstyle.cpp:242
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled %1 style"
+msgid_plural "Successfully uninstalled %1 styles."
+msgstr[0] ""
+
+#: kcmstyle.cpp:306 kcmstyle.cpp:313
+#, kde-format
+msgid "There was an error loading the configuration dialog for this style."
+msgstr "加载此外观样式的配置对话框时出错。"
+
+#: kcmstyle.cpp:420
+#, kde-format
+msgid "Failed to apply selected style '%1'."
+msgstr "无法应用选择的外观样式“%1”。"
+
+#: styleconfdialog.cpp:21
+#, kde-format
+msgid "Configure %1"
+msgstr "配置 %1"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_1)
+#: stylepreview.ui:33
+#, kde-format
+msgid "Tab 1"
+msgstr "标签页 1"
+
+#. i18n: ectx: property (format), widget (QProgressBar, progressBar)
+#: stylepreview.ui:65
+#, no-c-format, kde-format
+msgid "%p%"
+msgstr "%p%"
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: stylepreview.ui:85
+#, kde-format
+msgid "Button"
+msgstr "按钮"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: stylepreview.ui:99
+#, kde-format
+msgid "Combo box"
+msgstr "下拉菜单组合框"
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkBox)
+#: stylepreview.ui:109
+#, kde-format
+msgid "Checkbox"
+msgstr "复选框"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton_2)
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton_1)
+#: stylepreview.ui:119 stylepreview.ui:129
+#, kde-format
+msgid "Radio button"
+msgstr "单选按钮"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, lineEdit)
+#: stylepreview.ui:138
+#, kde-format
+msgid "Text Field"
+msgstr "文本框"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: stylepreview.ui:146
+#, kde-format
+msgid "Tab 2"
+msgstr "标签页 2"
+
+#. i18n: ectx: label, entry (widgetStyle), group (KDE)
+#: stylesettings.kcfg:9
+#, kde-format
+msgid "Application style"
+msgstr "应用程序外观样式"
+
+#. i18n: ectx: label, entry (unionStyle), group (KDE)
+#: stylesettings.kcfg:13
+#, kde-format
+msgid "Union Style ID"
+msgstr "Union 和合样式 ID"
+
+#. i18n: ectx: label, entry (iconsOnButtons), group (KDE)
+#: stylesettings.kcfg:17
+#, kde-format
+msgid "Show icons on buttons"
+msgstr "按钮显示图标"
+
+#. i18n: ectx: label, entry (iconsInMenus), group (KDE)
+#: stylesettings.kcfg:21
+#, kde-format
+msgid "Show icons in menus"
+msgstr "菜单项显示图标"
+
+#. i18n: ectx: label, entry (toolButtonStyle), group (Toolbar style)
+#: stylesettings.kcfg:27
+#, kde-format
+msgid "Main toolbar label"
+msgstr "主工具栏项文本标签"
+
+#. i18n: ectx: label, entry (toolButtonStyleOtherToolbars), group (Toolbar style)
+#: stylesettings.kcfg:31
+#, kde-format
+msgid "Secondary toolbar label"
+msgstr "副工具栏项文本标签"
+
+#: ui/EffectSettingsPopup.qml:19
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure Icons and Toolbars"
+msgstr "配置图标和工具栏"
+
+#: ui/EffectSettingsPopup.qml:36
+#, kde-format
+msgid "Show icons:"
+msgstr "显示图标："
+
+#: ui/EffectSettingsPopup.qml:37
+#, kde-format
+msgid "On buttons"
+msgstr "按钮图标"
+
+#: ui/EffectSettingsPopup.qml:48
+#, kde-format
+msgid "In menus"
+msgstr "菜单图标"
+
+#: ui/EffectSettingsPopup.qml:60
+#, kde-format
+msgid "Main toolbar label:"
+msgstr "主工具栏文本标签："
+
+#: ui/EffectSettingsPopup.qml:62
+#, kde-format
+msgid "None"
+msgstr "不显示"
+
+#: ui/EffectSettingsPopup.qml:63
+#, kde-format
+msgid "Text only"
+msgstr "仅显示文本"
+
+#: ui/EffectSettingsPopup.qml:64
+#, kde-format
+msgid "Beside icons"
+msgstr "显示在图标一侧"
+
+#: ui/EffectSettingsPopup.qml:65
+#, kde-format
+msgid "Below icon"
+msgstr "显示在图标下方"
+
+#: ui/EffectSettingsPopup.qml:80
+#, kde-format
+msgid "Secondary toolbar label:"
+msgstr "副工具栏文本标签："
+
+#: ui/GtkStylePage.qml:17
+#, kde-format
+msgid "GNOME/GTK Application Style"
+msgstr "GNOME/GTK 应用程序外观样式"
+
+#: ui/GtkStylePage.qml:38
+#, kde-format
+msgctxt "@action:button"
+msgid "Install from File…"
+msgstr "安装样式主题文件…"
+
+#: ui/GtkStylePage.qml:43
+#, kde-format
+msgctxt "@action:button"
+msgid "Get New…"
+msgstr "获取新样式主题文件…"
+
+#: ui/GtkStylePage.qml:60
+#, kde-format
+msgid "GTK theme:"
+msgstr "GTK 应用程序外观样式："
+
+#: ui/GtkStylePage.qml:85
+#, kde-format
+msgid "Preview…"
+msgstr "预览…"
+
+#: ui/GtkStylePage.qml:104
+#, kde-format
+msgid "Select GTK Theme Archive"
+msgstr "选择 GTK 应用程序外观样式包"
+
+#: ui/GtkStylePage.qml:106
+#, kde-format
+msgid "GTK Theme Archive (*.tar.xz *.tar.gz *.tar.bz2)"
+msgstr "GTK 应用程序外观样式包 (*.tar.xz *.tar.gz *.tar.bz2)"
+
+#: ui/main.qml:85
+#, kde-format
+msgctxt "@action:button"
+msgid "Install From File…"
+msgstr "安装样式主题文件…"
+
+#: ui/main.qml:90
+#, kde-format
+msgid "Configure Icons and Toolbars…"
+msgstr "配置图标和工具栏…"
+
+#: ui/main.qml:108
+#, kde-format
+msgid "Configure GNOME/GTK Application Style…"
+msgstr "配置 GNOME/GTK 应用程序外观样式…"
+
+#: ui/main.qml:170
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"This style is using the Union style engine which is still under development. "
+"Some things may look or behave incorrectly when using this style."
+msgstr ""
+"此样式使用仍在开发中的 Union 和合样式引擎。某些视觉效果和行为可能存在错误。"
+
+#: ui/main.qml:174
+#, kde-format
+msgid "Configure Style…"
+msgstr "配置风格…"
+
+#: ui/main.qml:182
+#, kde-format
+msgctxt "@action:button"
+msgid "Uninstall…"
+msgstr "卸载…"
+
+#: ui/main.qml:184
+#, kde-format
+msgctxt "@action:button"
+msgid "Cannot uninstall system-installed styles."
+msgstr "无法卸载系统安装的样式。"
+
+#: ui/main.qml:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Can only uninstall Union styles."
+msgstr "只能卸载 Union 和合样式。"
+
+#: ui/main.qml:199
+#, kde-format
+msgid "Do not uninstall this style."
+msgstr "不要卸载此样式。"
+
+#: ui/main.qml:245
+#, kde-format
+msgctxt "@title:dialog"
+msgid "Choose Union Style to Install"
+msgstr "选择要安装的 Union 和合样式"
+
+#: ui/main.qml:246
+#, kde-format
+msgctxt "@action:button"
+msgid "Install"
+msgstr "安装"
+
+#: ui/UnionThumbnailItem.qml:25
+#, kde-format
+msgctxt "@title:tab"
+msgid "Tab 1"
+msgstr "标签页 1"
+
+#: ui/UnionThumbnailItem.qml:29
+#, kde-format
+msgctxt "@title:tab"
+msgid "Tab 2"
+msgstr "标签页 2"
+
+#: ui/UnionThumbnailItem.qml:50
+#, kde-format
+msgctxt "@option:check"
+msgid "Checkbox"
+msgstr "复选框"
+
+#: ui/UnionThumbnailItem.qml:56 ui/UnionThumbnailItem.qml:62
+#, kde-format
+msgctxt "@option:radio"
+msgid "Radio Button"
+msgstr "单选按钮"
+
+#: ui/UnionThumbnailItem.qml:84
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Combo Box"
+msgstr "组合框"
+
+#: ui/UnionThumbnailItem.qml:85
+#, kde-format
+msgctxt "@item:inlistbox"
+msgid "Combo Box Item"
+msgstr "组合框项目"
+
+#: ui/UnionThumbnailItem.qml:94
+#, kde-format
+msgctxt "@action:button"
+msgid "Button"
+msgstr "按钮"
+
+#: ui/UnionThumbnailItem.qml:107
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Text Field"
+msgstr "文本框"
+
+#: ui/UnionThumbnailItem.qml:122
+#, kde-format
+msgctxt "@item:inrange Progress bar value"
+msgid "%1%"
+msgstr "%1%"

@@ -1,0 +1,44 @@
+# Uyghur translation for plasma_runner_webshortcuts.
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+# Sahran <sahran.ug@gmail.com>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma_runner_webshortcuts\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-08-12 00:49+0000\n"
+"PO-Revision-Date: 2026-09-23 06:56+0900\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
+"Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
+
+#: webshortcutrunner.cpp:42 webshortcutrunner.cpp:134 webshortcutrunner.cpp:151
+#, kde-format
+msgid "Search %1 for %2"
+msgstr "%2 ئۈچۈن %1 نى ئىزدە"
+
+#: webshortcutrunner.cpp:66
+#, kde-format
+msgid "Opens \"%1\" in a web browser with the query :q:."
+msgstr ":q: سۈرۈش بىلەن «%1» نى توركۆرگۈدە ئاچىدۇ."
+
+#: webshortcutrunner.cpp:71
+#, kde-format
+msgid "Search using the DuckDuckGo bang syntax"
+msgstr "DuckDuckGo bang تىلقۇرمىسىنى ئىشلىتىپ ئىزدەيدۇ"
+
+#: webshortcutrunner.cpp:99
+#, kde-format
+msgid "Search in private window"
+msgstr "شەخسىي كۆزنەكتە ئىزدەيدۇ"
+
+#: webshortcutrunner.cpp:99
+#, kde-format
+msgid "Search in incognito window"
+msgstr "ئىزسىز كۆزنەكتە ئىزدەيدۇ"

@@ -1,0 +1,180 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the plasma-workspace package.
+#
+# SPDX-FileCopyrightText: 2024 OIS <mistresssilvara@hotmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-workspace\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-09-22 00:47+0000\n"
+"PO-Revision-Date: 2024-08-02 14:35+0700\n"
+"Last-Translator: OIS <mistresssilvara@hotmail.com>\n"
+"Language-Team: Interlingue <>\n"
+"Language: ie\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 24.07.70\n"
+
+#: contents/splash/Splash.qml:79
+#, kde-format
+msgctxt ""
+"This is the first text the user sees while starting in the splash screen, "
+"should be translated as something short, is a form that can be seen on a "
+"product. Plasma is the project name so shouldn't be translated."
+msgid "Plasma made by KDE"
+msgstr "Plasma es creat de KDE"
+
+#~ msgid "Installing software updates and restarting in 1 second"
+#~ msgid_plural "Installing software updates and restarting in %1 seconds"
+#~ msgstr[0] "Installante actualisamentes e reiniciante pos %1 seconde"
+#~ msgstr[1] "Installante actualisamentes e reiniciante pos %1 secondes"
+
+#~ msgid "Restarting in 1 second"
+#~ msgid_plural "Restarting in %1 seconds"
+#~ msgstr[0] "Reiniciante pos %1 seconde"
+#~ msgstr[1] "Reiniciante pos %1 secondes"
+
+#~ msgid "Logging out in 1 second"
+#~ msgid_plural "Logging out in %1 seconds"
+#~ msgstr[0] "Cludente li session pos %1 seconde"
+#~ msgstr[1] "Cludente li session pos %1 secondes"
+
+#, fuzzy
+#~| msgid "Installing software updates and restarting in 1 second"
+#~| msgid_plural "Installing software updates and restarting in %1 seconds"
+#~ msgid "Installing software updates and shutting down in 1 second"
+#~ msgid_plural "Installing software updates and shutting down in %1 seconds"
+#~ msgstr[0] "Installante actualisamentes e reiniciante pos %1 seconde"
+#~ msgstr[1] "Installante actualisamentes e reiniciante pos %1 secondes"
+
+#~ msgid "Shutting down in 1 second"
+#~ msgid_plural "Shutting down in %1 seconds"
+#~ msgstr[0] "Extintente pos %1 seconde"
+#~ msgstr[1] "Extintente pos %1 secondes"
+
+#, fuzzy
+#~ msgid ""
+#~ "One other user is currently logged in. If the computer is shut down or "
+#~ "restarted, that user may lose work."
+#~ msgid_plural ""
+#~ "%1 other users are currently logged in. If the computer is shut down or "
+#~ "restarted, those users may lose work."
+#~ msgstr[0] "Extinter"
+#~ msgstr[1] "Extinter"
+
+#, fuzzy
+#~| msgid "When restarted, the computer will enter the firmware setup screen."
+#~ msgid "When restarted, the computer will enter UEFI firmware settings."
+#~ msgstr ""
+#~ "Pos reiniciation li computator va monstrar li ecran de configuration de "
+#~ "firmware."
+
+#~ msgid "When restarted, the computer will enter the firmware setup screen."
+#~ msgstr ""
+#~ "Pos reiniciation li computator va monstrar li ecran de configuration de "
+#~ "firmware."
+
+#, fuzzy
+#~| msgid "When restarted, the computer will enter the firmware setup screen."
+#~ msgid "When restarted, the computer will enter the boot loader menu."
+#~ msgstr ""
+#~ "Pos reiniciation li computator va monstrar li ecran de configuration de "
+#~ "firmware."
+
+#, fuzzy
+#~| msgid "When restarted, the computer will enter the firmware setup screen."
+#~ msgctxt "%1 is a boot loader entry"
+#~ msgid "When restarted, the computer will switch to %1."
+#~ msgstr ""
+#~ "Pos reiniciation li computator va monstrar li ecran de configuration de "
+#~ "firmware."
+
+#, fuzzy
+#~| msgctxt "Suspend to RAM"
+#~| msgid "Sleep"
+#~ msgctxt "Suspend to RAM"
+#~ msgid "Slee&p"
+#~ msgstr "Indormir"
+
+#, fuzzy
+#~| msgctxt "Suspend to RAM"
+#~| msgid "Sleep Now"
+#~ msgctxt "Suspend to RAM"
+#~ msgid "Slee&p Now"
+#~ msgstr "Indormir nu"
+
+#, fuzzy
+#~| msgid "Hibernate"
+#~ msgid "&Hibernate"
+#~ msgstr "Hivernar"
+
+#, fuzzy
+#~| msgid "Hibernate Now"
+#~ msgid "&Hibernate Now"
+#~ msgstr "Hivernar nu"
+
+#, fuzzy
+#~| msgctxt "@action:button Keep short"
+#~| msgid "Install Updates & Restart"
+#~ msgctxt "@action:button Keep short"
+#~ msgid "Install Updates and Restart"
+#~ msgstr "Installar actualisamentes e reiniciar"
+
+#, fuzzy
+#~| msgid "Restart"
+#~ msgid "&Restart"
+#~ msgstr "Reiniciar"
+
+#, fuzzy
+#~| msgid "Restart Now"
+#~ msgid "&Restart Now"
+#~ msgstr "Reiniciar nu"
+
+#, fuzzy
+#~| msgctxt "@action:button Keep short"
+#~| msgid "Install Updates & Restart Now"
+#~ msgctxt "@action:button Keep short"
+#~ msgid "Install Updates and Shut Down"
+#~ msgstr "Installar actualisamentes e reiniciar nu"
+
+#, fuzzy
+#~| msgid "Shut Down"
+#~ msgid "&Shut Down"
+#~ msgstr "Extinter"
+
+#, fuzzy
+#~| msgid "Shut Down Now"
+#~ msgid "&Shut Down Now"
+#~ msgstr "Extinter nu"
+
+#, fuzzy
+#~| msgid "Log Out"
+#~ msgid "&Log Out"
+#~ msgstr "Cluder li session"
+
+#, fuzzy
+#~| msgid "Log Out Now"
+#~ msgid "&Log Out Now"
+#~ msgstr "Cluder li session nu"
+
+#, fuzzy
+#~| msgid "Cancel"
+#~ msgid "&Cancel"
+#~ msgstr "Anullar"
+
+#~ msgctxt "Percentage value"
+#~ msgid "%1%"
+#~ msgstr "%1%"
+
+#~ msgctxt "@action:button Keep short"
+#~ msgid "Install Updates & Restart Now"
+#~ msgstr "Installar actualisamentes e reiniciar nu"
+
+#, fuzzy
+#~| msgctxt "@action:button Keep short"
+#~| msgid "Install Updates & Restart Now"
+#~ msgctxt "@action:button Keep short"
+#~ msgid "Install Updates & Shut Down Now"
+#~ msgstr "Installar actualisamentes e reiniciar nu"

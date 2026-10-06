@@ -1,0 +1,106 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-workspace package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-workspace\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-06-13 00:46+0000\n"
+"PO-Revision-Date: 2026-01-31 05:26+0100\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.8\n"
+
+#. i18n: ectx: label, entry (Theme), group (Icons)
+#: iconssettingsbase.kcfg:9
+#, kde-format
+msgid "Name of the current icon theme"
+msgstr "ხატულების მიმდინარე თემის სახელი"
+
+#: main.cpp:147
+#, kde-format
+msgid "Unable to create a temporary file."
+msgstr "დროებითი ფაილის შექმნის შეცდომა."
+
+#: main.cpp:158
+#, kde-format
+msgid "Unable to download the icon theme archive: %1"
+msgstr "ხატულების თემის არქივის გადმოწერის შეცდომა: %1"
+
+#: main.cpp:172
+#, kde-format
+msgid "The file is not a valid icon theme archive."
+msgstr "ფაილი ხატულების თემის სწორ არქივს არ წარმოადგენს."
+
+#: main.cpp:177
+#, kde-format
+msgid ""
+"A problem occurred during the installation process; however, most of the "
+"themes in the archive have been installed"
+msgstr "დაყენების პროცესის შეცდომა. მაგრამ არქივის ძირითადი თემები დაყენებულია"
+
+#: main.cpp:181
+#, kde-format
+msgid "Theme installed successfully."
+msgstr "თემა წარმატებით დადგა."
+
+#: main.cpp:227
+#, kde-format
+msgid "Installing icon themes…"
+msgstr "ხატულის თემების დაყენება…"
+
+#: main.cpp:239
+#, kde-format
+msgid "Installing %1 theme…"
+msgstr "თემის დაყენება: %1 …"
+
+#: ui/main.qml:67
+#, kde-format
+msgid "Install from File…"
+msgstr "ფაილიდან დაყენება…"
+
+#: ui/main.qml:72
+#, kde-format
+msgid "Get New…"
+msgstr "ახლის მიღება…"
+
+#: ui/main.qml:189
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove icon theme"
+msgstr "ხატულების თემის წაშლა"
+
+#: ui/main.qml:191
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Cannot delete the active icon theme"
+msgstr "აქტიური ხატულების თემის წაშლა შეუძლებელია"
+
+#: ui/main.qml:193
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Cannot delete system-installed icon themes"
+msgstr "სისტემასთან ერთად დაყენებული ხატულას თემების წაშლა შეუძლებელია"
+
+#: ui/main.qml:201
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Don’t delete this icon theme"
+msgstr "არ წაშალოთ ეს ხატულების თემა"
+
+#: ui/main.qml:250
+#, kde-format
+msgid "Open Theme"
+msgstr "თემის გახსნა"
+
+#: ui/main.qml:252
+#, kde-format
+msgid "Theme Files (*.tar.gz *.tar.bz2)"
+msgstr "თემის ფაილები (*.tar.gz *.tar.bz2)"

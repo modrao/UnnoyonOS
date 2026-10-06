@@ -1,0 +1,155 @@
+# Sanskrit translations for plasma-workspace package.
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the plasma-workspace package.
+# Kali <EMAIL@ADDRESS>, 2024.
+#
+# SPDX-FileCopyrightText: 2024 kali <skkalwar999@gmail.com>
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-workspace\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-09-22 00:47+0000\n"
+"PO-Revision-Date: 2024-12-20 12:26+0530\n"
+"Last-Translator: kali <skkalwar999@gmail.com>\n"
+"Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
+"Language: sa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>2);\n"
+"X-Generator: Lokalize 24.08.2\n"
+
+#: contents/splash/Splash.qml:79
+#, kde-format
+msgctxt ""
+"This is the first text the user sees while starting in the splash screen, "
+"should be translated as something short, is a form that can be seen on a "
+"product. Plasma is the project name so shouldn't be translated."
+msgid "Plasma made by KDE"
+msgstr "केडीई द्वारा निर्मित प्लाज्मा"
+
+#~ msgid "Installing software updates and restarting in 1 second"
+#~ msgid_plural "Installing software updates and restarting in %1 seconds"
+#~ msgstr[0] "सॉफ्टवेयर अपडेट् संस्थाप्य १ सेकेण्ड् मध्ये पुनः आरम्भः"
+#~ msgstr[1] "सॉफ्टवेयर अपडेट् संस्थाप्य %1 सेकेण्ड् मध्ये पुनः आरभ्यते"
+
+#~ msgid "Restarting in 1 second"
+#~ msgid_plural "Restarting in %1 seconds"
+#~ msgstr[0] "१ सेकेण्ड् मध्ये पुनः आरभ्यते"
+#~ msgstr[1] "%1 सेकेण्ड् मध्ये पुनः आरभ्यते"
+
+#~ msgid "Logging out in 1 second"
+#~ msgid_plural "Logging out in %1 seconds"
+#~ msgstr[0] "१ सेकेण्ड् मध्ये लॉग आउट् करणम्"
+#~ msgstr[1] "%1 सेकेण्ड् मध्ये लॉग आउट् करणम्"
+
+#~ msgid "Installing software updates and shutting down in 1 second"
+#~ msgid_plural "Installing software updates and shutting down in %1 seconds"
+#~ msgstr[0] "सॉफ्टवेयर अपडेट् संस्थाप्य 1 सेकेण्ड् मध्ये निष्क्रियं करणम्"
+#~ msgstr[1] "सॉफ्टवेयर अपडेट् संस्थाप्य %1 सेकेण्ड् मध्ये निष्क्रियं करणम्"
+
+#~ msgid "Shutting down in 1 second"
+#~ msgid_plural "Shutting down in %1 seconds"
+#~ msgstr[0] "१ सेकेण्ड् मध्ये निरुद्धं भवति"
+#~ msgstr[1] "%1 सेकेण्ड् मध्ये निष्क्रियं भवति"
+
+#~ msgid ""
+#~ "One other user is currently logged in. If the computer is shut down or "
+#~ "restarted, that user may lose work."
+#~ msgid_plural ""
+#~ "%1 other users are currently logged in. If the computer is shut down or "
+#~ "restarted, those users may lose work."
+#~ msgstr[0] ""
+#~ "अन्यः एकः उपयोक्ता सम्प्रति प्रवेशितः अस्ति यदि सङ्गणकः निरुद्धः अथवा पुनः आरब्धः "
+#~ "अस्ति तर्हि सः उपयोक्ता कार्यं नष्टं कर्तुं शक्नोति ।"
+#~ msgstr[1] ""
+#~ "%1 अन्ये उपयोक्तारः सम्प्रति प्रवेशं कृतवन्तः यदि सङ्गणकं निरुद्धं वा पुनः आरब्धं वा तर्हि ते "
+#~ "उपयोक्तारः कार्यं नष्टुं शक्नुवन्ति ।"
+
+#, fuzzy
+#~| msgid "When restarted, the computer will enter the firmware setup screen."
+#~ msgid "When restarted, the computer will enter UEFI firmware settings."
+#~ msgstr "पुनः आरभ्यते सति सङ्गणकः फर्मवेयर सेटअप स्क्रीन् मध्ये प्रविशति ।"
+
+#~ msgid "When restarted, the computer will enter the firmware setup screen."
+#~ msgstr "पुनः आरभ्यते सति सङ्गणकः फर्मवेयर सेटअप स्क्रीन् मध्ये प्रविशति ।"
+
+#~ msgid "When restarted, the computer will enter the boot loader menu."
+#~ msgstr "पुनः आरभ्यते सति सङ्गणकः बूट् लोडर् मेन्यू मध्ये प्रविशति ।"
+
+#, fuzzy
+#~| msgid "When restarted, the computer will enter the boot loader menu."
+#~ msgctxt "%1 is a boot loader entry"
+#~ msgid "When restarted, the computer will switch to %1."
+#~ msgstr "पुनः आरभ्यते सति सङ्गणकः बूट् लोडर् मेन्यू मध्ये प्रविशति ।"
+
+#, fuzzy
+#~| msgctxt "Suspend to RAM"
+#~| msgid "Sleep"
+#~ msgctxt "Suspend to RAM"
+#~ msgid "Slee&p"
+#~ msgstr "शयनं करोतु"
+
+#, fuzzy
+#~| msgctxt "Suspend to RAM"
+#~| msgid "Sleep Now"
+#~ msgctxt "Suspend to RAM"
+#~ msgid "Slee&p Now"
+#~ msgstr "अधुना निद्रातु"
+
+#, fuzzy
+#~| msgid "Hibernate"
+#~ msgid "&Hibernate"
+#~ msgstr "शीतनिद्रा"
+
+#, fuzzy
+#~| msgid "Hibernate Now"
+#~ msgid "&Hibernate Now"
+#~ msgstr "अधुना हाइबरनेटं कुर्वन्तु"
+
+#~ msgctxt "@action:button Keep short"
+#~ msgid "Install Updates and Restart"
+#~ msgstr "Updates संस्थाप्य पुनः आरम्भं कुर्वन्तु"
+
+#, fuzzy
+#~| msgid "Restart"
+#~ msgid "&Restart"
+#~ msgstr "पुनः आरभत"
+
+#, fuzzy
+#~| msgid "Restart Now"
+#~ msgid "&Restart Now"
+#~ msgstr "अधुना पुनः आरभत"
+
+#~ msgctxt "@action:button Keep short"
+#~ msgid "Install Updates and Shut Down"
+#~ msgstr "Updates संस्थाप्य Shut Down कुर्वन्तु"
+
+#, fuzzy
+#~| msgid "Shut Down"
+#~ msgid "&Shut Down"
+#~ msgstr "शट डाउन"
+
+#, fuzzy
+#~| msgid "Shut Down Now"
+#~ msgid "&Shut Down Now"
+#~ msgstr "अधुना निरुद्धं कुरुत"
+
+#, fuzzy
+#~| msgid "Log Out"
+#~ msgid "&Log Out"
+#~ msgstr "Log Out इति"
+
+#, fuzzy
+#~| msgid "Log Out Now"
+#~ msgid "&Log Out Now"
+#~ msgstr "अधुना लॉग आउट् कुर्वन्तु"
+
+#, fuzzy
+#~| msgid "Cancel"
+#~ msgid "&Cancel"
+#~ msgstr "निरसयतु"
+
+#~ msgctxt "Percentage value"
+#~ msgid "%1%"
+#~ msgstr "%1%"

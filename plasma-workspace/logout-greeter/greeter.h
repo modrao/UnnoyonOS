@@ -1,0 +1,51 @@
+/*
+    ksmserver - the KDE session management server
+
+    SPDX-FileCopyrightText: 2016 Martin Graesslin <mgraesslin@kde.org>
+    SPDX-FileCopyrightText: 2018 David Edmundson <davidedmundson@kde.org>
+
+    SPDX-License-Identifier: MIT
+*/
+
+#pragma once
+
+#include <QList>
+#include <QObject>
+#include <QQmlEngine>
+
+#include "shutdowndlg.h"
+
+#include <KPackage/Package>
+
+class QScreen;
+
+class Greeter : public QObject
+{
+    Q_OBJECT
+public:
+    Greeter(const KPackage::Package &package);
+    ~Greeter() override;
+
+    void init();
+    void enableWindowed();
+
+    bool eventFilter(QObject *watched, QEvent *event) override;
+
+public Q_SLOTS:
+    void promptLogout();
+    void promptShutDown();
+    void promptReboot();
+    void promptAll();
+
+private:
+    void quit();
+    void adoptScreen(QScreen *screen);
+
+    bool m_running = false;
+
+    ShutdownType m_shutdownType = ShutdownTypeHalt;
+    QList<KSMShutdownDlg *> m_dialogs;
+    bool m_windowed = false;
+    const KPackage::Package m_package;
+    std::shared_ptr<QQmlEngine> m_engine;
+};

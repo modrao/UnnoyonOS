@@ -1,0 +1,448 @@
+# Uyghur translation for plasmashell.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the plasma-workspace package.
+# Abduqadir Abliz <sahranbay@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-workspace\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-09-18 00:47+0000\n"
+"PO-Revision-Date: 2026-09-24 20:39-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
+"Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
+"Language: ug\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.9\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ئابدۇقادىر ئابلىز، غەيرەت كەنجى"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sahranbay@gmail.com, gheyret@gmail.com"
+
+#: currentcontainmentactionsmodel.cpp:201
+#, kde-format
+msgid "Configure Mouse Actions Plugin"
+msgstr "چاشقىنەك مەشغۇلات قىستۇرمىسىنى سەپلە"
+
+#: desktopview.cpp:206
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma 6.0 Dev"
+msgstr "KDE Plasma 6.0 ئىجادىيەت نەشرى"
+
+#: desktopview.cpp:209
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma 6.0 Alpha"
+msgstr "KDE Plasma 6.0 ئالفا سىناق نەشرى"
+
+#: desktopview.cpp:212
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma 6.0 Beta 1"
+msgstr "KDE Plasma 6.0 بېتا سىناق نەشرى 1"
+
+#: desktopview.cpp:215
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma 6.0 Beta 2"
+msgstr "KDE Plasma 6.0 بېتا سىناق نەشرى 2"
+
+#: desktopview.cpp:218
+#, kde-format
+msgctxt "@label %1 is the Plasma version, RC meaning Release Candidate"
+msgid "KDE Plasma 6.0 RC1"
+msgstr "KDE Plasma 6.0 كاندىدات تارقىتىش نەشرى 1"
+
+#: desktopview.cpp:221
+#, kde-format
+msgctxt "@label %1 is the Plasma version, RC meaning Release Candidate"
+msgid "KDE Plasma 6.0 RC2"
+msgstr "KDE Plasma 6.0 كاندىدات تارقىتىش نەشرى 2"
+
+#: desktopview.cpp:247
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma %1 Dev"
+msgstr "KDE Plasma ‏‎%1‎‏ ئىجادىيەت نەشرى"
+
+#: desktopview.cpp:251
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma %1 Beta"
+msgstr "KDE Plasma %1 بېتا سىناق نەشرى‎‏"
+
+#: desktopview.cpp:254
+#, kde-format
+msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
+msgid "KDE Plasma %1 Beta %2"
+msgstr "KDE Plasma %1 بېتا سىناق نەشرى‎‏ %2"
+
+#: desktopview.cpp:258
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma %1"
+msgstr "KDE Plasma %1"
+
+#: desktopview.cpp:264
+#, kde-format
+msgctxt "@info:usagetip"
+msgid "Visit bugs.kde.org to report issues"
+msgstr "bugs.kde.org زىيارەت قىلىپ مەسىلىنى مەلۇم قىلىڭ"
+
+#: desktopview.cpp:272
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Plasma Version"
+msgstr "Plasma نەشرىنى كۆچۈر"
+
+#: desktopview.cpp:278
+#, kde-format
+msgctxt "@action:button"
+msgid "Report a Bug…"
+msgstr "كەمتۈك مەلۇم قىل…"
+
+#: desktopview.cpp:288
+#, kde-format
+msgctxt "@title:menu"
+msgid "Hide Preview Banner"
+msgstr "ئالدىن كۆزىتىش لەۋھەسىنى يوشۇر"
+
+#: desktopview.cpp:290
+#, kde-format
+msgctxt "@action:button Hide the preview banner until the system is restarted"
+msgid "Hide Until Restart"
+msgstr "قايتا قوزغىتىلغۇچە يوشۇر"
+
+#: desktopview.cpp:297
+#, kde-format
+msgctxt "@action:button Hide the preview banner permanently"
+msgid "Hide Permanently…"
+msgstr "مەڭگۈلۈك يوشۇر…"
+
+#: desktopview.cpp:303
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Are you sure you want to permanently hide the preview banner?<nl/><nl/>This "
+"action can only be undone by removing the line beginning with "
+"<icode>ShowDesktopPreviewBanner</icode> in the <filename>kdeglobals</"
+"filename> config file."
+msgstr ""
+"ئالدىن كۆزىتىش لەۋھەسىنى راستتىنلا مەڭگۈلۈك يوشۇرامسىز؟<nl/><nl/>بۇ "
+"مەشغۇلاتتىن يېنىۋېلىشتا چوقۇم <filename>kdeglobals</filename> سەپلىمە "
+"ھۆججەتتىكى <icode>ShowDesktopPreviewBanner</icode> بىلەن باشلانغان بىر قۇرنى "
+"ئۆچۈرۈش كېرەك."
+
+#: desktopview.cpp:305
+#, kde-format
+msgctxt "@title:window"
+msgid "Hide Preview Banner?"
+msgstr "ئالدىن كۆزىتىش لەۋھەسىنى يوشۇرامدۇ؟"
+
+#: desktopview.cpp:520 desktopview.cpp:536
+#, kde-format
+msgid "Enter Edit Mode"
+msgstr "تەھرىرلەش ھالىتىگە كىرىدۇ"
+
+#: desktopview.cpp:534
+#, kde-format
+msgid "Exit Edit Mode"
+msgstr "تەھرىرلەش ھالىتىدىن چېكىنىدۇ"
+
+#: main.cpp:126
+#, kde-format
+msgid "Plasma Shell"
+msgstr "Plasma Shell"
+
+#: main.cpp:139
+#, kde-format
+msgid "Enable QML Javascript debugger"
+msgstr "QML Javascript سازلىغۇچنى قوزغات"
+
+#: main.cpp:142
+#, kde-format
+msgid "Do not restart plasma-shell automatically after a crash"
+msgstr "يىمىرىلگەندىن كېيىن plasma-shell نى ئۆزلۈكىدىن قوزغاتما"
+
+#: main.cpp:145
+#, kde-format
+msgid "Force loading the given shell plugin"
+msgstr "بېرىلگەن shell قىستۇرمىنى مەجبۇرىي يۈكلەيدۇ"
+
+#: main.cpp:149
+#, kde-format
+msgid "Replace an existing instance"
+msgstr "مەۋجۇت ئۈلگىنى ئالماشتۇر"
+
+#: main.cpp:152
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr ""
+"ئىشلەتكۈچى قايتۇرما ئىنكاسىنىڭ ئىشلەتكىلى بولىدىغان تاللانما تىزىمىنى "
+"كۆرسىتىدۇ"
+
+#: main.cpp:208
+#, kde-format
+msgid "Plasma Failed To Start"
+msgstr "Plasma قوزغىلالمىدى"
+
+#: main.cpp:209
+#, kde-format
+msgid ""
+"Plasma is unable to start as it could not correctly use OpenGL 2 or software "
+"fallback\n"
+"Please check that your graphic drivers are set up correctly."
+msgstr ""
+"Plasma قوزغىلالمىدى چۈنكى OpenGL 2 ياكى زاپاس يۇمشاق دېتال شەكىللەندۈرگۈچنى "
+"ئادەتتىكىدەك ئىشلىتەلمىدى.\n"
+"گىرافىكىلىق قوزغاتقۇنىڭ توغرا تەڭشەلگەنلىكىنى تەكشۈرۈڭ."
+
+#: osd.cpp:70
+#, kde-format
+msgctxt "Brightness OSD: display name and brightness percentage"
+msgid "%1: %2%"
+msgstr "%1: %2%"
+
+#: osd.cpp:98
+#, kde-format
+msgctxt "OSD informing that the system is muted, keep short"
+msgid "Audio Muted"
+msgstr "ئاۋاز ئۈنسىزلەندى"
+
+#: osd.cpp:121
+#, kde-format
+msgctxt "OSD informing that the microphone is muted, keep short"
+msgid "Microphone Muted"
+msgstr "مىكروفون ئۈنسىز"
+
+#: osd.cpp:137
+#, kde-format
+msgctxt "OSD informing that some media app is muted, eg. Amarok Muted"
+msgid "%1 Muted"
+msgstr "%1  ئۈنسىزلەندى"
+
+#: osd.cpp:159
+#, kde-format
+msgctxt "touchpad was enabled, keep short"
+msgid "Touchpad On"
+msgstr "سەزگۈر تاختا ئوچۇق"
+
+#: osd.cpp:161
+#, kde-format
+msgctxt "touchpad was disabled, keep short"
+msgid "Touchpad Off"
+msgstr "سەزگۈر تاختا تاقاق"
+
+#: osd.cpp:168
+#, kde-format
+msgctxt "wireless lan was enabled, keep short"
+msgid "Wifi On"
+msgstr "Wifi ئوچۇق"
+
+#: osd.cpp:170
+#, kde-format
+msgctxt "wireless lan was disabled, keep short"
+msgid "Wifi Off"
+msgstr "Wifi تاقاق"
+
+#: osd.cpp:177
+#, kde-format
+msgctxt "Bluetooth was enabled, keep short"
+msgid "Bluetooth On"
+msgstr "كۆكچىش ئوچۇق"
+
+#: osd.cpp:179
+#, kde-format
+msgctxt "Bluetooth was disabled, keep short"
+msgid "Bluetooth Off"
+msgstr "كۆكچىش تاقاق"
+
+#: osd.cpp:186
+#, kde-format
+msgctxt "mobile internet was enabled, keep short"
+msgid "Mobile Internet On"
+msgstr "كۆچمە ئىنتېرنېت ئوچۇق"
+
+#: osd.cpp:188
+#, kde-format
+msgctxt "mobile internet was disabled, keep short"
+msgid "Mobile Internet Off"
+msgstr "كۆچمە ئىنتېرنېت تاقاق"
+
+#: osd.cpp:196
+#, kde-format
+msgctxt ""
+"on screen keyboard was enabled because physical keyboard got unplugged, keep "
+"short"
+msgid "On-Screen Keyboard Activated"
+msgstr "ئېكران ھەرپتاختا ئاكتىپلاندى"
+
+#: osd.cpp:199
+#, kde-format
+msgctxt ""
+"on screen keyboard was disabled because physical keyboard was plugged in, "
+"keep short"
+msgid "On-Screen Keyboard Deactivated"
+msgstr "ئېكران ھەرپتاختا تاقاق"
+
+#: osd.cpp:206
+#, kde-format
+msgctxt "power management was inhibited, keep short"
+msgid "Sleep and Screen Locking Blocked"
+msgstr "ئۇيقۇ ۋە ئېكران قۇلۇپلاش توسۇلدى"
+
+#: osd.cpp:208
+#, kde-format
+msgctxt "power management was uninhibited, keep short"
+msgid "Sleep and Screen Locking Unblocked"
+msgstr "ئۇيقۇ ۋە ئېكران قۇلۇپلاش توسۇلمىدى"
+
+#: osd.cpp:218
+#, kde-format
+msgctxt "Power profile was changed to power save mode, keep short"
+msgid "Power Save Mode"
+msgstr "توك تېجەش ھالىتى"
+
+#: osd.cpp:221
+#, kde-format
+msgctxt "Power profile was changed to balanced mode, keep short"
+msgid "Balanced Power Mode"
+msgstr "تەڭپۇڭ توك ھالىتى"
+
+#: osd.cpp:224
+#, kde-format
+msgctxt "Power profile was changed to performance mode, keep short"
+msgid "Performance Mode"
+msgstr "ئۈنۈم ھالىتى"
+
+#: panelview.cpp:1066
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Hide Panel Configuration"
+msgstr "كۆزنەكچە سەپلىمىسىنى يوشۇر"
+
+#: panelview.cpp:1068
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Show Panel Configuration"
+msgstr "كۆزنەكچە سەپلىمىسىنى كۆرسەت"
+
+#: qml/OsdItem.qml:34
+#, kde-format
+msgctxt "Percentage value"
+msgid "%1%"
+msgstr "%1%"
+
+#: shellcontainmentconfig.cpp:109
+#, kde-format
+msgid "Built-in Screen"
+msgstr "ئىچكى ئېكران"
+
+#: shellcontainmentconfig.cpp:138
+#, kde-format
+msgid "Disconnected Screen %1"
+msgstr "ئۈزۈلگەن ئېكران %1"
+
+#: shellcorona.cpp:174 shellcorona.cpp:176
+#, kde-format
+msgid "Show Desktop"
+msgstr "ئۈستەلئۈستىنى كۆرسەت"
+
+#: shellcorona.cpp:176
+#, kde-format
+msgid "Hide Desktop"
+msgstr "ئۈستەلئۈستىنى يوشۇر"
+
+#: shellcorona.cpp:192
+#, kde-format
+msgid "Activate Application Launcher"
+msgstr "پىروگرامما قوزغاتقۇچنى ئاكتىپلا"
+
+#: shellcorona.cpp:200
+#, kde-format
+msgid "Show Activity Switcher"
+msgstr "پائالىيەت ئالماشتۇرغۇچنى كۆرسەت"
+
+#: shellcorona.cpp:209
+#, kde-format
+msgid "Switch to Previous Activity"
+msgstr "ئالدىنقى پائالىيەتكە ئالماشتۇر"
+
+#: shellcorona.cpp:217
+#, kde-format
+msgid "Switch to Next Activity"
+msgstr "كېيىنكى پائالىيەتكە ئالماشتۇر"
+
+#: shellcorona.cpp:248
+#, kde-format
+msgctxt "@action:button"
+msgid "Manage Desktops and Panels…"
+msgstr "ئۈستەلئۈستى ۋە كۆزنەكچە باشقۇر…"
+
+#: shellcorona.cpp:270
+#, kde-format
+msgid "Move keyboard focus between panels"
+msgstr "ھەرپتاختا فوكۇسىنى كۆزنەكچە ئارىسىدا يۆتكە"
+
+#: shellcorona.cpp:2282
+#, kde-format
+msgid "Add Panel"
+msgstr "كۆزنەكچە قوش"
+
+#: shellcorona.cpp:2369
+#, kde-format
+msgctxt "Creates an empty containment (%1 is the containment name)"
+msgid "Empty %1"
+msgstr "بوش %1"
+
+#: softwarerendernotifier.cpp:34
+#, kde-format
+msgid "Software Renderer In Use"
+msgstr "يۇمشاق دېتال شەكىللەندۈرگۈچ ئىشلىتىلىۋاتىدۇ"
+
+#: softwarerendernotifier.cpp:35
+#, kde-format
+msgctxt "Tooltip telling user their GL drivers are broken"
+msgid "Software Renderer In Use"
+msgstr "يۇمشاق دېتال شەكىللەندۈرگۈچ ئىشلىتىلىۋاتىدۇ"
+
+#: softwarerendernotifier.cpp:36
+#, kde-format
+msgctxt "Tooltip telling user their GL drivers are broken"
+msgid "Rendering may be degraded"
+msgstr "شەكىللەندۈرۈش سۈپىتى تۆۋەنلىشى مۇمكىن"
+
+#: softwarerendernotifier.cpp:46
+#, kde-format
+msgid "Never show again"
+msgstr "ھەرگىز قايتا كۆرسەتمە"
+
+#: userfeedback.cpp:36
+#, kde-format
+msgid "Panel Count"
+msgstr "كۆزنەكچە سانى"
+
+#: userfeedback.cpp:40
+#, kde-format
+msgid "Counts the panels"
+msgstr "كۆزنەكچىنى سانايدۇ"
+
+#~ msgid "Internal Screen on %1"
+#~ msgstr "%1 دىكى ئىچكى ئېكران"
+
+#~ msgctxt "Screen manufacturer and model on connector"
+#~ msgid "%1 %2 on %3"
+#~ msgstr "%3 دىكى %1 %2"
+
+#~ msgid "Activate Task Manager Entry %1"
+#~ msgstr "ۋەزىپە باشقۇرغۇچ تۈرى %1 نى ئاكتىپلا"

@@ -1,0 +1,62 @@
+# Copyright (C) 2026 This file is copyright:
+# This file is distributed under the same license as the plasma-workspace package.
+#
+# SPDX-FileCopyrightText: 2024, 2026 Sveinn í Felli <sv1@fellsnet.is>
+msgid ""
+msgstr ""
+"Project-Id-Version: plasma-workspace\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-10-01 17:43+0000\n"
+"PO-Revision-Date: 2026-06-24 11:18+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic\n"
+"Language: is\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#: main.cpp:60 plasmawindowedcorona.cpp:106
+#, kde-format
+msgid "Plasma Windowed"
+msgstr "Plasma í gluggum"
+
+#: main.cpp:62
+#, kde-format
+msgid "Enable QML Javascript debugger"
+msgstr "Virkja QML Javascript-aflúsara"
+
+#: main.cpp:65 plasmawindowedcorona.cpp:108
+#, kde-format
+msgid ""
+"Makes the plasmoid stay alive in the Notification Area, even when the window "
+"is closed."
+msgstr ""
+"Lætur plasmíðið haldast lifandi á tilkynningasvæðinu, jafnvel þótt glugganum "
+"sé lokað."
+
+#: main.cpp:67
+#, kde-format
+msgid "Force loading the given shell plugin"
+msgstr "Þvinga keyrslu á tiltekinni skeljaviðbót"
+
+#: main.cpp:71 plasmawindowedcorona.cpp:109
+#, kde-format
+msgid "The applet to open."
+msgstr "Smáforritið sem á að opna."
+
+#: main.cpp:72 plasmawindowedcorona.cpp:110
+#, kde-format
+msgid "Arguments to pass to the plasmoid."
+msgstr "Breytur sem á að koma til plasmíðsins."
+
+#: main.cpp:73
+#, kde-format
+msgid "Internal, for testing"
+msgstr "Innbyggt, til prófana"
+
+#: plasmawindowedview.cpp:127
+#, kde-format
+msgid "Close %1"
+msgstr "Loka %1"

@@ -1,0 +1,11 @@
+task-kde-desktop
+sudo
+network-manager
+network-manager-applet
+konsole
+dolphin
+firefox-esr
+locales
+fonts-noto-core
+plymouth
+plymouth-label

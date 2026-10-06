@@ -1,0 +1,116 @@
+/*
+    KCMStyle
+    SPDX-FileCopyrightText: 2000 TrollTech AS.
+    SPDX-FileCopyrightText: 2002 Karol Szwed <gallium@kde.org>
+    SPDX-FileCopyrightText: 2002 Daniel Molkentin <molkentin@kde.org>
+    SPDX-FileCopyrightText: 2007 Urs Wolfer <uwolfer @ kde.org>
+    SPDX-FileCopyrightText: 2019 Kai Uwe Broulik <kde@broulik.de>
+    SPDX-FileCopyrightText: 2019 Cyril Rossi <cyril.rossi@enioka.com>
+
+
+    Based on kcmdisplay
+    SPDX-FileCopyrightText: 1997-2002 kcmdisplay Authors.
+
+    SPDX-License-Identifier: GPL-2.0-only
+*/
+
+#pragma once
+
+#include <QPointer>
+
+#include <KQuickManagedConfigModule>
+
+#include "gtkpage.h"
+#include "stylesettings.h"
+#include "stylesmodel.h"
+#include "unionstylesmodel.h"
+
+class QQuickItem;
+
+class StyleData;
+class StyleConfigDialog;
+
+class KCMStyle : public KQuickManagedConfigModule
+{
+    Q_OBJECT
+
+    Q_PROPERTY(GtkPage *gtkPage READ gtkPage CONSTANT)
+    Q_PROPERTY(QAbstractItemModel *model READ model CONSTANT)
+    Q_PROPERTY(StyleSettings *styleSettings READ styleSettings CONSTANT)
+    Q_PROPERTY(ToolBarStyle mainToolBarStyle READ mainToolBarStyle WRITE setMainToolBarStyle NOTIFY mainToolBarStyleChanged)
+    Q_PROPERTY(ToolBarStyle otherToolBarStyle READ otherToolBarStyle WRITE setOtherToolBarStyle NOTIFY otherToolBarStyleChanged)
+    Q_PROPERTY(bool gtkConfigKdedModuleLoaded READ gtkConfigKdedModuleLoaded NOTIFY gtkConfigKdedModuleLoadedChanged)
+    Q_PROPERTY(QStringList stylesToUninstall READ stylesToUninstall WRITE setStylesToUninstall NOTIFY stylesToUninstallChanged)
+
+public:
+    KCMStyle(QObject *parent, const KPluginMetaData &data);
+    ~KCMStyle() override;
+
+    enum ToolBarStyle {
+        NoText,
+        TextOnly,
+        TextBesideIcon,
+        TextUnderIcon,
+    };
+    Q_ENUM(ToolBarStyle)
+
+    GtkPage *gtkPage() const;
+
+    QAbstractItemModel *model() const;
+
+    StyleSettings *styleSettings() const;
+
+    Q_INVOKABLE void installUnionStyle(const QUrl &url);
+    Q_INVOKABLE void uninstallUnionStyles(const QStringList &styleIds);
+
+    ToolBarStyle mainToolBarStyle() const;
+    void setMainToolBarStyle(ToolBarStyle style);
+    Q_SIGNAL void mainToolBarStyleChanged();
+
+    ToolBarStyle otherToolBarStyle() const;
+    void setOtherToolBarStyle(ToolBarStyle style);
+    Q_SIGNAL void otherToolBarStyleChanged();
+
+    bool gtkConfigKdedModuleLoaded() const;
+    Q_SIGNAL void gtkConfigKdedModuleLoadedChanged();
+
+    QStringList stylesToUninstall() const;
+    void setStylesToUninstall(const QStringList &newStylesToUninstall);
+    Q_SIGNAL void stylesToUninstallChanged();
+
+    Q_INVOKABLE void configure(const QString &title, const QString &styleName, QQuickItem *ctx = nullptr);
+
+    void load() override;
+    void save() override;
+    void defaults() override;
+
+    bool isDefaults() const override;
+    bool isSaveNeeded() const override;
+
+Q_SIGNALS:
+    void showInfoMessage(const QString &message);
+    void showErrorMessage(const QString &message);
+    void styleReconfigured(const QString &styleName);
+
+private:
+    void loadSettingsToModel();
+    void checkGtkConfigKdedModuleLoaded();
+
+    StyleData *const m_data;
+    QSortFilterProxyModel *m_sortFilterModel = nullptr;
+    StylesModel *m_stylesModel = nullptr;
+    UnionStylesModel *m_unionStylesModel = nullptr;
+
+    QString m_previousStyle;
+    bool m_effectsDirty = false;
+
+    ToolBarStyle m_mainToolBarStyle = NoText;
+    ToolBarStyle m_otherToolBarStyle = NoText;
+
+    QPointer<StyleConfigDialog> m_styleConfigDialog;
+
+    bool m_gtkConfigKdedModuleLoaded = false;
+    GtkPage *m_gtkPage = nullptr;
+
+    QStringList m_stylesToUninstall;
+};

@@ -1,0 +1,13 @@
+[SddmGreeterTheme]
+Name=UnnoyonOS
+Description=UnnoyonOS Login Theme
+Author=UnnoyonOS Project
+License=LGPL-2.1+
+Type=sddm-theme
+Version=0.1.0
+Screenshot=preview.png
+MainScript=Main.qml
+ConfigFile=theme.conf
+Theme-Id=UnnoyonOS
+Theme-API=2.0
+QtVersion=6

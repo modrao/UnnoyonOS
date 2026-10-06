@@ -1,0 +1,18 @@
+logo = Image("logo.svg");
+
+screen_width = Window.GetWidth();
+screen_height = Window.GetHeight();
+
+logo_width = screen_width * 0.12;
+logo_height = logo_width * logo.GetHeight() / logo.GetWidth();
+
+logo = logo.Scale(logo_width, logo_height);
+
+logo_x = (screen_width - logo.GetWidth()) / 2;
+logo_y = (screen_height - logo.GetHeight()) / 2;
+
+logo_sprite = Sprite(logo);
+logo_sprite.SetPosition(logo_x, logo_y, 100);
+
+Window.SetBackgroundTopColor(0.035, 0.035, 0.035);
+Window.SetBackgroundBottomColor(0.035, 0.035, 0.035);

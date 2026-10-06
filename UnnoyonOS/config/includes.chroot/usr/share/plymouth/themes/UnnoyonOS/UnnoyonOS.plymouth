@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=UnnoyonOS
+Description=UnnoyonOS Boot Splash
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/UnnoyonOS
+ScriptFile=/usr/share/plymouth/themes/UnnoyonOS/UnnoyonOS.script

@@ -1,0 +1,515 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&klipper;">
+  <!ENTITY package "kdebase">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Dutch "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<book id="klipper" lang="&language;">
+<bookinfo>
+<title
+>Het handboek van &klipper; </title>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>2026-09-09</date>
+<releaseinfo
+>Plasma 6.8</releaseinfo>
+
+<abstract>
+<para
+>&klipper; is de &plasma; klembordtoepassing voor het kopiëren en plakken.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Klipper</keyword>
+<keyword
+>kdebase</keyword>
+<keyword
+>klembord</keyword>
+</keywordset>
+</bookinfo>
+<chapter id="introduction">
+<title
+>Inleiding</title>
+<para
+>&klipper; is de &plasma; klembordtoepassing. Het bewaart de geschiedenis van het klembord en geeft de mogelijkheid om de klembordinhoud te koppelen aan acties. Fouten of verzoeken kunt u rapporteren aan <ulink url="http://bugs.kde.org"
+>Bug-volgsysteem van KDE</ulink
+>.</para>
+</chapter>
+
+<chapter id="using-klipper">
+<title
+>&klipper; gebruiken</title>
+
+<sect1 id="basic-usage">
+<title
+>Basishandelingen</title>
+<para
+>U kunt &klipper; in het systeemvak gebruiken ofwel als &plasma;-widget of als klassieke toepassing. Beiden delen dezelfde functionaliteit maar hebben een verschillende &GUI; en tonen het laatste item van de geschiedenis bij zweven boven het &klipper;-pictogram in het systeemvak: </para>
+
+<screenshot>
+<screeninfo
+>Het &klipper;-pictogram.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screenshot.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Het &klipper;-pictogram</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Om de geschiedenis in het klembord te tonen, klik op het &klipper;-pictogram in het systeemvak.</para>
+
+<sect2 id="klipper-widget">
+<title
+>&klipper;-Widget</title>
+<screenshot>
+<screeninfo
+>Het &klipper;-widget.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="klipper-widget.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>Het &klipper;-widget</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<!-- TODO: Document starred functionality -->
+<para
+>Zweef boven een item met de muisaanwijzer en er verschijnen vier pictogrammen die u in staat stellen om een actie te starten, de barcode te tonen, de inhoud te bewerken of het item uit de geschiedenis te verwijderen. Gebruik &spectacle; om de barcodes op te nemen en ze te slaan. </para>
+
+<para
+>U kunt door de klembordgeschiedenis zoeken door opzoekvraag in het zoekveld te typen. De resultaten worden bijgewerkt terwijl u typt. Om de klembordgeschiedenis te wissen drukt op het pictogram rechts van het zoekveld. </para>
+
+<para
+>De actie <guilabel
+>Klembord configureren...</guilabel
+> in het contextmenu opent de <link linkend="preferences"
+>instellingendialoog</link
+>. </para>
+
+</sect2>
+</sect1>
+
+<sect1 id="actions">
+<title
+>Acties</title>
+
+<para
+>&klipper; kan acties uitvoeren op de inhoud van het klembord, afhankelijk van de vraag of deze overeenkomt met een bepaalde reguliere expressie. Er is een ingebouwde actie die werkt met webadressen en bestanden. Hiermee kunt u een webadres dat begint met <quote
+>http://</quote
+> of <quote
+>https://</quote
+> doorgeven aan een webbrowser of een bestand — bijvoorbeeld een <acronym
+>PDF</acronym
+> — aan een compatibele toepassing zoals &okular;.</para>
+
+<para
+>U kunt uw eigen acties definiëren op de pagina <guilabel
+>Actieconfiguratie</guilabel
+> van het <link linkend="preferences"
+>instellingendialoogvenster</link
+>; hier kunt u ook de ingebouwde actie uitschakelen via de optie <guilabel
+>Toepassingen voorstellen voor gekopieerde koppelingen en bestanden</guilabel
+>. </para>
+
+<para
+>U kunt het bijbehorende actiemenu altijd openen via een knop naast het item in uw geschiedenis. U kunt er ook voor kiezen om het actiemenu automatisch te laten verschijnen zodra er iets op het klembord wordt geplaatst. Dit doet u door gebruik te maken van de sneltoets voor het <guilabel
+>Automatische pop-upactiemenu</guilabel
+> (in te stellen op de pagina <guilabel
+>Sneltoetsen</guilabel
+>) of door de optie <guilabel
+>Direct bij selectie</guilabel
+> aan te vinken onder <guilabel
+>Pop-upactiemenu tonen</guilabel
+> op de pagina <guilabel
+>Actiemenu</guilabel
+>. Op diezelfde pagina kunt u via de optie <guilabel
+>Tijd voor automatisch actiemenu</guilabel
+> ook instellen hoe lang het duurt voordat het automatische menu vanzelf sluit als u er geen actie op onderneemt.</para>
+
+<para
+>Klembordinhoud die voldoet aan een reguliere expressie, kunnen ook worden bewerkt voordat een actie wordt uitgevoerd. Selecteer <guimenuitem
+>Inhoud bewerken...</guimenuitem
+> rechts van het klembord-item u kunt de inhoud van het klembord-item aanpassen in de dialoog die verschijnt voordat u op de knop <guibutton
+>OK</guibutton
+> heeft geklikt om de gewenste actie uit te voeren.</para>
+
+<para
+>Als u een sneltoets instelt voor <guilabel
+>Actie handmatig uitvoeren op huidig ​​klembord</guilabel
+>, wordt bij het indrukken van deze sneltoets het bijbehorende pop-upmenu getoond.</para>
+
+</sect1>
+
+<sect1 id="clipboard-modes">
+<title
+>Klembord- &amp; selectiegedrag</title>
+
+<sect2 id="clipboard-modes-general">
+<title
+>Algemeen</title>
+<para
+>&klipper; can be used to set the behavior of the clipboard and selection in &plasma;. To adjust their behavior, see <xref linkend="general-page"/>. </para>
+
+<note
+><para
+>Er zijn twee verschillende klembordbuffers. De <quote
+>selectie</quote
+> en het <quote
+>klembord</quote
+>. Tekst wordt in het selectiebuffer geplaatst door tekst simpelweg te selecteren. U kunt deze tekst vervolgens plakken met uw middelste muisknop. Tekst wordt op het klembord geplaatst door de tekst te selecteren en vervolgens de toetscombinatie <keycombo
+>&Ctrl;<keycap
+>X</keycap
+></keycombo
+> of <keycombo
+>&Ctrl;<keycap
+>C</keycap
+></keycombo
+> te gebruiken. Tekst kan dan weer geplakt worden door de combinatie <keycombo
+>&Ctrl;<keycap
+>V</keycap
+></keycombo
+> of door uit het contextmenu te kiezen voor <guimenuitem
+>Plakken</guimenuitem
+>.</para>
+</note>
+</sect2>
+</sect1>
+</chapter>
+
+<chapter id="preferences">
+<title
+>&klipper; instellen</title>
+
+<sect1 id="general-page">
+<title
+>Algemene opties</title>
+<note
+><para
+>Options below distinguish between <emphasis
+>selection</emphasis
+> and <emphasis
+>clipboard</emphasis
+>. To understand the difference, see <xref linkend="clipboard-modes"/>. </para
+></note>
+
+
+<variablelist>
+
+<varlistentry
+><term
+><guilabel
+>Klembordgeschiedenis: Geschiedenis opslaan tussen bureaubladsessies</guilabel
+></term>
+<listitem
+><para
+>Schakelt in of uit of de klembordgeschiedenis behouden blijft wanneer u zich afmeldt of de computer afsluit.</para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Geschiedenisgrootte</guilabel
+></term>
+<listitem
+><para
+>Hiermee stelt u het aantal ingangen in die beschikbaar zijn in het klembordgeschiedenis. De waarde kan tussen 1 en 2048 liggen.</para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Selectie en klembord: behoud de selectie en het klembord</guilabel
+></term>
+<listitem
+><para
+>Wanneer deze optie is geactiveerd dan worden de selectie- en de klembordbuffer hetzelfde gehouden, zodat elke selectie of klembord onmiddellijk beschikbaar is om op elke manier te worden geplakt. Als het is uitgezet kan de selectie nog steeds worden opgeslagen in de klembordgeschiedenis (onderworpen aan de onderstaande opties), maar deze kan alleen geplakt worden met de middelste muisknop. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Opnemen in geschiedenis: tekst die met de aanwijzer of het toetsenbord is geselecteerd</guilabel
+></term>
+<listitem
+><para
+>Indien geactiveerd, wordt de selectie in de geschiedenis opgeslagen. Het klembord wordt altijd opgeslagen. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Opnemen in geschiedenis: Afbeeldingsgegevens expliciet gekopieerd</guilabel
+></term>
+<listitem
+><para
+>Indien geactiveerd, worden afbeeldingen die als gegevens zijn gekopieerd — bijvoorbeeld lagen en selecties die in een beeldbewerkingsprogramma zijn gekopieerd — opgeslagen in de klembordgeschiedenis. Afbeeldingsbestanden die vanuit een bestandsbeheerder worden gekopieerd, worden altijd opgeslagen. In de geschiedenis verschijnen ze als afbeeldingen, maar dit zijn slechts voorbeelden; in werkelijkheid gaat het om bestandsnamen. Ook schermafbeeldingen die door &spectacle; worden gemaakt, worden opgeslagen als dit daar zo is ingesteld. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+<sect1 id="action-menu-page">
+<title
+>Menu Actie</title>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Voor een item gekozen uit de geschiedenis</guilabel
+></term>
+<listitem
+><para
+>Indien geselecteerd zal wanner er een ingang uit de geschiedenis van &klipper; geselecteerd wordt, nogmaals het actie-venster getoond worden, indien van toepassing.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Automatisch actie-menu-tijd</guilabel
+></term>
+<listitem
+><para
+>Stel in hoe lang het duurt voordat het automatische menu vanzelf sluit als u er geen actie op onderneemt.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Witruimte trimmen</guilabel
+></term>
+<listitem
+><para
+>Indien geactiveerd zullen witruimtes (veroorzaakt door bijvoorbeeld spaties en tabs) aan het begin en het einde van de klembordinhoud verwijderd worden voordat de inhoud doorgegeven wordt aan een actie. De in de geschiedenis opgeslagen tekst is blijft hetzelfde.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+
+<sect1 id="actions-configuration-page">
+<title
+>Acties instellen</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Bied toepassingen aan voor gekopieerde koppelingen en bestanden</guilabel
+></term>
+<listitem
+><para
+>Bij selectie biedt het pop-upmenu toepassingen aan die een gekopieerd bestand kunnen openen of een gekopieerde koppeling die begint met <quote
+>http://</quote
+> of <quote
+>https://</quote
+>, zelfs als er geen bijbehorende actie van uw kant is.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Actielijst</term>
+<listitem
+><para
+>Op de pagina <guilabel
+>Acties</guilabel
+> kunt u dubbelklikken op een reguliere expressie of op een actie die u wilt bewerken of selecteer het en druk op de knop <guibutton
+> Actie bewerken</guibutton
+>. Vervolgens kunt u de tekst met de expressie bewerken.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Toevoegen van acties</term>
+<listitem
+><para
+>Klik op de knop <guibutton
+>Actie toevoegen...</guibutton
+> om een reguliere expressie toe te voegen die &klipper; overeen moet laten komen. &klipper; gebruikt <classname
+>QRegularExpression</classname
+> van &Qt; die PCRE (Perl Compatible Regular Expressions) gebruikt.</para>
+<para
+>U kunt een beschrijving van de reguliere expressie (bijvoorbeeld <quote
+>Internetadres</quote
+>) opgeven door met uw <mousebutton
+>linker</mousebutton
+>muisknop te klikken in de kolom <guilabel
+>Beschrijving</guilabel
+>.</para>
+
+<note
+><para
+>U kunt gedetailleerde informatie over het gebruik van <classname
+>QRegularExpression</classname
+> reguliere expressies vinden in <ulink url="https://doc.qt.io/qt-5/qregularexpression.html#details"
+>de de Qt upstream documentatie</ulink
+>.</para
+></note>
+
+<para
+>Hoe u de reguliere expressies kunt bewerken staat hierboven reeds vermeld. Om een uit te voeren commando toe te voegen klikt u op <guimenuitem
+>Commando toevoegen</guimenuitem
+> en bewerkt u het commando in een tekstvak. Dubbelklikken op een commando stelt u in staat deze te bewerken.</para>
+
+<para
+>De parameter <token
+>%s</token
+> wordt vervangen door de inhoud van het klembord. Als u bijvoorbeeld als commando <userinput
+><command
+>kwrite</command
+> <token
+>%s</token
+></userinput
+> opgeeft en de inhoud van het klembord is <filename
+>/home/toma/tekstbestand</filename
+>, dan zal uiteindelijk het commando <userinput
+><command
+>kwrite</command
+> <filename
+>/home/toma/tekstbestand</filename
+></userinput
+> worden uitgevoerd. Om het commando te gebruiken in een shell, dient u <token
+>%s</token
+> te 'escapen', gebruik dan dus <userinput
+>\%s</userinput
+>.</para>
+
+<para
+>Items <userinput
+><token
+>%0</token
+></userinput
+> tot <userinput
+><token
+>%9</token
+></userinput
+> zullen vervagen worden door de overeenkomstige gevangen teksten uit het overeenkomstpatroon. </para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="shortcuts-page">
+<title
+>Sneltoetsen-instellingen</title>
+
+<para
+>De pagina Sneltoetsen maakt het mogelijk om de sneltoetsen in te stellen die binnen &klipper; gebruikt worden. U kunt de sneltoetsen op drie manieren instellen:</para>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Geen</guilabel
+></term>
+<listitem
+><para
+>De geselecteerde actie kan niet via een sneltoets worden opgeroepen</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Standaard</guilabel
+></term>
+<listitem
+><para
+>De geselecteerde actie gebruikt de standaard toets van &klipper;. Dit zijn de sneltoetsen zoals zij in deze handleiding voorkomen.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Aangepast</guilabel
+></term>
+<listitem
+><para
+>De geselecteerde actie wordt toegekend aan een toets van uw keuze.</para>
+<para
+>Om een toets in te stellen voor de actie die u hebt geselecteerd, klikt u op <guilabel
+>Aangepast</guilabel
+> en dan <guilabel
+>Geen</guilabel
+>. Typ dan de gewenste toetscombinatie op uw toetsenbord zoals in elke &kde;-applicatie. </para
+> </listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>Als u een sneltoets definieert voor <guilabel
+>Open Klipper op de positie van de muis</guilabel
+> zal het indrukken van deze sneltoets het pop-upmenu op de positie van de muiscursor openen, in plaats van op de standaard positie (in het &plasma;-paneel. Dat is handig wanneer u de muis meer gebruikt dan het toetsenbord.</para>
+
+</sect1>
+</chapter>
+
+<chapter id="credits">
+<title
+>Dankbetuigingen en licentie</title>
+
+<para
+>&klipper; </para>
+<para
+>Programma copyright 1998 &Andrew.Stanley-Jones; <email
+>asj@cban.com</email
+> </para>
+<para
+>Programma copyright 1998-2000 &Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;</para>
+<para
+>Momenteel onderhouden door KDE- en Plasma-ontwikkelaars. </para>
+
+<para
+>Documentatie copyright 2000-2003, 2005 &Philip.Rodrigues; &Philip.Rodrigues.mail;</para>
+
+&meld.fouten;&vertaling.tom;&vertaling.sander; &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+sgml-indent-step: 0
+End:
+-->
+
+
+
+
+
+
+
+
+
+

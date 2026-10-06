@@ -1,0 +1,700 @@
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Danishka Navin <danishka@gmail.com>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmstyle\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-09-10 00:49+0000\n"
+"PO-Revision-Date: 2009-12-14 10:10+0530\n"
+"Last-Translator: Danishka Navin <danishka@gmail.com>\n"
+"Language-Team: Sinhala <danishka@gmail.com>\n"
+"Language: si\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 0.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: gtkpage.cpp:57
+#, kde-format
+msgid "%1 is not a valid GTK Theme archive."
+msgstr ""
+
+#: kcmstyle.cpp:117
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: Cannot install a style from a remote location."
+msgstr ""
+
+#: kcmstyle.cpp:123
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style file could not be read."
+msgstr ""
+
+#: kcmstyle.cpp:128
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style file does not contain any data."
+msgstr ""
+
+#: kcmstyle.cpp:134
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style file could not be unpacked."
+msgstr ""
+
+#: kcmstyle.cpp:144
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The style could not be found."
+msgstr ""
+
+#: kcmstyle.cpp:148
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The selected file is not a valid Union style."
+msgstr ""
+
+#: kcmstyle.cpp:151
+#, kde-format
+msgctxt "@info:status"
+msgid "Installation failed: The selected style is not supported."
+msgstr ""
+
+#: kcmstyle.cpp:165
+#, kde-format
+msgctxt "@info:status"
+msgid "Installing “%1” failed: The style is already installed."
+msgstr ""
+
+#: kcmstyle.cpp:170
+#, kde-format
+msgctxt "@info:status"
+msgid "Installing “%1” failed: Permission was denied."
+msgstr ""
+
+#: kcmstyle.cpp:174
+#, kde-format
+msgctxt "@info:status"
+msgid "Installing “%1” failed: %2"
+msgstr ""
+
+#: kcmstyle.cpp:179
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully installed “%1”."
+msgstr ""
+
+#: kcmstyle.cpp:192
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstall failed: The style with ID “%1” could not be found."
+msgstr ""
+
+#: kcmstyle.cpp:202
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: Permission was denied."
+msgstr ""
+
+#: kcmstyle.cpp:204
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: The style is not installed."
+msgstr ""
+
+#: kcmstyle.cpp:206
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: The style is in use."
+msgstr ""
+
+#: kcmstyle.cpp:208
+#, kde-format
+msgctxt "@info:status"
+msgid "Uninstalling “%1” failed: %2"
+msgstr ""
+
+#: kcmstyle.cpp:223
+#, kde-format
+msgctxt "@info:status"
+msgid "Could not uninstall styles:\n"
+msgstr ""
+
+#: kcmstyle.cpp:226
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled “%1” but could not uninstall others:\n"
+msgstr ""
+
+#: kcmstyle.cpp:229
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled %1 style but could not uninstall others:\n"
+msgid_plural ""
+"Successfully uninstalled %1 styles but could not uninstall others:\n"
+msgstr[0] ""
+msgstr[1] ""
+
+#: kcmstyle.cpp:240
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled “%1”."
+msgstr ""
+
+#: kcmstyle.cpp:242
+#, kde-format
+msgctxt "@info:status"
+msgid "Successfully uninstalled %1 style"
+msgid_plural "Successfully uninstalled %1 styles."
+msgstr[0] ""
+msgstr[1] ""
+
+#: kcmstyle.cpp:306 kcmstyle.cpp:313
+#, kde-format
+msgid "There was an error loading the configuration dialog for this style."
+msgstr "මෙම රටාව සඳහා සැකසුම් සංවාදය පූර්ණය කිරීමේ වරදක් හට ගැණිනි."
+
+#: kcmstyle.cpp:420
+#, kde-format
+msgid "Failed to apply selected style '%1'."
+msgstr ""
+
+#: styleconfdialog.cpp:21
+#, kde-format
+msgid "Configure %1"
+msgstr "%1 සකසන්න"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_1)
+#: stylepreview.ui:33
+#, kde-format
+msgid "Tab 1"
+msgstr "1 ටැබය"
+
+#. i18n: ectx: property (format), widget (QProgressBar, progressBar)
+#: stylepreview.ui:65
+#, no-c-format, kde-format
+msgid "%p%"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, pushButton)
+#: stylepreview.ui:85
+#, fuzzy, kde-format
+#| msgid "Button"
+msgid "Button"
+msgstr "බොත්තම"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox)
+#: stylepreview.ui:99
+#, fuzzy, kde-format
+#| msgid "Combobox"
+msgid "Combo box"
+msgstr "සංයුක්ත කොටුව"
+
+#. i18n: ectx: property (text), widget (QCheckBox, checkBox)
+#: stylepreview.ui:109
+#, kde-format
+msgid "Checkbox"
+msgstr "සලකුණු කොටුව"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton_2)
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton_1)
+#: stylepreview.ui:119 stylepreview.ui:129
+#, kde-format
+msgid "Radio button"
+msgstr "රේඩියෝ බොත්තම"
+
+#. i18n: ectx: property (placeholderText), widget (QLineEdit, lineEdit)
+#: stylepreview.ui:138
+#, fuzzy, kde-format
+#| msgid "Text Only"
+msgid "Text Field"
+msgstr "පෙළ පමණක්"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: stylepreview.ui:146
+#, kde-format
+msgid "Tab 2"
+msgstr "2 ටැබය"
+
+#. i18n: ectx: label, entry (widgetStyle), group (KDE)
+#: stylesettings.kcfg:9
+#, fuzzy, kde-format
+#| msgctxt "@title:tab"
+#| msgid "&Applications"
+msgid "Application style"
+msgstr "භාවිත යෙදවුම් (&A)"
+
+#. i18n: ectx: label, entry (unionStyle), group (KDE)
+#: stylesettings.kcfg:13
+#, kde-format
+msgid "Union Style ID"
+msgstr ""
+
+#. i18n: ectx: label, entry (iconsOnButtons), group (KDE)
+#: stylesettings.kcfg:17
+#, fuzzy, kde-format
+#| msgid "Show icons on buttons:"
+msgid "Show icons on buttons"
+msgstr "බොත්තම් මත අයිකන පෙන්වන්න"
+
+#. i18n: ectx: label, entry (iconsInMenus), group (KDE)
+#: stylesettings.kcfg:21
+#, fuzzy, kde-format
+#| msgid "Show icons on buttons:"
+msgid "Show icons in menus"
+msgstr "බොත්තම් මත අයිකන පෙන්වන්න"
+
+#. i18n: ectx: label, entry (toolButtonStyle), group (Toolbar style)
+#: stylesettings.kcfg:27
+#, fuzzy, kde-format
+#| msgid "Main tool bar text:"
+msgid "Main toolbar label"
+msgstr "ප්‍රධාන ටූල්බාර් පෙළ:"
+
+#. i18n: ectx: label, entry (toolButtonStyleOtherToolbars), group (Toolbar style)
+#: stylesettings.kcfg:31
+#, fuzzy, kde-format
+#| msgid "Secondary tool bar text:"
+msgid "Secondary toolbar label"
+msgstr "ද්විතීයක ටූල්බාර් පෙළ:"
+
+#: ui/EffectSettingsPopup.qml:19
+#, kde-format
+msgctxt "@title:window"
+msgid "Configure Icons and Toolbars"
+msgstr ""
+
+#: ui/EffectSettingsPopup.qml:36
+#, fuzzy, kde-format
+#| msgid "Show icons on buttons:"
+msgid "Show icons:"
+msgstr "බොත්තම් මත අයිකන පෙන්වන්න"
+
+#: ui/EffectSettingsPopup.qml:37
+#, fuzzy, kde-format
+#| msgid "Radio button"
+msgid "On buttons"
+msgstr "රේඩියෝ බොත්තම"
+
+#: ui/EffectSettingsPopup.qml:48
+#, kde-format
+msgid "In menus"
+msgstr ""
+
+#: ui/EffectSettingsPopup.qml:60
+#, fuzzy, kde-format
+#| msgid "Main tool bar text:"
+msgid "Main toolbar label:"
+msgstr "ප්‍රධාන ටූල්බාර් පෙළ:"
+
+#: ui/EffectSettingsPopup.qml:62
+#, kde-format
+msgid "None"
+msgstr ""
+
+#: ui/EffectSettingsPopup.qml:63
+#, fuzzy, kde-format
+#| msgid "Text Only"
+msgid "Text only"
+msgstr "පෙළ පමණක්"
+
+#: ui/EffectSettingsPopup.qml:64
+#, fuzzy, kde-format
+#| msgid "Text Beside Icons"
+msgid "Beside icons"
+msgstr "අයිකන වලට පිටත පෙළ"
+
+#: ui/EffectSettingsPopup.qml:65
+#, fuzzy, kde-format
+#| msgid "Text Below Icons"
+msgid "Below icon"
+msgstr "අයිකන වලට පහළින් පෙළ"
+
+#: ui/EffectSettingsPopup.qml:80
+#, fuzzy, kde-format
+#| msgid "Secondary tool bar text:"
+msgid "Secondary toolbar label:"
+msgstr "ද්විතීයක ටූල්බාර් පෙළ:"
+
+#: ui/GtkStylePage.qml:17
+#, fuzzy, kde-format
+#| msgctxt "@title:tab"
+#| msgid "&Applications"
+msgid "GNOME/GTK Application Style"
+msgstr "භාවිත යෙදවුම් (&A)"
+
+#: ui/GtkStylePage.qml:38
+#, kde-format
+msgctxt "@action:button"
+msgid "Install from File…"
+msgstr ""
+
+#: ui/GtkStylePage.qml:43
+#, kde-format
+msgctxt "@action:button"
+msgid "Get New…"
+msgstr ""
+
+#: ui/GtkStylePage.qml:60
+#, kde-format
+msgid "GTK theme:"
+msgstr ""
+
+#: ui/GtkStylePage.qml:85
+#, fuzzy, kde-format
+#| msgid "Preview"
+msgid "Preview…"
+msgstr "පෙරදැක්ම"
+
+#: ui/GtkStylePage.qml:104
+#, kde-format
+msgid "Select GTK Theme Archive"
+msgstr ""
+
+#: ui/GtkStylePage.qml:106
+#, kde-format
+msgid "GTK Theme Archive (*.tar.xz *.tar.gz *.tar.bz2)"
+msgstr ""
+
+#: ui/main.qml:85
+#, kde-format
+msgctxt "@action:button"
+msgid "Install From File…"
+msgstr ""
+
+#: ui/main.qml:90
+#, kde-format
+msgid "Configure Icons and Toolbars…"
+msgstr ""
+
+#: ui/main.qml:108
+#, fuzzy, kde-format
+#| msgid "Con&figure..."
+msgid "Configure GNOME/GTK Application Style…"
+msgstr "සකසන්න... (&f)"
+
+#: ui/main.qml:170
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"This style is using the Union style engine which is still under development. "
+"Some things may look or behave incorrectly when using this style."
+msgstr ""
+
+#: ui/main.qml:174
+#, fuzzy, kde-format
+#| msgid "Con&figure..."
+msgid "Configure Style…"
+msgstr "සකසන්න... (&f)"
+
+#: ui/main.qml:182
+#, kde-format
+msgctxt "@action:button"
+msgid "Uninstall…"
+msgstr ""
+
+#: ui/main.qml:184
+#, kde-format
+msgctxt "@action:button"
+msgid "Cannot uninstall system-installed styles."
+msgstr ""
+
+#: ui/main.qml:186
+#, kde-format
+msgctxt "@action:button"
+msgid "Can only uninstall Union styles."
+msgstr ""
+
+#: ui/main.qml:199
+#, kde-format
+msgid "Do not uninstall this style."
+msgstr ""
+
+#: ui/main.qml:245
+#, kde-format
+msgctxt "@title:dialog"
+msgid "Choose Union Style to Install"
+msgstr ""
+
+#: ui/main.qml:246
+#, kde-format
+msgctxt "@action:button"
+msgid "Install"
+msgstr ""
+
+#: ui/UnionThumbnailItem.qml:25
+#, fuzzy, kde-format
+#| msgid "Tab 1"
+msgctxt "@title:tab"
+msgid "Tab 1"
+msgstr "1 ටැබය"
+
+#: ui/UnionThumbnailItem.qml:29
+#, fuzzy, kde-format
+#| msgid "Tab 2"
+msgctxt "@title:tab"
+msgid "Tab 2"
+msgstr "2 ටැබය"
+
+#: ui/UnionThumbnailItem.qml:50
+#, fuzzy, kde-format
+#| msgid "Checkbox"
+msgctxt "@option:check"
+msgid "Checkbox"
+msgstr "සලකුණු කොටුව"
+
+#: ui/UnionThumbnailItem.qml:56 ui/UnionThumbnailItem.qml:62
+#, fuzzy, kde-format
+#| msgid "Radio button"
+msgctxt "@option:radio"
+msgid "Radio Button"
+msgstr "රේඩියෝ බොත්තම"
+
+#: ui/UnionThumbnailItem.qml:84
+#, fuzzy, kde-format
+#| msgid "Combobox"
+msgctxt "@item:inlistbox"
+msgid "Combo Box"
+msgstr "සංයුක්ත කොටුව"
+
+#: ui/UnionThumbnailItem.qml:85
+#, fuzzy, kde-format
+#| msgid "Combobox"
+msgctxt "@item:inlistbox"
+msgid "Combo Box Item"
+msgstr "සංයුක්ත කොටුව"
+
+#: ui/UnionThumbnailItem.qml:94
+#, fuzzy, kde-format
+#| msgid "Button"
+msgctxt "@action:button"
+msgid "Button"
+msgstr "බොත්තම"
+
+#: ui/UnionThumbnailItem.qml:107
+#, fuzzy, kde-format
+#| msgid "Text Only"
+msgctxt "@label:textbox"
+msgid "Text Field"
+msgstr "පෙළ පමණක්"
+
+#: ui/UnionThumbnailItem.qml:122
+#, kde-format
+msgctxt "@item:inrange Progress bar value"
+msgid "%1%"
+msgstr ""
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "&Applications"
+#~ msgid "Get New GNOME/GTK Application Styles…"
+#~ msgstr "භාවිත යෙදවුම් (&A)"
+
+#, fuzzy
+#~| msgid ""
+#~| "<h1>Style</h1>This module allows you to modify the visual appearance of "
+#~| "user interface elements, such as the widget style and effects."
+#~ msgid ""
+#~ "This module allows you to modify the visual appearance of applications' "
+#~ "user interface elements."
+#~ msgstr ""
+#~ "<h1>රටා</h1> මෙම මොඩියුලය පරිශීලක අතුරුමුහුණත් මූලයන් හී දෘශ්‍ය පෙනුම වෙනස් කිරීමට ඉඩදෙයි, "
+#~ "විජෙට්ටු රටා හා සැරසිලි වැනි."
+
+#~ msgctxt "NAME OF TRANSLATORS"
+#~ msgid "Your names"
+#~ msgstr "ඩනිෂ්ක නවින්"
+
+#~ msgctxt "EMAIL OF TRANSLATORS"
+#~ msgid "Your emails"
+#~ msgstr "danishka@gmail.com"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "&Applications"
+#~ msgid "Application Style"
+#~ msgstr "භාවිත යෙදවුම් (&A)"
+
+#, fuzzy
+#~| msgid "(c) 2002 Karol Szwed, Daniel Molkentin"
+#~ msgid "(c) 2002 Karol Szwed, Daniel Molkentin, (c) 2019 Kai Uwe Broulik "
+#~ msgstr "(c) 2002 Karol Szwed, Daniel Molkentin"
+
+#~ msgid "Karol Szwed"
+#~ msgstr "Karol Szwed"
+
+#~ msgid "Daniel Molkentin"
+#~ msgstr "Daniel Molkentin"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "&Applications"
+#~ msgid "Download New GNOME/GTK2 Application Styles..."
+#~ msgstr "භාවිත යෙදවුම් (&A)"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "&Applications"
+#~ msgid "GNOME/GTK2 Application Styles"
+#~ msgstr "භාවිත යෙදවුම් (&A)"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "&Applications"
+#~ msgid "Download New GNOME/GTK3 Application Styles..."
+#~ msgstr "භාවිත යෙදවුම් (&A)"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "&Applications"
+#~ msgid "GNOME/GTK3 Application Styles"
+#~ msgstr "භාවිත යෙදවුම් (&A)"
+
+#~ msgid "Unable to Load Dialog"
+#~ msgstr "සංවාදය පූරණය කල නොහැකි විය"
+
+#~ msgid "No description available."
+#~ msgstr "විස්තර කිරීමක් නොමැත"
+
+#~ msgid ""
+#~ "This area shows a preview of the currently selected style without having "
+#~ "to apply it to the whole desktop."
+#~ msgstr ""
+#~ "මම ප්‍රදේශය දැනට තෝරාඇති රටාව මුළු වැඩතලයට ඇතුළු කිරීමෙන් තොරව පෙරදැක්මකින් පෙන්වයි."
+
+#~ msgid ""
+#~ "Here you can choose from a list of predefined widget styles (e.g. the way "
+#~ "buttons are drawn) which may or may not be combined with a theme "
+#~ "(additional information like a marble texture or a gradient)."
+#~ msgstr ""
+#~ "මෙහිදී ඔබට කලින් නිවේශනය කල විජෙට්ටු රටා ලැයිස්තුවකින් තෝරාගත හැක (උදා. බොත්තම් ඇඳෙන "
+#~ "ආකාරය) මේවා තේමාව සමග සංයුක්ත හෝ අසංයුක්ත විය හැක (මාබල රටා හා අනුක්‍රමික වැනි අමතර "
+#~ "තොරතුරු)."
+
+#, fuzzy
+#~| msgid ""
+#~| "If you enable this option, KDE Applications will show small icons "
+#~| "alongside some important buttons."
+#~ msgid ""
+#~ "If you enable this option, applications will show small icons alongside "
+#~ "some important buttons."
+#~ msgstr ""
+#~ "මෙම වික්ල්පය සක්‍රීය විට, KDE භාවිතයෙදවුම් වල වැදගත් බොත්තම් පසෙකින් කුඩා අයිකන පෙන්වනු ඇත."
+
+#, fuzzy
+#~| msgid ""
+#~| "If you enable this option, KDE Applications will show small icons "
+#~| "alongside some important buttons."
+#~ msgid ""
+#~ "If you enable this option, applications will show small icons alongside "
+#~ "most menu items."
+#~ msgstr ""
+#~ "මෙම වික්ල්පය සක්‍රීය විට, KDE භාවිතයෙදවුම් වල වැදගත් බොත්තම් පසෙකින් කුඩා අයිකන පෙන්වනු ඇත."
+
+#, fuzzy
+#~| msgid ""
+#~| "<p><b>Icons only:</b> Shows only icons on toolbar buttons. Best option "
+#~| "for low resolutions.</p><p><b>Text only: </b>Shows only text on toolbar "
+#~| "buttons.</p><p><b>Text alongside icons: </b> Shows icons and text on "
+#~| "toolbar buttons. Text is aligned alongside the icon.</p><b>Text under "
+#~| "icons: </b> Shows icons and text on toolbar buttons. Text is aligned "
+#~| "below the icon."
+#~ msgid ""
+#~ "<p><b>No text:</b> Shows only icons on toolbar buttons. Best option for "
+#~ "low resolutions.</p><p><b>Text only: </b>Shows only text on toolbar "
+#~ "buttons.</p><p><b>Text beside icons: </b> Shows icons and text on toolbar "
+#~ "buttons. Text is aligned beside the icon.</p><b>Text below icons: </b> "
+#~ "Shows icons and text on toolbar buttons. Text is aligned below the icon."
+#~ msgstr ""
+#~ "<p><b>අයිකන පමණයි:</b> ටූල්බාර් බොත්තම් මත අයිකන පමණක් පෙන්වයි, අඩු විභේදනය සඳහා වඩාත්ම "
+#~ "සුදුසු විකල්පය මෙයයි.</p><p><b>පෙළ පමණයි: </b>ටූල්බාර් බොත්තම් වල පෙළ පමණක් පෙන්වයි.</"
+#~ "p><p><b>අයිකනයට පසෙකින් පෙළ: </b> ටූල්බාර් බොත්තම් මත පෙළ හා අයිකන දැක්වේ, පෙළ "
+#~ "පසෙකින් පිහිටයි</p><b>අයිකනයට පහළින් පෙළ: </b> ටූල් බාර් බොත්තම් වල අයිකන හා පෙළ පෙන්වයි. "
+#~ "පෙළ අයිකනයන්ට පහළින් පිහිටයි."
+
+#, fuzzy
+#~| msgid "Tool Bars"
+#~ msgid "Toolbars"
+#~ msgstr "ටූල් බාර"
+
+#~ msgid "No Text"
+#~ msgstr "පෙළ රහිත"
+
+#, fuzzy
+#~| msgid "Widget style:"
+#~ msgid "Widget Style"
+#~ msgstr "විජෙට්ටු රටාව:"
+
+#~ msgid "Widget style:"
+#~ msgstr "විජෙට්ටු රටාව:"
+
+#~ msgctxt "@title:tab"
+#~ msgid "&Fine Tuning"
+#~ msgstr "සුමටනය (&F)"
+
+#~ msgid "Description: %1"
+#~ msgstr "විස්තරය: %1"
+
+#~ msgid ""
+#~ "This page allows you to choose details about the widget style options"
+#~ msgstr "මෙම පිටුව විජෙට්ටු රටා පිළිබඳ තොරතුරු තෝරාගැනීමට ඉඩදෙයි"
+
+#~ msgid "Group Box"
+#~ msgstr "කාණ්ඩ කොටුව"
+
+#~ msgid "KDE Style Module"
+#~ msgstr "KDE රටා මොඩියුලය"
+
+#~ msgid "Ralf Nolden"
+#~ msgstr "Ralf Nolden"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "&Applications"
+#~ msgid "In application"
+#~ msgstr "භාවිත යෙදවුම් (&A)"
+
+#, fuzzy
+#~| msgctxt "@title:tab"
+#~| msgid "&Applications"
+#~ msgid "Global Menu widget"
+#~ msgstr "භාවිත යෙදවුම් (&A)"
+
+#~ msgid "Graphical effects:"
+#~ msgstr "චිත්‍රණ සැරසුම්:"
+
+#~ msgid "Low display resolution and Low CPU"
+#~ msgstr "අඩු දෘශ්‍ය විභේදනයක් හා අඩු CPU"
+
+#~ msgid "High display resolution and Low CPU"
+#~ msgstr "වැඩි දෘශ්‍ය විභේදනය හා අඩු CPU"
+
+#~ msgid "Low display resolution and High CPU"
+#~ msgstr "අඩු දෘශ්‍ය විභේදනයක් හා වැඩි CPU"
+
+#~ msgid "High display resolution and High CPU"
+#~ msgstr "වැඩි දෘශ්‍ය විභේදනය හා වැඩි CPU"
+
+#~ msgid "Low display resolution and Very High CPU"
+#~ msgstr "අඩු දෘශ්‍ය විභේදනයක් හා ඉතා වැඩි CPU"
+
+#~ msgid "High display resolution and Very High CPU"
+#~ msgstr "වැඩි දෘශ්‍ය විභේදනය හා ඉතා වැඩි CPU"
+
+#~ msgid ""
+#~ "If you enable this option, KDE Applications will run internal animations."
+#~ msgstr "මෙම විකල්පය තෝරා ඇතිවිට, KDE විසින් අභ්‍යන්තර සජීවීකරණයන් ක්‍රියාත්මක කරයි."
+
+#~ msgid "kcmstyle"
+#~ msgstr "kcmstyle"
+
+#~ msgctxt "@title:tab"
+#~ msgid "&Workspace"
+#~ msgstr "වැඩබිම (&W)"
+
+#~ msgid "Get New Themes..."
+#~ msgstr "නව තේමා ලබාගන්න"

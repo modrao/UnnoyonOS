@@ -1,0 +1,14 @@
+{
+    "KPlugin": {
+        "Id": "UnnoyonOS",
+        "Name": "UnnoyonOS",
+        "Description": "UnnoyonOS Plasma Desktop Theme",
+        "Version": "0.1.0",
+        "License": "LGPL-2.1+",
+        "Authors": [
+            {
+                "Name": "UnnoyonOS Project"
+            }
+        ]
+    }
+}

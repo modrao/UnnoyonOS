@@ -1,0 +1,442 @@
+# Translation of plasmashell.po into Serbian.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2014, 2015, 2016.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: plasmashell\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-09-18 00:47+0000\n"
+"PO-Revision-Date: 2026-10-02 15:10+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Часлав Илић,Немања Хиршл"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "caslav.ilic@gmx.net,nemhirsl@gmail.com"
+
+# >> @title:window
+#: currentcontainmentactionsmodel.cpp:201
+#, kde-format
+msgid "Configure Mouse Actions Plugin"
+msgstr "Подешавање прикључка за радње мишем"
+
+#: desktopview.cpp:206
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma 6.0 Dev"
+msgstr "КДЕ Плазма 6.0 развојна"
+
+#: desktopview.cpp:209
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma 6.0 Alpha"
+msgstr "КДЕ Плазма 6.0 алфа"
+
+#: desktopview.cpp:212
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma 6.0 Beta 1"
+msgstr "КДЕ Плазма 6.0 бета 1"
+
+#: desktopview.cpp:215
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma 6.0 Beta 2"
+msgstr "КДЕ Плазма 6.0 бета 2"
+
+#: desktopview.cpp:218
+#, kde-format
+msgctxt "@label %1 is the Plasma version, RC meaning Release Candidate"
+msgid "KDE Plasma 6.0 RC1"
+msgstr "КДЕ Плазма 6.0 RC1"
+
+#: desktopview.cpp:221
+#, kde-format
+msgctxt "@label %1 is the Plasma version, RC meaning Release Candidate"
+msgid "KDE Plasma 6.0 RC2"
+msgstr "КДЕ Плазма 6.0 RC2"
+
+#: desktopview.cpp:247
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma %1 Dev"
+msgstr "КДЕ Плазма %1 развојна"
+
+#: desktopview.cpp:251
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma %1 Beta"
+msgstr "КДЕ Плазма %1 бета"
+
+#: desktopview.cpp:254
+#, kde-format
+msgctxt "@label %1 is the Plasma version, %2 is the beta release number"
+msgid "KDE Plasma %1 Beta %2"
+msgstr "КДЕ Плазма %1 бета %2"
+
+#: desktopview.cpp:258
+#, kde-format
+msgctxt "@label %1 is the Plasma version"
+msgid "KDE Plasma %1"
+msgstr "КДЕ Плазма %1"
+
+#: desktopview.cpp:264
+#, kde-format
+msgctxt "@info:usagetip"
+msgid "Visit bugs.kde.org to report issues"
+msgstr "Посетите bugs.kde.org да бисте пријавили проблеме"
+
+#: desktopview.cpp:272
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy Plasma Version"
+msgstr "Копирај издање Плазме"
+
+#: desktopview.cpp:278
+#, kde-format
+msgctxt "@action:button"
+msgid "Report a Bug…"
+msgstr "Пријави грешку…"
+
+#: desktopview.cpp:288
+#, kde-format
+msgctxt "@title:menu"
+msgid "Hide Preview Banner"
+msgstr "Сакриј барјак пробног издања"
+
+#: desktopview.cpp:290
+#, kde-format
+msgctxt "@action:button Hide the preview banner until the system is restarted"
+msgid "Hide Until Restart"
+msgstr "Сакриј до поновног покретања"
+
+#: desktopview.cpp:297
+#, kde-format
+msgctxt "@action:button Hide the preview banner permanently"
+msgid "Hide Permanently…"
+msgstr "Трајно сакриј…"
+
+#: desktopview.cpp:303
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"Are you sure you want to permanently hide the preview banner?<nl/><nl/>This "
+"action can only be undone by removing the line beginning with "
+"<icode>ShowDesktopPreviewBanner</icode> in the <filename>kdeglobals</"
+"filename> config file."
+msgstr ""
+"Желите ли заиста да трајно сакријете барјак пробног издања?<nl/><nl/>Ова "
+"радња може да се опозове само уклањањем реда који почиње са "
+"<icode>ShowDesktopPreviewBanner</icode> у поставном фајлу "
+"<filename>kdeglobals</filename>."
+
+#: desktopview.cpp:305
+#, kde-format
+msgctxt "@title:window"
+msgid "Hide Preview Banner?"
+msgstr "Сакрити барјак пробног издања?"
+
+#: desktopview.cpp:520 desktopview.cpp:536
+#, kde-format
+msgid "Enter Edit Mode"
+msgstr "Уђи у режим уређивања"
+
+#: desktopview.cpp:534
+#, kde-format
+msgid "Exit Edit Mode"
+msgstr "Изађи из режима уређивања"
+
+#: main.cpp:126
+#, kde-format
+msgid "Plasma Shell"
+msgstr "Плазма шкољка"
+
+#: main.cpp:139
+#, kde-format
+msgid "Enable QML Javascript debugger"
+msgstr "Активирај исправљач КуМЛ јаваскрипта"
+
+# literal-segment: plasma-shell
+#: main.cpp:142
+#, kde-format
+msgid "Do not restart plasma-shell automatically after a crash"
+msgstr "Не покрећи plasma-shell аутоматски по паду"
+
+#: main.cpp:145
+#, kde-format
+msgid "Force loading the given shell plugin"
+msgstr "Наметни учитавање датог прикључка шкољке"
+
+#: main.cpp:149
+#, kde-format
+msgid "Replace an existing instance"
+msgstr "Замени постојећи примерак"
+
+#: main.cpp:152
+#, kde-format
+msgid "Lists the available options for user feedback"
+msgstr "Наброји доступне опције повратних информација корисника"
+
+#: main.cpp:208
+#, kde-format
+msgid "Plasma Failed To Start"
+msgstr "Плазма не може да се покрене"
+
+#: main.cpp:209
+#, kde-format
+msgid ""
+"Plasma is unable to start as it could not correctly use OpenGL 2 or software "
+"fallback\n"
+"Please check that your graphic drivers are set up correctly."
+msgstr ""
+"Плазма не може да се покрене јер не може исправно да користи ни опенГЛ 2 ни "
+"софтверску замену.\n"
+"Проверите да ли је графички драјвер правилно подешен."
+
+#: osd.cpp:70
+#, kde-format
+msgctxt "Brightness OSD: display name and brightness percentage"
+msgid "%1: %2%"
+msgstr "%1: %2%"
+
+#: osd.cpp:98
+#, kde-format
+msgctxt "OSD informing that the system is muted, keep short"
+msgid "Audio Muted"
+msgstr "Звук утишан"
+
+#: osd.cpp:121
+#, kde-format
+msgctxt "OSD informing that the microphone is muted, keep short"
+msgid "Microphone Muted"
+msgstr "Микрофон утишан"
+
+#: osd.cpp:137
+#, kde-format
+msgctxt "OSD informing that some media app is muted, eg. Amarok Muted"
+msgid "%1 Muted"
+msgstr ""
+"%1 утишан|/|%1 $[по-роду-броју %1 утишан утишана утишано утишани утишане "
+"утишана]"
+
+#: osd.cpp:159
+#, kde-format
+msgctxt "touchpad was enabled, keep short"
+msgid "Touchpad On"
+msgstr "Додирник укључен"
+
+#: osd.cpp:161
+#, kde-format
+msgctxt "touchpad was disabled, keep short"
+msgid "Touchpad Off"
+msgstr "Додирник искључен"
+
+#: osd.cpp:168
+#, kde-format
+msgctxt "wireless lan was enabled, keep short"
+msgid "Wifi On"
+msgstr "Бежична укључена"
+
+#: osd.cpp:170
+#, kde-format
+msgctxt "wireless lan was disabled, keep short"
+msgid "Wifi Off"
+msgstr "Бежична искључена"
+
+#: osd.cpp:177
+#, kde-format
+msgctxt "Bluetooth was enabled, keep short"
+msgid "Bluetooth On"
+msgstr "Блутут укључен"
+
+#: osd.cpp:179
+#, kde-format
+msgctxt "Bluetooth was disabled, keep short"
+msgid "Bluetooth Off"
+msgstr "Блутут искључен"
+
+#: osd.cpp:186
+#, kde-format
+msgctxt "mobile internet was enabled, keep short"
+msgid "Mobile Internet On"
+msgstr "Мобилни интернет укључен"
+
+#: osd.cpp:188
+#, kde-format
+msgctxt "mobile internet was disabled, keep short"
+msgid "Mobile Internet Off"
+msgstr "Мобилни интернет искључен"
+
+#: osd.cpp:196
+#, kde-format
+msgctxt ""
+"on screen keyboard was enabled because physical keyboard got unplugged, keep "
+"short"
+msgid "On-Screen Keyboard Activated"
+msgstr "Тастатура на екрану активирана"
+
+#: osd.cpp:199
+#, kde-format
+msgctxt ""
+"on screen keyboard was disabled because physical keyboard was plugged in, "
+"keep short"
+msgid "On-Screen Keyboard Deactivated"
+msgstr "Тастатура на екрану деактивирана"
+
+#: osd.cpp:206
+#, kde-format
+msgctxt "power management was inhibited, keep short"
+msgid "Sleep and Screen Locking Blocked"
+msgstr "Спавање и закључавање екрана блокирани"
+
+#: osd.cpp:208
+#, kde-format
+msgctxt "power management was uninhibited, keep short"
+msgid "Sleep and Screen Locking Unblocked"
+msgstr "Спавање и закључавање екрана одблокирани"
+
+#: osd.cpp:218
+#, kde-format
+msgctxt "Power profile was changed to power save mode, keep short"
+msgid "Power Save Mode"
+msgstr "Режим штедње енергије"
+
+#: osd.cpp:221
+#, kde-format
+msgctxt "Power profile was changed to balanced mode, keep short"
+msgid "Balanced Power Mode"
+msgstr "Уравнотежен режим напајања"
+
+#: osd.cpp:224
+#, kde-format
+msgctxt "Power profile was changed to performance mode, keep short"
+msgid "Performance Mode"
+msgstr "Режим перформанси"
+
+#: panelview.cpp:1066
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Hide Panel Configuration"
+msgstr "Сакриј поставу панела"
+
+#: panelview.cpp:1068
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Show Panel Configuration"
+msgstr "Прикажи поставу панела"
+
+#: qml/OsdItem.qml:34
+#, kde-format
+msgctxt "Percentage value"
+msgid "%1%"
+msgstr "%1%"
+
+#: shellcontainmentconfig.cpp:109
+#, kde-format
+msgid "Built-in Screen"
+msgstr "Уграђени екран"
+
+#: shellcontainmentconfig.cpp:138
+#, kde-format
+msgid "Disconnected Screen %1"
+msgstr "Неповезан екран %1"
+
+#: shellcorona.cpp:174 shellcorona.cpp:176
+#, kde-format
+msgid "Show Desktop"
+msgstr "Прикажи површ"
+
+#: shellcorona.cpp:176
+#, kde-format
+msgid "Hide Desktop"
+msgstr "Сакриј површ"
+
+#: shellcorona.cpp:192
+#, kde-format
+msgid "Activate Application Launcher"
+msgstr "Активирај покретач програма"
+
+#: shellcorona.cpp:200
+#, kde-format
+msgid "Show Activity Switcher"
+msgstr "Прикажи мењач активности"
+
+#: shellcorona.cpp:209
+#, kde-format
+msgid "Switch to Previous Activity"
+msgstr "Пребаци на претходну активност"
+
+#: shellcorona.cpp:217
+#, kde-format
+msgid "Switch to Next Activity"
+msgstr "Пребаци на наредну активност"
+
+#: shellcorona.cpp:248
+#, kde-format
+msgctxt "@action:button"
+msgid "Manage Desktops and Panels…"
+msgstr "Управљај површима и панелима…"
+
+#: shellcorona.cpp:270
+#, kde-format
+msgid "Move keyboard focus between panels"
+msgstr "Помери фокус тастатуре између панела"
+
+#: shellcorona.cpp:2282
+#, kde-format
+msgid "Add Panel"
+msgstr "Додај панел"
+
+#: shellcorona.cpp:2369
+#, kde-format
+msgctxt "Creates an empty containment (%1 is the containment name)"
+msgid "Empty %1"
+msgstr ""
+"Празан %1|/|$[по-роду-броју %1 Празан Празна Празно Празни Празне Празна] %1"
+
+#: softwarerendernotifier.cpp:34
+#, kde-format
+msgid "Software Renderer In Use"
+msgstr "Користи се софтверски рендерер"
+
+#: softwarerendernotifier.cpp:35
+#, kde-format
+msgctxt "Tooltip telling user their GL drivers are broken"
+msgid "Software Renderer In Use"
+msgstr "Користи се софтверски рендерер"
+
+#: softwarerendernotifier.cpp:36
+#, kde-format
+msgctxt "Tooltip telling user their GL drivers are broken"
+msgid "Rendering may be degraded"
+msgstr "Рендеровање може бити лошије"
+
+#: softwarerendernotifier.cpp:46
+#, kde-format
+msgid "Never show again"
+msgstr "Не приказуј више"
+
+#: userfeedback.cpp:36
+#, kde-format
+msgid "Panel Count"
+msgstr "Број панела"
+
+#: userfeedback.cpp:40
+#, kde-format
+msgid "Counts the panels"
+msgstr "Броји панеле"

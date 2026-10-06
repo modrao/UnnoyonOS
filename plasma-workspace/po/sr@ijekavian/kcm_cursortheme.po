@@ -1,0 +1,290 @@
+# Translation of kcmmousetheme.po into Serbian.
+# Toplica Tanaskovic <toptan@kde.org.yu>, 2003, 2004.
+# Marko Rosic <roske@kde.org.yu>, 2004.
+# Chusslove Illich <caslav.ilic@gmx.net>, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2014, 2015, 2016.
+# Dalibor Djuric <dalibor.djuric@gmail.com>, 2009, 2010.
+# Nemanja Hiršl <nemhirsl@gmail.com>, 2026.
+msgid ""
+msgstr ""
+"Project-Id-Version: kcmmousetheme\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2026-07-16 00:46+0000\n"
+"PO-Revision-Date: 2026-10-02 15:10+0200\n"
+"Last-Translator: Nemanja Hiršl <nemhirsl@gmail.com>\n"
+"Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
+"Language: sr@ijekavian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+"X-Environment: kde\n"
+
+#. i18n: ectx: label, entry (cursorTheme), group (Mouse)
+#: cursorthemesettings.kcfg:9
+#, kde-format
+msgid "Name of the current pointer theme"
+msgstr "Име текуће теме показивача"
+
+#. i18n: ectx: label, entry (cursorSize), group (Mouse)
+#: cursorthemesettings.kcfg:13
+#, kde-format
+msgid "Current pointer size"
+msgstr "Текућа величина показивача"
+
+#: kcmcursortheme.cpp:375
+#, kde-format
+msgid "Unable to create a temporary file."
+msgstr "Не могу да направим привремени фајл."
+
+#: kcmcursortheme.cpp:386
+#, kde-format
+msgid "Unable to download the icon theme archive: %1"
+msgstr "Не могу да преузмем архиву теме иконица: %1"
+
+#: kcmcursortheme.cpp:400
+#, kde-format
+msgctxt "@info"
+msgid "Unable to open the icon theme archive."
+msgstr "Не могу да отворим архиву теме иконица."
+
+#: kcmcursortheme.cpp:420
+#, kde-format
+msgid "The file is not a valid icon theme archive."
+msgstr "Овај фајл није исправна архива теме иконица."
+
+#: kcmcursortheme.cpp:427
+#, kde-format
+msgid "Failed to create 'icons' folder."
+msgstr "Не могу да направим фасциклу иконица „icons“."
+
+#: kcmcursortheme.cpp:436
+#, kde-format
+msgid ""
+"A theme named %1 already exists in your icon theme folder. Do you want "
+"replace it with this one?"
+msgstr ""
+"Тема иконица по имену %1 већ постоји у фасцикли тема. Желите ли да је "
+"замијените овом?"
+
+#: kcmcursortheme.cpp:440
+#, kde-format
+msgid "Overwrite Theme?"
+msgstr "Пребрисати тему?"
+
+#: kcmcursortheme.cpp:464
+#, kde-format
+msgid "Theme installed successfully."
+msgstr "Тема успјешно инсталирана."
+
+#. i18n: ectx: label, entry (cursorTimeout), group (BusyCursorSettings)
+#. i18n: ectx: label, entry (taskbarTimeout), group (TaskbarButtonSettings)
+#: launchfeedbacksettings.kcfg:19 launchfeedbacksettings.kcfg:33
+#, kde-format
+msgid "Timeout in seconds"
+msgstr "Прековријеме у секундама"
+
+#: plasma-apply-cursortheme.cpp:38
+#, kde-format
+msgid ""
+"This tool allows you to set the mouse pointer theme for the current Plasma "
+"session, without accidentally setting it to one that is either not "
+"available, or which is already set."
+msgstr ""
+"Ова алатка вам омогућава да поставите тему показивача миша за текућу сесију "
+"Плазме, без случајног постављања теме која није доступна или која је већ "
+"постављена."
+
+#: plasma-apply-cursortheme.cpp:42
+#, kde-format
+msgid ""
+"The name of the pointer theme you wish to set for your current Plasma "
+"session (passing a full path will only use the last part of the path)"
+msgstr ""
+"Име теме показивача коју желите да поставите за текућу сесију Плазме (ако "
+"задате пуну путању, биће употријебљен само њен посљедњи дио)"
+
+#: plasma-apply-cursortheme.cpp:43
+#, kde-format
+msgid ""
+"Show all the themes available on the system (and which is the current theme)"
+msgstr "Прикажи све теме доступне на систему (и која је текућа тема)"
+
+#: plasma-apply-cursortheme.cpp:44
+#, kde-format
+msgid "Use a specific size, rather than the theme default size"
+msgstr "Употријеби задату величину умјесто подразумијеване величине теме"
+
+#: plasma-apply-cursortheme.cpp:65
+#, kde-format
+msgid ""
+"The requested theme “%1” is already set as the theme for the current Plasma "
+"session."
+msgstr "Тражена тема „%1“ је већ постављена као тема текуће сесије Плазме."
+
+#: plasma-apply-cursortheme.cpp:77
+#, kde-format
+msgid ""
+"Successfully applied the mouse pointer theme %1 to your current Plasma "
+"session"
+msgstr ""
+"Тема показивача миша %1 успјешно је примијењена на текућу сесију Плазме"
+
+#: plasma-apply-cursortheme.cpp:79
+#, kde-format
+msgid ""
+"You have to restart the Plasma session for your newly applied mouse pointer "
+"theme to display correctly."
+msgstr ""
+"Морате поново покренути сесију Плазме да би се новопримијењена тема "
+"показивача миша исправно приказала."
+
+#: plasma-apply-cursortheme.cpp:89
+#, kde-format
+msgid ""
+"Could not find theme “%1”. The theme should be one of the following options: "
+"%2"
+msgstr "Не могу да нађем тему „%1“. Тема треба да буде једна од сљедећих: %2"
+
+#: plasma-apply-cursortheme.cpp:97
+#, kde-format
+msgid "You have the following mouse pointer themes on your system:"
+msgstr "На систему имате сљедеће теме показивача миша:"
+
+#: plasma-apply-cursortheme.cpp:102
+#, kde-format
+msgid "(Current theme for this Plasma session)"
+msgstr "(текућа тема ове сесије Плазме)"
+
+#: ui/Delegate.qml:48
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Remove pointer theme"
+msgstr "Уклони тему показивача"
+
+#: ui/Delegate.qml:50
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Cannot delete the active pointer theme"
+msgstr "Не могу да обришем активну тему показивача"
+
+#: ui/Delegate.qml:52
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Cannot delete system-installed pointer themes"
+msgstr "Не могу да обришем системски инсталиране теме показивача"
+
+#: ui/Delegate.qml:60
+#, kde-format
+msgid "Don’t delete this pointer theme"
+msgstr "Не бриши ову тему показивача"
+
+#: ui/LaunchFeedbackDialog.qml:16
+#, kde-format
+msgctxt "@title"
+msgid "Launch Feedback"
+msgstr "Одзив при покретању"
+
+#: ui/LaunchFeedbackDialog.qml:27
+#, kde-format
+msgctxt "@info:usagetip"
+msgid "Configure the animations played while an application is launching."
+msgstr "Подесите анимације које се приказују док се програм покреће."
+
+#: ui/LaunchFeedbackDialog.qml:49
+#, kde-format
+msgctxt "@label"
+msgid "Pointer feedback:"
+msgstr "Одзив показивача:"
+
+#: ui/LaunchFeedbackDialog.qml:50
+#, kde-format
+msgctxt "@option:radio No pointer feedback when launching apps"
+msgid "None"
+msgstr "Никакав"
+
+#: ui/LaunchFeedbackDialog.qml:59
+#, kde-format
+msgctxt "@option:radio"
+msgid "Static"
+msgstr "Статичан"
+
+#: ui/LaunchFeedbackDialog.qml:68
+#, kde-format
+msgctxt "@option:radio"
+msgid "Blinking"
+msgstr "Трепћући"
+
+#: ui/LaunchFeedbackDialog.qml:77
+#, kde-format
+msgctxt "@option:radio"
+msgid "Bouncing"
+msgstr "Поскакујући"
+
+#: ui/LaunchFeedbackDialog.qml:92
+#, kde-format
+msgctxt "@label"
+msgid "Task Manager feedback:"
+msgstr "Одзив у менаџеру задатака:"
+
+#: ui/LaunchFeedbackDialog.qml:94
+#, kde-format
+msgctxt "@option:check"
+msgid "Enable animation"
+msgstr "Укључи анимацију"
+
+#: ui/LaunchFeedbackDialog.qml:113
+#, kde-format
+msgctxt "@label"
+msgid "Stop animations after:"
+msgstr "Заустави анимације послије:"
+
+#: ui/LaunchFeedbackDialog.qml:127 ui/LaunchFeedbackDialog.qml:139
+#, kde-format
+msgid "%1 second"
+msgid_plural "%1 seconds"
+msgstr[0] "%1 секунда"
+msgstr[1] "%1 секунде"
+msgstr[2] "%1 секунди"
+msgstr[3] "%1 секунда"
+
+#: ui/main.qml:106 ui/main.qml:144
+#, kde-format
+msgid "Size: %1"
+msgstr "Величина: %1"
+
+#: ui/main.qml:153
+#, kde-format
+msgctxt "@action:button"
+msgid "&Configure Launch Feedback…"
+msgstr "&Подеси одзив при покретању…"
+
+#: ui/main.qml:168
+#, kde-format
+msgid "&Install from File…"
+msgstr "&Инсталирај из фајла…"
+
+#: ui/main.qml:174
+#, kde-format
+msgid "&Get New…"
+msgstr "&Добави нове…"
+
+#: ui/main.qml:188
+#, kde-format
+msgid "Open Theme"
+msgstr "Отварање теме"
+
+#: ui/main.qml:190
+#, kde-format
+msgid "Pointer Theme Files (*.tar.gz *.tar.bz2)"
+msgstr "фајлови тема показивача (*.tar.gz *.tar.bz2)"
+
+#: xcursor/xcursortheme.cpp:56
+#, kde-format
+msgctxt ""
+"@info The argument is the list of available sizes (in pixel). Example: "
+"'Available sizes: 24' or 'Available sizes: 24, 36, 48'"
+msgid "(Available sizes: %1)"
+msgstr "(доступне величине: %1)"

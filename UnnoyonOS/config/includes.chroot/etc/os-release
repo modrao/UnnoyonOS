@@ -1,0 +1,9 @@
+NAME="UnnoyonOS"
+ID=unnoyonos
+ID_LIKE=debian
+PRETTY_NAME="UnnoyonOS"
+VERSION="0.1.0"
+VERSION_ID="0.1"
+VERSION_CODENAME="Trixie"
+VARIANT="Desktop"
+VARIANT_ID=desktop

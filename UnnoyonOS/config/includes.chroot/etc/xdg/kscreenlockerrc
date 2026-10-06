@@ -1,0 +1,5 @@
+[Greeter]
+WallpaperPlugin=org.kde.image
+
+[Wallpaper][org.kde.image][General]
+Image=/usr/share/wallpapers/unnoyonos-dark-signature/contents/images/1376x768.png

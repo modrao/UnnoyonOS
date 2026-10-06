@@ -1,0 +1,503 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN"
+"dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&klipper;">
+  <!ENTITY package "kdebase">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % Catalan  "INCLUDE"
+> <!-- change language only here -->
+]>
+
+<book id="klipper" lang="&language;">
+<bookinfo>
+<title
+>El manual del &klipper; </title>
+
+<legalnotice
+>&FDLNotice;</legalnotice>
+
+<date
+>9 de setembre de 2026</date>
+<releaseinfo
+>Plasma 6.8</releaseinfo>
+
+<abstract>
+<para
+>El &klipper; és la utilitat del &plasma; per a retallar i enganxar.</para>
+</abstract>
+
+<keywordset>
+<keyword
+>KDE</keyword>
+<keyword
+>Klipper</keyword>
+<keyword
+>kdebase</keyword>
+<keyword
+>porta-retalls</keyword>
+</keywordset>
+</bookinfo>
+<chapter id="introduction">
+<title
+>Introducció</title>
+<para
+>El &klipper; és la utilitat de porta-retalls del &plasma;. Emmagatzema l'historial del porta-retalls, i us permet enllaçar el contingut amb les accions de les aplicacions. Si us plau, informeu a sobre de qualsevol problema o petició d'alguna característica al <ulink url="http://bugs.kde.org"
+>Sistema de seguiment d'errors de KDE</ulink
+>.</para>
+</chapter>
+
+<chapter id="using-klipper">
+<title
+>Ús del &klipper;</title>
+
+<sect1 id="basic-usage">
+<title
+>Ús bàsic</title>
+<para
+>Podeu utilitzar el &klipper; a la safata del sistema, sigui com un giny del &plasma; o una aplicació clàssica. Tots dos comparteixen la mateixa funcionalitat, però tenen una &IGU; diferent i es mostra l'últim element de l'historial quan es passa el punter del ratolí sobre la icona del &klipper; a la safata del sistema: </para>
+
+<screenshot>
+<screeninfo
+>La icona del &klipper;.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screenshot.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>La icona del &klipper;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<para
+>Per a visualitzar l'historial del porta-retalls, feu clic a la icona del &klipper; a la safata del sistema.</para>
+
+<sect2 id="klipper-widget">
+<title
+>Giny del &klipper;</title>
+<screenshot>
+<screeninfo
+>El giny del &klipper;.</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="klipper-widget.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase
+>El giny del &klipper;</phrase>
+</textobject>
+</mediaobject>
+</screenshot>
+
+<!-- TODO: Document starred functionality -->
+<para
+>Passeu per sobre d'una entrada amb el punter del ratolí i apareixeran quatre icones que us permetran invocar una acció, mostrar el codi de barres, editar el contingut o eliminar l'entrada de l'historial. Utilitzeu l'&spectacle; per a capturar els codis de barres i desar-los. </para>
+
+<para
+>Per a cercar a través de l'historial del porta-retalls escriviu la consulta en el camp de cerca. Els resultats s'actualitzaran mentre escriviu. Per a esborrar l'historial del porta-retalls, feu clic en la icona a la dreta del camp de cerca. </para>
+
+<para
+>L'acció <guilabel
+>Configura el porta-retalls...</guilabel
+> al menú contextual obre el <link linkend="preferences"
+>diàleg de configuració</link
+>. </para>
+
+</sect2>
+</sect1>
+
+<sect1 id="actions">
+<title
+>Accions</title>
+
+<para
+>El &klipper; pot realitzar accions sobre el contingut del porta-retalls, basant-se en una expressió regular en particular. Hi ha una acció integrada que actua sobre adreces web i fitxers. Permet passar una adreça web que comenci per «http://» o «https://» a un navegador web, o un fitxer, per exemple, un <acronym
+>PDF</acronym
+> a una aplicació compatible com l'&okular;.</para>
+
+<para
+>Podeu escriure les vostres pròpies accions a la pàgina <guilabel
+>Configuració d'accions</guilabel
+> del <link linkend="preferences"
+>diàleg de configuració</link
+>, on també podeu desactivar l'acció integrada amb <guilabel
+>Ofereix aplicacions per a enllaços i fitxers copiats</guilabel
+>. </para>
+
+<para
+>Sempre podeu accedir al menú d'accions coincidents amb un botó al costat de l'element de l'historial. També podeu triar tenir un menú d'acció emergent en qualsevol moment que es col·loqui una coincidència al porta-retalls utilitzant la drecera <guilabel
+>Menú emergent d'acció automàtica</guilabel
+> que podeu configurar a la pàgina <guilabel
+>Dreceres</guilabel
+>, o marcant <guilabel
+>Immediatament a la selecció</guilabel
+> a <guilabel
+>Mostra el menú emergent d'acció</guilabel
+> a la pàgina <guilabel
+>Menú d'acció</guilabel
+>. Allà, amb l'opció <guilabel
+>Temps del menú d'acció automàtica</guilabel
+>, també podeu canviar el temps que triga el menú automàtic a tancar per si mateix si no hi actueu.</para>
+
+<para
+>El contingut del porta-retalls que coincideixi amb una expressió regular també es pot editar abans de realitzar una operació a sobre seu. Seleccioneu <guimenuitem
+>Edita el contingut...</guimenuitem
+> a la dreta de l'entrada al porta-retalls, i podreu modificar el contingut del porta-retalls en el diàleg que aparegui, abans de fer clic al botó <guibutton
+>D'acord</guibutton
+> per a executar l'acció apropiada.</para>
+
+<para
+>Si definiu una drecera per a <guilabel
+>Invoca manualment una acció al porta-retalls actual</guilabel
+> prement aquesta drecera es mostrarà el menú emergent apropiat.</para>
+
+</sect1>
+
+<sect1 id="clipboard-modes">
+<title
+>Comportament de la selecció i el porta-retalls</title>
+
+<sect2 id="clipboard-modes-general">
+<title
+>General</title>
+<para
+>El &klipper; es pot emprar per a establir el comportament del porta-retalls i selecció al &plasma;. Per ajustar el seu comportament, vegeu <xref linkend="general-page"/>. </para>
+
+<note
+><para
+>Hi ha dues memòries intermèdies per separat de l'historial del porta-retalls: la «selecció» i el «porta-retalls». El text se situa a la memòria intermèdia de selecció simplement quan aquest és seleccionat i es pot enganxar amb el &BMR;. Per a situar el text a la memòria intermèdia del porta-retalls, seleccioneu-lo i premeu <keycombo
+>&Ctrl;<keycap
+>X</keycap
+> </keycombo
+> o <keycombo
+>&Ctrl;<keycap
+>C</keycap
+> </keycombo
+>. El text localitzat en el porta-retalls s'enganxa usant <keycombo
+>&Ctrl;<keycap
+>V</keycap
+> </keycombo
+> o seleccionant <guimenuitem
+>Enganxa</guimenuitem
+> al menú contextual.</para>
+</note>
+</sect2>
+</sect1>
+</chapter>
+
+<chapter id="preferences">
+<title
+>Configuració del &klipper;</title>
+
+<sect1 id="general-page">
+<title
+>Opcions generals</title>
+<note
+><para
+>Les opcions a sota distingeixen entre <emphasis
+>selecció</emphasis
+> i <emphasis
+>porta-retalls</emphasis
+>. Per entendre la diferència, vegeu <xref linkend="clipboard-modes"/>. </para
+></note>
+
+
+<variablelist>
+
+<varlistentry
+><term
+><guilabel
+>Historial del porta-retalls: Desa l'historial entre les sessions d'escriptori</guilabel
+></term>
+<listitem
+><para
+>Commuta si es conserva l'historial del porta-retalls quan tanqueu la sessió o apagueu l'ordinador.</para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Mida de l'historial</guilabel
+></term>
+<listitem
+><para
+>Estableix el nombre d'elements que estan emmagatzemats en l'historial del porta-retalls. El valor pot estar entre 1 i 2048.</para
+></listitem>
+</varlistentry>
+
+<varlistentry
+><term
+><guilabel
+>Selecció i porta-retalls: manté igual la selecció i el porta-retalls</guilabel
+></term>
+<listitem
+><para
+>Quan està activada, aquesta opció manté iguals la selecció i el porta-retalls, de manera que qualsevol selecció del porta-retalls està disponible immediatament per a enganxar de qualsevol manera. Si està desactivada, la selecció encara es pot desar en l'historial del porta-retalls (subjecte a les opcions següents), però només es pot enganxar utilitzant el &BMR;. </para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Inclou a l'historial: text seleccionat amb el punter o el teclat</guilabel
+></term>
+<listitem
+><para
+>Quan està marcada, la selecció es desarà a l'historial. El porta-retalls sempre es desa. </para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Inclou a l'historial: les dades d'imatges copiades explícitament</guilabel
+></term>
+<listitem
+><para
+>Quan està marcada, les imatges copiades com a dades (capes i seleccions copiades en un editor d'imatges, per exemple) es desaran a l'historial del porta-retalls. Els fitxers d'imatges copiats des d'un gestor de fitxers sempre es desen. A l'historial, apareixen com a imatges, però aquestes només són previsualitzacions, a sota només són noms de fitxer. Les captures de pantalla desades per l'&spectacle; també es desaran quan es configuri allí. </para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+
+</sect1>
+
+<sect1 id="action-menu-page">
+<title
+>Menú d'accions</title>
+
+<variablelist>
+
+<varlistentry>
+<term
+><guilabel
+>Per a un element triat de l'historial</guilabel
+></term>
+<listitem
+><para
+>Si aquesta opció és activada, seleccionar un element de l'historial causarà que el &klipper; mostri les accions emergents sobre aquest element, si fos apropiat.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Temps del menú emergent d'acció automàtica</guilabel
+></term>
+<listitem
+><para
+>Estableix quant temps triga el menú automàtic a tancar-se per si mateix si no hi actueu.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+><guilabel
+>Elimina els espais en blanc</guilabel
+></term>
+<listitem
+><para
+>Si se selecciona, qualsevol espai en blanc (espais, tabulacions, &etc;) al començament o final del contingut del porta-retalls s'eliminaran després de passar el contingut des del porta-retalls a una aplicació. El text desat en el porta-retalls no està afectat.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</sect1>
+
+<sect1 id="actions-configuration-page">
+<title
+>Configuració de les accions</title>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Ofereix aplicacions per a enllaços i fitxers copiats</guilabel
+></term>
+<listitem
+><para
+>Si està seleccionat, el menú emergent ofereix aplicacions que poden obrir un fitxer copiat o un enllaç copiat que comença per «http://» o «https://», fins i tot quan no coincideixi cap acció de les vostres.</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Editar les expressions i accions</term>
+<listitem
+><para
+>Sobre la pàgina <guilabel
+>Accions</guilabel
+>, feu doble clic a sobre de l'expressió regular o acció que vulgueu editar o premeu el botó <guibutton
+>Edita l'acció</guibutton
+>. Apareixerà un diàleg en el qual podreu editar el text com vulgueu.</para
+></listitem>
+</varlistentry>
+
+<varlistentry>
+<term
+>Afegir expressions i accions</term>
+<listitem
+><para
+>Feu clic al botó <guibutton
+>Afegeix una acció...</guibutton
+> per a afegir una expressió regular amb la qual, el &klipper; pugui trobar una correspondència. El &klipper; utilitza la classe <classname
+>QRegularExpression</classname
+> de les &Qt;, la qual utilitza PCRE (Perl Compatible Regular Expressions -expressions regulars admeses per Perl-).</para>
+<para
+>Podeu afegir una descripció del tipus expressió regular (&pex;, «HTTP URL») fent clic <mousebutton
+>esquerre</mousebutton
+> en la columna <guilabel
+>Descripció</guilabel
+>.</para>
+
+<note
+><para
+>Trobareu informació detallada sobre de l'ús de les expressions regulars de <classname
+>QRegularExpression</classname
+> en <ulink url="https://doc.qt.io/qt-5/qregularexpression.html#details"
+>la documentació del codi font de les Qt</ulink
+>.</para
+></note>
+
+<para
+>Editeu l'expressió regular tal com es descriu més amunt. Per a afegir una ordre, feu clic a <guimenuitem
+>Afegeix una ordre</guimenuitem
+> i editeu l'ordre en el quadre d'edició de text. En fer doble clic sobre una ordre podreu editar-la.</para>
+
+<para
+>Cal tenir present que <token
+>%s</token
+> en la línia d'ordres és substituïda pel contingut del porta-retalls, &pex;, si la vostra definició d'ordre és <userinput
+><command
+>kwrite</command
+> <token
+>%s</token
+></userinput
+> i el contingut del vostre porta-retalls és <filename
+>/home/jordi/fitxer_text</filename
+>, s'executarà l'ordre <userinput
+><command
+>kwrite</command
+> <filename
+>/home/jordi/fitxer_text</filename
+></userinput
+>. Per a incloure <token
+>%s</token
+> en la línia d'ordres, empreu la barra inversa, de la manera següent: <userinput
+>\%s</userinput
+>.</para>
+
+<para
+>Les entrades des de <userinput
+><token
+>%0</token
+></userinput
+> fins a <userinput
+><token
+>%9</token
+></userinput
+> se substituiran amb els textos capturats corresponents del patró de coincidència. </para>
+</listitem>
+</varlistentry>
+</variablelist>
+
+</sect1>
+
+<sect1 id="shortcuts-page">
+<title
+>Opcions a la pestanya Dreceres</title>
+
+<para
+>La pàgina de dreceres us permet canviar les dreceres de teclat que s'empren per a accedir a les funcions del &klipper;. Podeu canviar les dreceres a una de les tres opcions següents:</para>
+
+<variablelist>
+<varlistentry>
+<term
+><guilabel
+>Cap</guilabel
+></term>
+<listitem
+><para
+>L'acció seleccionada no serà accessible directament des del teclat.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Omissió</guilabel
+></term>
+<listitem
+><para
+>L'acció seleccionada utilitzarà la tecla predeterminada del &klipper;. Aquestes seran les dreceres a les quals ens referirem en aquest manual.</para
+></listitem>
+</varlistentry>
+<varlistentry>
+<term
+><guilabel
+>Personalitzada</guilabel
+></term>
+<listitem
+><para
+>L'acció seleccionada serà assignada a les tecles que escolliu.</para>
+<para
+>Per a escollir una tecla a mida per a l'acció que hàgiu seleccionat, feu clic a sobre de <guilabel
+>Personalitzada</guilabel
+> i llavors a <guilabel
+>Cap</guilabel
+>. Ara escriviu el tipus de combinació de tecles desitjada, com en qualsevol aplicació &kde;. </para
+> </listitem>
+</varlistentry>
+</variablelist>
+
+<para
+>Si definiu una drecera per a <guilabel
+>Obre el Klipper a la posició del ratolí</guilabel
+>, prement aquesta drecera s'obrirà el menú emergent del &klipper; a la posició del cursor del ratolí, en lloc de la seva posició per omissió (al plafó del &plasma;). És útil si utilitzeu el ratolí més que el teclat.</para>
+
+</sect1>
+</chapter>
+
+<chapter id="credits">
+<title
+>Crèdits i llicència</title>
+
+<para
+>&klipper; </para>
+<para
+>Copyright del programa 1998 &Andrew.Stanley-Jones; <email
+>asj@cban.com</email
+> </para>
+<para
+>Copyright del programa 1998-2000 &Carsten.Pfeiffer; &Carsten.Pfeiffer.mail;</para>
+<para
+>Mantingut actualment pels desenvolupadors del &plasma; de KDE. </para>
+
+<para
+>Copyright de la documentació 2000-2003, 2005 &Philip.Rodrigues; &Philip.Rodrigues.mail;</para>
+
+<para
+>Traductor/Revisor de la documentació: &credits.Antoni.Bella;</para
+> &underFDL; &underGPL; </chapter>
+
+&documentation.index;
+
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes: nil
+sgml-general-insert-case: lower
+sgml-indent-step: 0
+End:
+-->
+
+
+
+
+
+
+
+
+
+
